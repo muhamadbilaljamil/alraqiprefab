@@ -2,7 +2,7 @@ import React, {useEffect} from 'react';
 import './Day_Counter.css'
 import {day_counter} from "./Day_Counter";
 
-const Day_Counter_1 = () => {
+const Day_Counter = () => {
 
     useEffect(() => {
         day_counter();
@@ -79,4 +79,4 @@ const Day_Counter_1 = () => {
     );
 }
 
-export default Day_Counter_1;
+export default Day_Counter;

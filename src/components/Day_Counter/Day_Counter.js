@@ -1,6 +1,6 @@
 export const day_counter = () => {
-    let endDate = '01/22/2023 00:00:00';
-    const countToDate = new Date(endDate).setHours(new Date(endDate).getHours() + (24 * 15));
+    let endDate = '02/06/2023 00:00:00';
+    const countToDate = new Date(endDate).setHours(new Date(endDate).getHours() + (24 * 69));
 
     let previousTimeBetweenDates
     setInterval(() => {

@@ -1,0 +1,373 @@
+.fornax-coin {
+    position: relative;
+    z-index: 0;
+    background: #101e2d;
+}
+
+.fornax-coin .content {
+    padding: 60px 0 120px;
+}
+
+.fornax-coin .content .title p {
+    font-size: 36px;
+    font-weight: 700;
+    text-align: center;
+}
+
+.fornax-coin .content .info-timer {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 50px 0;
+}
+
+.fornax-coin .content .info-timer .info {
+    flex: 2;
+}
+
+.fornax-coin .content .info-timer .info ul {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    list-style: none;
+}
+
+.fornax-coin .content .info-timer .info ul li {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    min-width: 330px;
+    margin: 23px 0;
+}
+
+input.button {
+    font-size: 24px;
+    height: 100%;
+    padding: 8px;
+    padding-top: 2px;
+    width: 100px;
+}
+
+.fornax-coin .content .info-timer .info ul li .circle-out-logo {
+    position: absolute;
+    z-index: 1;
+    left: -64px;
+    top: -22px;
+    width: 98px;
+    height: 98px;
+    background: #101e2d;
+    border: 2px solid var(--PRIMARY_COLOR);
+    border-radius: 50%;
+}
+
+.fornax-coin .content .info-timer .info ul li .logo {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    left: -55px;
+    top: -13px;
+    background: #101e2d;
+    z-index: 2;
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+}
+
+.fornax-coin .content .info-timer .info ul li .info-text {
+    position: relative;
+    z-index: 1;
+    width: 100%;
+    height: 100%;
+    background: #1A3252;
+    border: 1px solid var(--PRIMARY_COLOR);
+    row-gap: 2px;
+    padding: 10px 0 10px 60px;
+}
+
+.fornax-coin .content .info-timer .info ul li h3 {
+    font-size: 16px;
+    font-weight: 600;
+    color: #fff;
+}
+
+.fornax-coin .content .info-timer .info ul li h5 {
+    font-size: 14px;
+    font-weight: 400;
+    color: rgba(255, 255, 255, 0.8);
+}
+
+.fornax-coin .content .info-timer .timer {
+    border: 1px solid #b27f29;
+    margin: 20px 0;
+}
+
+
+.fornax-coin .content .info-timer .timer {
+    flex: 1.2;
+    display: flex;
+    flex-direction: column;
+    row-gap: 10px;
+    justify-content: center;
+    align-items: center;
+}
+
+.fornax-coin .content .info-timer .timer h3 {
+    padding-top: 10px;
+    font-size: 20px;
+    font-weight: 400;
+    color: #fff;
+    line-height: 30px;
+    text-align: center;
+}
+
+.fornax-coin .content .info-timer .timer .center {
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 22px;
+    text-align: center;
+    padding: 10px;
+}
+
+.fornax-coin .content .slider-button {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.fornax-coin .content .slider-button .slider {
+    flex: 3;
+}
+
+.fornax-coin .content .slider-button .slider .white-bar {
+    position: relative;
+    width: 90%;
+    height: 14px;
+    background: #fff;
+    border-radius: 7px;
+}
+
+.fornax-coin .content .slider-button .slider .white-bar .golden-bar {
+    position: relative;
+    width: 0%;
+    height: 14px;
+    background: #b27f29;
+    border-radius: 7px;
+}
+
+.fornax-coin .content .slider-button .slider .white-bar .golden-bar .circle {
+    position: absolute;
+    top: -6px;
+    right: -8px;
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    background: #b27f29;
+    border: 1px solid #fff;
+}
+
+.fornax-coin .content .slider-button .slider .white-bar .slider-partition {
+    display: flex;
+    justify-content: space-between;
+    margin: 0 100px;
+}
+
+.fornax-coin .content .slider-button .slider .white-bar .slider-partition .parts {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    row-gap: 6px;
+    overflow: hidden;
+}
+
+.fornax-coin .content .slider-button .slider .white-bar .slider-partition .parts div {
+    width: 20px;
+    height: 20px;
+    /* background: rgb(178 127 42); */
+    background: #fff;
+    transform: rotate(45deg);
+    position: relative;
+    top: -10px;
+}
+
+.fornax-coin .content .slider-button .button {
+    display: block;
+}
+
+.fornax-coin .content .slider-button .button .input-group {
+    display: flex;
+    background: #FFF;
+}
+
+.fornax-coin .content .slider-button .button input {
+    width: 100px;
+    border: none;
+    outline: none;
+    padding: 10px;
+    color: #B27F29;
+    font-size: 16px;
+}
+
+.fornax-coin .content .slider-button .button .dropdown {
+    position: relative;
+    list-style: none;
+    padding: 0 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.fornax-coin .content .slider-button .button .input-group .dropdown > .option {
+    width: 90px;
+    background: rgba(244, 241, 241, 0.87);
+    display: flex;
+    justify-content: space-between;
+    padding: 4px;
+    align-items: center;
+    border-radius: 15px;
+}
+
+.fornax-coin .content .slider-button .button .dropdown .option .icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 25px;
+    height: 25px;
+}
+
+
+.fornax-coin .content .slider-button .button button {
+    cursor: pointer;
+    width: max-content;
+    background: #B27F29;
+    border: 1px solid #B27F29;
+    color: #fff;
+    font-size: 16px;
+    padding: 10px 20px;
+}
+
+.fornax-coin .content .slider-button .message {
+    /* flex: 1; */
+    padding:10px 0;
+}
+
+
+
+.fornax-coin .content .slider-button .button .dropdown .list.active {
+    height: 74px;
+}
+
+
+.fornax-coin .content .slider-button .button .dropdown .list {
+    height: 0;
+    background: #FFF;
+    position: absolute;
+    top: 40px;
+    right: 0;
+    border-bottom-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+    transition: all 0.3s;
+}
+
+.fornax-coin .content .slider-button .button .dropdown .list.active .option {
+    height: 37px;
+    opacity: 1;
+
+}
+
+.fornax-coin .content .slider-button .button .dropdown .list .option {
+    height: 0;
+    width: 99px;
+    padding: 6px 5px;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    column-gap: 10px;
+    transition: all 0.3s;
+    opacity: 0;
+}
+
+.fornax-coin .content .slider-button .button .dropdown .list .option:hover {
+    background: rgba(225, 224, 224, 0.85);
+}
+
+.fornax-coin .content .slider-button .button .dropdown .list .option:last-child {
+    border-bottom-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+}
+
+@media screen and (max-width: 768px) {
+
+    .fornax-coin .content {
+        padding: 60px 0 60px;
+    }
+
+
+    .fornax-coin .content .info-timer .info ul {
+        display: flex;
+        padding: 0 30px;
+        margin-left: 20px;
+    }
+
+    .fornax-coin .content .info-timer .info ul li {
+        min-width: 280px;
+        margin: 26px 0;
+    }
+
+    .fornax-coin .content .info-timer .info ul li .circle-out-logo {
+        left: -38px;
+    }
+
+    .fornax-coin .content .info-timer .info ul li .logo {
+        left: -30px;
+    }
+
+    .fornax-coin .content .info-timer .info ul li .info-text {
+        row-gap: 2px;
+        padding: 10px 0 10px 70px;
+    }
+
+    .fornax-coin .content .info-timer .timer {
+        border: 1px solid #b27f29;
+        margin: 20px 0;
+    }
+
+    .fornax-coin .content .info-timer .timer {
+        border: none;
+        margin: 50px 0;
+    }
+
+    .fornax-coin .content .info-timer .timer h3 {
+        font-size: 20px;
+        font-weight: 700;
+        text-underline: #e4a40c;
+        color: #fff;
+    }
+
+    .fornax-coin .content .slider-button {
+        padding: 10px;
+        row-gap: 120px;
+        flex-direction: column;
+    }
+
+    .fornax-coin .content .slider-button .slider {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+
+
+    .fornax-coin .content .slider-button .slider .white-bar .slider-partition {
+        margin: 0 10px;
+    }
+
+
+    .fornax-coin .content .slider-button .slider .white-bar .slider-partition .parts div {
+        width: 20px;
+        height: 20px;
+    }
+
+
+}

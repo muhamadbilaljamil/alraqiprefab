@@ -1,0 +1,191 @@
+.background-animation {
+ display: none;
+}
+
+@media screen and (max-width: 768px) {
+    .background-animation {
+        position: absolute;
+        z-index: 0;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        overflow: hidden;
+    }
+    .background-animation > .right-side .content {
+        min-height: 556px;
+        min-width: 673px;
+    }
+    .background-animation .right-side .content .block_1 {
+        top: 91px;
+        right: 52px;
+    }
+
+    .background-animation .right-side .content .block_2 {
+        bottom: 236px;
+        left: 46%;
+
+    }
+
+    .background-animation .right-side .content .block_3 {
+        top: 157px;
+    }
+
+}
+
+@media screen and (max-width: 650px){
+    .background-animation > .right-side .content {
+        min-height: 350px;
+        min-width: 368px;
+    }
+
+    .background-animation .right-side .content .blocks {
+        padding: 0 30px;
+    }
+
+   .background-animation .right-side .content .block_1 {
+       top: 56px;
+       right: 78px;
+    }
+
+   .background-animation .right-side .content .block_2 {
+       bottom: 77px;
+       left: 32%;
+
+    }
+
+   .background-animation .right-side .content .block_3 {
+       top: 83px;
+       left: 60px;
+   }
+}
+
+
+@media screen and (max-width: 600px){
+
+    .background-animation .content {
+        min-height: 350px;
+        min-width: 368px;
+
+        margin-top: 0px;
+    }
+
+    .background-animation .content .line {
+        width: 60%;
+        height: 35px;
+
+    }
+
+    .background-animation .content .blocks {
+        padding: 0 30px;
+    }
+
+    .background-animation .content .block_1 {
+        top: 106px;
+    }
+
+    .background-animation .content .block_2 {
+        bottom: 77px;
+        left: 32%;
+        /*display: none;*/
+
+    }
+
+    .background-animation .content .block_3 {
+        left: 40px;
+        top: 111px;
+    }
+
+
+    .loader span {
+        position: relative;
+        margin: 10px;
+        width: 80px;
+        height: 16px;
+        display: block;
+        background: #3e3f46;
+        transition: 0.5s;
+        z-index: var(--i);
+        animation: animate 3s ease-in-out infinite;
+        animation-delay: calc(-1S * var(--i));
+    }
+
+    .loader span:last-child {
+        height: 50px;
+    }
+
+    .loader span::before {
+        left: -66px;
+        height: 100%;
+        width: 66px;
+    }
+
+    .loader span::after {
+        top: -66px;
+        height: 66px;
+    }
+}
+
+
+@media screen and (max-width: 500px){
+    .background-animation {
+        min-width: auto;
+
+    }
+    .background-animation .content {
+        min-height: 350px;
+    }
+
+    .background-animation .content .blocks {
+        padding: 0 30px;
+    }
+
+    .background-animation .content .block_1 {
+        top: 96px;
+        right: 24px;
+    }
+
+    .background-animation .content .block_2 {
+        bottom: 200px;
+        left: 40%;
+        /*display: none;*/
+
+    }
+
+    .background-animation .content .block_3 {
+        left: -6px;
+        top: 92px;
+    }
+
+
+    .loader span {
+        position: relative;
+        margin: 10px;
+        width: 80px;
+        height: 16px;
+        display: block;
+        background: #3e3f46;
+        transition: 0.5s;
+        z-index: var(--i);
+        animation: animate 3s ease-in-out infinite;
+        animation-delay: calc(-1S * var(--i));
+    }
+
+    .loader span:last-child {
+        height: 50px;
+    }
+
+    .loader span::before {
+        left: -66px;
+        height: 100%;
+        width: 66px;
+    }
+
+    .loader span::after {
+        top: -66px;
+        height: 66px;
+    }
+
+
+
+}

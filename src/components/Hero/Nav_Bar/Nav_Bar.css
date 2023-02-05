@@ -2,10 +2,21 @@
     display: grid;
     grid-template-columns: 100px 1fr 350px;
     position: relative;
-    z-index: 3;
+    z-index: 0;
     padding: 10px 20px;
     align-items: center;
     /*background: #041122;*/
+}
+.top-menu-container .nav-bar-logo {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    column-gap: 6px;
+}
+
+.top-menu-container img {
+    width: 40px;
+    animation: show 1s linear 0.2s forwards;
 }
 
 .menu-list {
@@ -37,19 +48,26 @@
 }
 
 .left-side-buttons .btn {
+
     display: flex;
     justify-content: center;
-    width: 136px;
+    min-width: 136px;
     height: 45px;
     padding: 0 10px;
     border: 1px solid var(--PRIMARY_COLOR);
 }
 
 .left-side-buttons .wallet {
+    cursor: pointer;
     margin-right: 10px;
 }
 
+.left-side-buttons .wallet button {
+    cursor: pointer;
+}
+
 .left-side-buttons .wallet img {
+    cursor: pointer;
     width: 25px;
     margin-right: 10px;
 }
@@ -77,21 +95,21 @@
     opacity: 1;
 }
 
-.mobile-menus-list {
-    position: absolute;
-    height: 100vh;
-    background-color: rgba(4, 17, 34, 0.9);
-    padding: 0;
-    z-index: 1;
-    top: -100%;
-    left: 0;
-    right: 0;
-    list-style: none;
-    transition: top 0.3s;
+.mobile-menu .hamburger {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    row-gap: 6px;
+    width: 30px;
+    height: 30px;
 }
 
-.top-menu-container img {
-    animation: show 1s linear 0.2s forwards;
+.mobile-menu .hamburger div {
+    width: 30px;
+    height: 3px;
+    background: #e4a40c;
+    border-radius: 5px;
 }
 
 .top-menu-container .menu {
@@ -127,4 +145,35 @@
 
 .mobile-menu {
     display: none;
+}
+
+@media screen and (max-width: 1230px){
+    .menu-list {
+        margin-left: 2%;
+    }
+}
+
+@media screen and (max-width: 1080px){
+    .top-menu-container {
+        grid-template-columns: 130px 1fr;
+        padding: 18px 12px;
+    }
+   .menu-list {
+       display: none;
+   }
+    .left-side-buttons {
+        display: none;
+    }
+    .mobile-menu {
+        display: flex;
+        justify-content: flex-end;
+    }
+    .top-menu-container img {
+        width: 30px;
+    }
+}
+
+@media screen and (max-width: 768px){
+
+
 }

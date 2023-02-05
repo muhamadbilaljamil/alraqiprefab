@@ -1,0 +1,23 @@
+.hero {
+    position: relative;
+    width: 100%;
+    background-image: url(../../assets/images/Crypto-Exchange.jpeg);
+    background-size: cover;
+}
+
+.hero .glass-layer {
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background: #041122;
+    opacity: 0.9;
+    z-index: 0;
+}
+
+header {
+    position: relative;
+    z-index: 1;
+    border-bottom: 0.1px solid var(--PRIMARY_COLOR);
+}

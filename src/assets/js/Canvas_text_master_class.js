@@ -1,7 +1,10 @@
-window.addEventListener("load", function () {
+export const animate =  () => {
     const canvas = document.getElementById("canvas1");
     const main_banner = document.querySelector(".main-banner");
-    console.log(main_banner.clientWidth, main_banner.clientHeight);
+    // console.log("Canvas: ", canvas);
+    // console.log("Main banner: ", main_banner);
+
+    // console.log(main_banner.clientWidth, main_banner.clientHeight);
     const ctx = canvas.getContext("2d");
 
     canvas.width = main_banner.clientWidth;
@@ -19,7 +22,7 @@ window.addEventListener("load", function () {
         function (event) {
             mouse.x = event.x;
             mouse.y = event.y;
-            console.log("mouse position: ", mouse);
+            // console.log("mouse position: ", mouse);
         }
     );
 
@@ -85,11 +88,11 @@ window.addEventListener("load", function () {
     //Create particle array
     function init() {
         particlesArray = [];
-        let numberOfParticles = (canvas.width * canvas.height) / 10000;
+        let numberOfParticles = (canvas.width * canvas.height) / 15000;
         for (let i = 0; i < numberOfParticles * 1.7 ; i++) {
             let size = (Math.random() * 2) + 1;
-            let x = (Math.random() * ((innerWidth - size * 2) - (size * 2)) + size * 2);
-            let y = (Math.random() * ((innerHeight - size * 2) - (size * 2)) + size * 2);
+            let x = (Math.random() * ((canvas.width - size * 2) - (size * 2)) + size * 2); // innerWidth
+            let y = (Math.random() * ((canvas.height - size * 2) - (size * 2)) + size * 2); // innerHeight
             let directionX = (Math.random() * 5) - 2.5;
             let directionY = (Math.random() * 5) - 2.5;
             let color = {
@@ -126,7 +129,7 @@ window.addEventListener("load", function () {
     // Animation loop
     function animate() {
         requestAnimationFrame(animate);
-        ctx.clearRect(0, 0, innerWidth, innerHeight);
+        ctx.clearRect(0, 0, canvas.width, canvas.height); // innerWidth, innerHeight
         for (let i = 0; i < particlesArray.length; i++) {
             particlesArray[i].update();
         }
@@ -135,8 +138,10 @@ window.addEventListener("load", function () {
 
     //Resize event
     window.addEventListener('resize', function () {
-        canvas.width = innerWidth;
-        canvas.height = innerHeight;
+        canvas.width = main_banner.clientWidth;
+        canvas.height = main_banner.clientHeight;
+       // canvas.width =  ; // innerWidth
+       // canvas.height = ; // innerHeight
         mouse.radius = ((canvas.height / 80) * (canvas.height / 80));
         init();
     });
@@ -149,4 +154,4 @@ window.addEventListener("load", function () {
     })
     init();
     animate();
-})
+}

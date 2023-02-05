@@ -1,6 +1,9 @@
 .App {
   text-align: center;
 }
+.pointer {
+  cursor: pointer;
+}
 
 .App-logo {
   height: 40vmin;
@@ -35,4 +38,10 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+
+.main-app {
+  position: relative;
+  z-index: 0;
 }

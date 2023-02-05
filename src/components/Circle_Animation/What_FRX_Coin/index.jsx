@@ -2,10 +2,10 @@ import React from 'react';
 import './What_FRX_Coin.css';
 import anchor_node from '../../assets/images/Anchor Nodes.svg';
 import medical_mobile_app from '../../assets/images/Medical Mobile App.svg';
-import wallet from '../../assets/images/Wallet.svg';
+import wallet from '../../assets/images/wallet.svg';
 import neutral_trading from '../../assets/images/Neutral Trading.svg';
-import online_store  from '../../assets/images/Online Store.svg';
-import slice  from '../../assets/images/Slice.svg';
+import online_store from '../../assets/images/Online Store.svg';
+import slice from '../../assets/images/Slice.svg';
 import frx_logo from '../../assets/images/main-banner-logo.svg';
 const What_FRX_Coin = () => {
     return (
@@ -22,42 +22,42 @@ const What_FRX_Coin = () => {
                             <img src={frx_logo} alt="frx-logo" />
                         </div>
                         <div className="second-circle active">
-                                <li style={{"--i": "0", "--clr": "#1877f2"}}>
-                                    <div className="icon">
-                                        <img src={medical_mobile_app} alt="anchor node"/>
-                                    </div>
-                                </li>
-                                <li style={{"--i": "1", "--clr": "#ff0000"}}>
-                                    <div className="icon">
-                                        <img src={wallet} alt="anchor node"/>
-                                    </div>
-                                </li>
-                                <li style={{"--i": "4", "--clr": "#ea4c89"}}>
-                                    <div className="icon">
-                                        <img src={neutral_trading} alt="anchor node"/>
-                                    </div>
-                                </li>
-                                <li style={{"--i": "5", "--clr": "#0a66c2"}}>
-                                    <div className="icon">
-                                        <img src={anchor_node} alt="anchor node"/>
-                                    </div>
-                                </li>
-                                <li style={{"--i": "6", "--clr": "#c32aa3"}}>
-                                    <div className="icon">
-                                        <img src={online_store} alt="anchor node"/>
-                                    </div>
-                                </li>
-                                <li style={{"--i": "9", "--clr": "#0a66c2"}}>
-                                    <div className="icon">
-                                        <img src={slice} alt="anchor node"/>
-                                    </div>
-                                </li>
+                            <li style={{ "--i": "0", "--clr": "#1877f2" }}>
+                                <div className="icon">
+                                    <img src={medical_mobile_app} alt="anchor node" />
+                                </div>
+                            </li>
+                            <li style={{ "--i": "1", "--clr": "#ff0000" }}>
+                                <div className="icon">
+                                    <img src={wallet} alt="anchor node" />
+                                </div>
+                            </li>
+                            <li style={{ "--i": "4", "--clr": "#ea4c89" }}>
+                                <div className="icon">
+                                    <img src={neutral_trading} alt="anchor node" />
+                                </div>
+                            </li>
+                            <li style={{ "--i": "5", "--clr": "#0a66c2" }}>
+                                <div className="icon">
+                                    <img src={anchor_node} alt="anchor node" />
+                                </div>
+                            </li>
+                            <li style={{ "--i": "6", "--clr": "#c32aa3" }}>
+                                <div className="icon">
+                                    <img src={online_store} alt="anchor node" />
+                                </div>
+                            </li>
+                            <li style={{ "--i": "9", "--clr": "#0a66c2" }}>
+                                <div className="icon">
+                                    <img src={slice} alt="anchor node" />
+                                </div>
+                            </li>
                         </div>
                         <div className="third-circle"></div>
                         <div className="links active">
-                            <li style={{"--i": "0", "--clr": "#1877f2"}}>
+                            <li style={{ "--i": "0", "--clr": "#1877f2" }}>
                                 <div className="icon">
-                                    <img src={medical_mobile_app} alt="anchor node"/>
+                                    <img src={medical_mobile_app} alt="anchor node" />
                                 </div>
                                 <div className='description des-1'>
                                     <div className="description-column">
@@ -66,9 +66,9 @@ const What_FRX_Coin = () => {
                                     </div>
                                 </div>
                             </li>
-                            <li style={{"--i": "1", "--clr": "#ff0000"}}>
+                            <li style={{ "--i": "1", "--clr": "#ff0000" }}>
                                 <div className="icon">
-                                    <img src={wallet} alt="anchor node"/>
+                                    <img src={wallet} alt="anchor node" />
                                 </div>
                                 <div className='description des-2'>
                                     <div className="description-column">
@@ -78,19 +78,19 @@ const What_FRX_Coin = () => {
                                     </div>
                                 </div>
                             </li>
-                            <li style={{"--i": "2", "--clr": "#25d366"}}>
+                            <li style={{ "--i": "2", "--clr": "#25d366" }}>
                                 <div className="icon">
-                                    <img src={anchor_node} alt="anchor node"/>
+                                    <img src={anchor_node} alt="anchor node" />
                                 </div>
                             </li>
-                            <li style={{"--i": "3", "--clr": "#1da1f2"}}>
+                            <li style={{ "--i": "3", "--clr": "#1da1f2" }}>
                                 <div className="icon">
-                                    <img src={anchor_node} alt="anchor node"/>
+                                    <img src={anchor_node} alt="anchor node" />
                                 </div>
                             </li>
-                            <li style={{"--i": "4", "--clr": "#ea4c89"}}>
+                            <li style={{ "--i": "4", "--clr": "#ea4c89" }}>
                                 <div className="icon">
-                                    <img src={neutral_trading} alt="anchor node"/>
+                                    <img src={neutral_trading} alt="anchor node" />
                                 </div>
                                 <div className='description des-3'>
                                     <div className="description-column">
@@ -100,9 +100,9 @@ const What_FRX_Coin = () => {
                                     </div>
                                 </div>
                             </li>
-                            <li style={{"--i": "5", "--clr": "#0a66c2"}}>
+                            <li style={{ "--i": "5", "--clr": "#0a66c2" }}>
                                 <div className="icon">
-                                    <img src={anchor_node} alt="anchor node"/>
+                                    <img src={anchor_node} alt="anchor node" />
                                 </div>
                                 <div className='description des-4'>
                                     <div className="description-column">
@@ -112,9 +112,9 @@ const What_FRX_Coin = () => {
                                     </div>
                                 </div>
                             </li>
-                            <li style={{"--i": "6", "--clr": "#c32aa3"}}>
+                            <li style={{ "--i": "6", "--clr": "#c32aa3" }}>
                                 <div className="icon">
-                                    <img src={online_store} alt="anchor node"/>
+                                    <img src={online_store} alt="anchor node" />
                                 </div>
                                 <div className='description des-5'>
                                     <div className="description-column ">
@@ -123,19 +123,19 @@ const What_FRX_Coin = () => {
                                     </div>
                                 </div>
                             </li>
-                            <li style={{"--i": "7", "--clr": "#1da1f2"}}>
+                            <li style={{ "--i": "7", "--clr": "#1da1f2" }}>
                                 <div className="icon">
-                                    <img src={anchor_node} alt="anchor node"/>
+                                    <img src={anchor_node} alt="anchor node" />
                                 </div>
                             </li>
-                            <li style={{"--i": "8", "--clr": "#ea4c89"}}>
+                            <li style={{ "--i": "8", "--clr": "#ea4c89" }}>
                                 <div className="icon">
-                                    <img src={anchor_node} alt="anchor node"/>
+                                    <img src={anchor_node} alt="anchor node" />
                                 </div>
                             </li>
-                            <li style={{"--i": "9", "--clr": "#0a66c2"}}>
+                            <li style={{ "--i": "9", "--clr": "#0a66c2" }}>
                                 <div className="icon">
-                                    <img src={slice} alt="anchor node"/>
+                                    <img src={slice} alt="anchor node" />
                                 </div>
                                 <div className='description des-6'>
                                     <div className="description-column">

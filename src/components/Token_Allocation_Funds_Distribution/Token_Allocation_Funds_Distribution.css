@@ -1,17 +1,18 @@
-.supported-block-chain {
+.token-allocation {
     width: 100%;
     background: #041122;
 }
 
-.supported-block-chain-wrapper {
+.token-allocation-wrapper {
     max-width: 1233px;
     margin: 0 auto;
-    padding: 32px 60px 80px;
-    background: #FFFFFF;
+    width: 100%;
+    padding: 50px 5px 80px;
+    background: #041122;
     border-radius: 20px;
 }
 
-.supported-block-chain-wrapper .main-column {
+.token-allocation-wrapper .main-column {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -19,7 +20,7 @@
     row-gap: 20px;
 }
 
-.supported-block-chain-wrapper .main-column .title {
+.token-allocation-wrapper .main-column .title {
     font-weight: 700;
     font-size: 36px;
     line-height: 42px;
@@ -30,235 +31,272 @@
     text-fill-color: transparent;
 
 }
-
-.supported-block-chain-wrapper .main-column .subtitle {
-    font-weight: 400;
-    font-size: 14px;
-    line-height: 16px;
-    color: rgba(0, 0, 0, 0.5);
+.tokenomics{
+    width: 100%;
+    margin-top: 30px;
 }
-
-.supported-block-chain-wrapper .main-column .buttons-row {
-    list-style: none;
+.token-allocation-list-column {
     display: flex;
-    column-gap: 10px;
-}
-
-.supported-block-chain-wrapper .main-column .buttons-row li {
-    cursor: pointer;
-    display: flex;
-    align-items: center;
-    column-gap: 8px;
-    padding: 14px 20px;
-    background: rgba(217, 217, 217, 0.1);
-    border: 1px solid #D9D9D9;
-    border-radius: 5px;
-}
-
-.supported-block-chain-wrapper .main-column .buttons-row li button {
-    border: none;
-    outline: none;
-    background: transparent;
-    font-weight: 400;
-    font-size: 12px;
-    line-height: 14px;
-    color: rgba(0, 0, 0, 0.3);
-}
-
-.block-chain-list-row {
-    display: flex;
+    flex-direction: column;
     margin-top: 40px;
-}
-
-.block-chain-left-side {
-    display: flex;
-    flex: 1 !important;
-}
-
-.block-chain-left-side .col-list {
-    display: flex;
-    flex-direction: column;
-    row-gap: 10px;
-}
-
-.block-chain-left-side ul {
-    list-style: none;
-}
-
-.block-chain-left-side .col-list li {
-    display: flex;
-    justify-content: left;
-    align-items: center;
-    column-gap: 10px;
-    padding: 16px 22px;
-    background: rgba(217, 217, 217, 0.4);
+    background: #fff;
+    padding: 50px 10px;
     border-radius: 10px;
-    transition: all 0.5s;
+    display: none;
 }
 
-.block-chain-left-side .col-list li.active, .block-chain-left-side .col-list li:hover  {
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-    transform: scale(1.01);
-    cursor: pointer;
-}
-
-.block-chain-left-side .col-list li .icon {
-    width: 26px;
-    height: 26px;
+.token-allocation-first-row {
     display: flex;
     justify-content: center;
-    padding-top: 5px;
-    background: #B27F29;
-    border-radius: 5px;
+    padding: 20px;
+    background: rgba(217, 217, 217, 0.2);
 }
 
-.block-chain-left-side .col-list li:nth-child(2) .icon {
-    background: #F79C04
-}
-
-.block-chain-left-side .col-list li:nth-child(3) .icon {
-    background: rgba(247, 156, 4, 0.66);
-}
-
-.block-chain-left-side .col-list li .button-text {
-    display: flex;
-    flex-direction: column;
-    row-gap: 2px;
-}
-
-.block-chain-left-side .col-list li .button-text .heading_1 {
-    font-weight: 600;
-    font-size: 16px;
-    line-height: 19px;
-    color: #101D2E;
-}
-
-.block-chain-left-side .col-list li .button-text .heading_2 {
-    font-family: 'Roboto';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 10px;
-    line-height: 12px;
-    color: rgba(0, 0, 0, 0.3);
-}
-
-.block-chain-right-side {
-    display: flex;
-    justify-content: center;
-    flex: 3;
-}
-
-.block-chain-detail-cards {
-    display: flex;
-    list-style: none;
-    column-gap: 30px;
-}
-
-.block-chain-detail-cards li {
-    width: 222px;
-    height: 222px;
-    background: rgba(217, 217, 217, 0.1);
-    border: 1px solid #D9D9D9;
-    border-radius: 10px;
-    padding: 29px 15px;
-    display: flex;
-    flex-direction: column;
-    row-gar: 10px;
-    /*justify-content: center;*/
-    align-items: center;
-    transition: all 0.5s;
-}
-
-.block-chain-detail-cards li:hover {
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-    transform: scale(1.01);
-}
-
-.block-chain-detail-cards li img {
-    width: 43px;
-    height: 43px;
-    margin-bottom: 10px;
-}
-
-.block-chain-detail-cards li .card-text {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    row-gap: 2px;
-}
-
-.block-chain-detail-cards li .card-text .heading_1 {
-    font-weight: 700;
-    font-size: 20px;
-    line-height: 23px;
-    color: rgba(0, 0, 0, 0.6);
-}
-
-.block-chain-detail-cards li .card-text .heading_2 {
-    font-weight: 400;
-    font-size: 12px;
-    line-height: 14px;
-    /* identical to box height */
-    color: rgba(0, 0, 0, 0.3);
-}
-
-.block-chain-detail-cards li .market-cap {
+.status-bars-list {
     width: 100%;
     display: flex;
-    margin-top: 20px;
     justify-content: space-between;
+    align-items: flex-end;
+    flex-wrap: wrap;
+    gap: 10px;
+    list-style: none;
+    margin: 5px 20px;
 }
 
-.block-chain-detail-cards li .market-cap .divider {
-    width: 1px;
-    height: 82px;
-    background: #D9D9D9;
-}
-
-.block-chain-detail-cards li .market-cap .left-col {
+.status-bars-list li {
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
-    flex: 1;
+    padding: 20px 5px 6px;
+    width: 98px;
+    height: var(--height);
+    border-radius: 50px;
+    background: var(--color);
+    border: 2px solid #FFFFFF;
+    box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.48);
+    border-radius: 50px;
+    transition: all 0.5s;
 }
 
-.block-chain-detail-cards li .market-cap .left-col .amount {
-    font-weight: 700;
-    font-size: 14px;
-    line-height: 16px;
-    color: rgba(0, 0, 0, 0.7);
+.status-bars-list li:hover {
+    transform: translateY(-5px) scale(0.90);
 }
 
-.block-chain-detail-cards li .market-cap .left-col .label {
-    margin-top: 2px;
-    font-weight: 400;
-    font-size: 12px;
-    line-height: 14px;
-    color: rgba(0, 0, 0, 0.3);
+.status-bars-list li:hover .icon img {
+    transform: scale(1.2);
 }
 
-.block-chain-detail-cards li .market-cap .right-col .amount {
-    font-weight: 400;
-    font-size: 15px;
-    line-height: 18px;
-    color: #00ADAB;
-
+.status-bars-list li h4 {
+    color: #FFFFFF;
+    font-size: 18px;
+    margin-top: 6px;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
 
-.block-chain-detail-cards li .market-cap .right-col .label {
-    margin-top: 2px;
-    font-weight: 400;
-    font-size: 12px;
-    line-height: 14px;
-    color: rgba(0, 0, 0, 0.3);
-}
-
-.block-chain-detail-cards li .market-cap .right-col {
+.status-bars-list li .icon {
     display: flex;
-    flex-direction: column;
-    flex-direction: column;
     justify-content: center;
     align-items: center;
-    flex: 1;
+    width: 86px;
+    height: 86px;
+    border-radius: 50%;
+    background: #E9E9E9;
+    border: 3px solid #FFFFFF;
+    box-shadow: inset 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.status-bars-list li .icon img {
+    margin-top: 10px;
+    transition: transform .4s ease-in-out
+}
+
+.token-allocation-second-row {
+    padding: 40px;
+}
+
+.token-allocation-second-row .row-1, .token-allocation-second-row .row-2 {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 15px;
+    list-style: none;
+    margin: 40px 5px;
+}
+
+.token-allocation-second-row .row-1 li, .token-allocation-second-row .row-2 li {
+    display: flex;
+    align-items: center;
+    column-gap: 14px;
+    background: rgba(217, 217, 217, 0.1);
+    border: 1px solid #D9D9D9;
+    border-radius: 10px;
+    padding: 15px;
+    transition: all 0.5s;
+}
+
+.token-allocation-second-row .row-1 li .dot, .token-allocation-second-row .row-2 li .dot {
+    width: 24px;
+    height: 24px;
+    background: var(--color);
+
+}
+
+.token-allocation-second-row .row-1 li h4, .token-allocation-second-row .row-2 li h4 {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    color: #000000;
+}
+
+.token-allocation-second-row .row-1 li.active, .token-allocation-second-row .row-1 li:hover, .token-allocation-second-row .row-2 li.active, .token-allocation-second-row .row-2 li:hover {
+    border: 1px solid var(--color);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    transform: scale(1.1);
+}
+.mobile{
+    display: none;
+}
+.web{
+    display: block;
+}
+
+
+@media screen and (max-width: 748px){
+
+    .token-allocation-wrapper {
+
+        padding: 50px 0 80px; /*new*/
+
+    }
+
+    .token-allocation-wrapper .main-column .title {
+
+        font-size: 28px;
+        line-height: 42px;
+
+    }
+
+    .status-bars-list li {
+        width: 60px;
+        height: var(--height);
+    }
+
+    .status-bars-list li .icon {
+        width: 50px;
+        height: 50px;
+    }
+
+    .status-bars-list li .icon img {
+        width:40px;
+        margin-top: 10px;
+        transition: transform .4s ease-in-out
+    }
+    .mobile{
+        display: none;
+    }
+    .web{
+        display: block;
+    }
+
+
+}
+
+@media screen and (max-width: 450px){
+    .mobile{
+        display: block;
+    }
+    .web{
+        display: none;
+    }
+.tokenomics{
+    padding: 30px;
+    margin-top: 0px;
+}
+    .token-allocation-wrapper {
+        padding: 30px 0 50px; /*new*/
+    }
+
+    .token-allocation-list-column {
+        padding: 0 0;
+        border-radius: 0;
+        margin-top: 20px;
+    }
+
+    .token-allocation-first-row {
+        padding: 10px 0;
+    }
+
+    .status-bars-list {
+        gap: 4px;
+        list-style: none;
+        margin: 5px 12px;
+    }
+
+    .token-allocation-wrapper .main-column .title {
+        font-size: 20px;
+        padding: 0 20px;
+        text-align: center;
+        line-height: 32px;
+    }
+
+    .status-bars-list li {
+        padding: 8px 5px 4px;
+        width: 50px;
+        height: var(--mobile-height);
+    }
+    .status-bars-list li h4 {
+        font-size: 14px;
+        margin-top: 6px;
+    }
+
+    .status-bars-list li .icon {
+        width: 42px;
+        height: 42px;
+        border: 1.5px solid #FFFFFF;
+    }
+
+    .status-bars-list li .icon img {
+        width:34px;
+    }
+
+    .token-allocation-second-row {
+        display: flex;
+        flex-direction: row;
+        padding: 0 0;
+        padding-bottom: 20px;
+    }
+
+    .token-allocation-second-row .row-1, .token-allocation-second-row .row-2 {
+        gap: 10px;
+        margin: 25px 2px 5px;
+    }
+
+    .token-allocation-second-row .row-1 li, .token-allocation-second-row .row-2 li {
+        display: flex;
+        min-width: 130px;
+        align-items: center;
+        column-gap: 8px;
+        background: rgba(217, 217, 217, 0.1);
+        border: 1px solid #D9D9D9;
+        border-radius: 10px;
+        padding: 8px;
+        transition: all 0.5s;
+    }
+
+    .token-allocation-second-row .row-1 li .dot, .token-allocation-second-row .row-2 li .dot {
+        width: 12px;
+        height: 12px;
+
+    }
+
+    .token-allocation-second-row .row-1 li h4, .token-allocation-second-row .row-2 li h4 {
+        font-weight: 400;
+        font-size: 10px;
+        line-height: 19px;
+        color: #000000;
+    }
+
+
 }

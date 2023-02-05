@@ -4,7 +4,8 @@
 /node_modules
 /.pnp
 .pnp.js
-
+/doc
+.idea
 # testing
 /coverage
 
@@ -21,3 +22,10 @@
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
+*.zip
+
+/srcnewfrombilal
+/srcworking
+/live
+*-lock.json
+*.lock

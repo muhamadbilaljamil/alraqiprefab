@@ -1,146 +1,87 @@
-import React, {useState} from 'react';
-import './Supported_Block_Chain.css';
-import {blockchains} from "./database";
-import down_arrow from '../../assets/images/Down Arrow.svg'
-import forward_arrow from '../../assets/images/forword_arrow.svg'
-import analysis from '../../assets/images/Analytics.svg'
-import arch from '../../assets/images/Arch.svg'
-import timer from '../../assets/images/Timer.svg'
-import eth_logo from '../../assets/images/ethereum-logo-EC6CDBA45B-seeklogo 1.svg'
-import solana from '../../assets/images/Solana_logo 1.svg'
-import chain_link from '../../assets/images/chainlink-link-logo 1.svg'
+import React, { useState } from 'react';
+import './Token_Allocation_Funds_Distribution.css';
+import { blockchains } from "./database";
+import mobile_package_tracking from '../../assets/images/Mobile Package Tracking.svg'
+import people from '../../assets/images/People.svg'
+import trophy from '../../assets/images/Trophy.svg'
+import project_manager from '../../assets/images/Project Manager.svg'
+import sankey from '../../assets/images/Sankey.svg'
+import sale from '../../assets/images/Sale.svg'
+import tokend from '../../assets/images/tokend.png'
+import tokendm from '../../assets/images/tokendm.png'
 
-const Supported_Block_Chain = () => {
-    const [showCards, setShowCards] = useState(1);
-    const [list, setList] = useState(blockchains.slice(0, 3))
-    console.log('list: ', list);
-    const handleButtonClick = (value) => {
+
+const Token_Allocation_Funds_Distribution = () => {
+    const [showCards, setShowCards] = useState(0);
+
+    const handleOnMouseEnter = (value) => {
         setShowCards(value);
-        switch (value) {
-            case 1:
-                setList(blockchains.slice(0, 3))
-                break;
-            case 2:
-                setList(blockchains.slice(3, 6))
-                break;
-        }
-    }
-    return (
-        <section className="supported-block-chain">
-            <div className="container-wrapper">
-                <div className="supported-block-chain-wrapper">
-                    <div className="main-column">
-                        <h2 className="title">Supported Blockchains</h2>
-                        <p className="subtitle">Choose an asset to Stake, Host or Monitor to get started</p>
-                        <ul className="buttons-row">
-                            <li>
-                                <button>Sort by Market cap</button>
-                                <img src={down_arrow} alt="down arrow"/>
-                            </li>
-                            <li>
-                                <button>0% fees</button>
-                            </li>
-                            <li>
-                                <button>Staking only</button>
-                            </li>
-                            <li>
-                                <button>Hardware Wallet</button>
-                            </li>
-                        </ul>
-                    </div>
-                    <div className="block-chain-list-row">
-                        <div className="block-chain-left-side">
-                            <ul className="col-list">
-                                <li className={`${showCards === 1 ? 'active' : ''}`}
-                                    onClick={() => handleButtonClick(1)}>
-                                    <div className="icon"><img src={analysis} alt="button_logo_1"/></div>
-                                    <div className="button-text">
-                                        <h2 className="heading_1">Staking</h2>
-                                        <h4 className="heading_2">Staking & Validator Node</h4>
-                                    </div>
-                                    {showCards === 1 ? <img src={forward_arrow} alt="button_log_2"/> : ''}
-                                </li>
-                                <li className={`${showCards === 2 ? 'active' : ''}`}
-                                    onClick={() => handleButtonClick(2)}>
-                                    <div className="icon"><img src={arch} alt="button_logo_1"/></div>
-                                    <div className="button-text">
-                                        <h2 className="heading_1">Infrastructure</h2>
-                                        <h4 className="heading_2">Staking & Validator Node</h4>
-                                    </div>
-                                    {showCards === 2 ? <img src={forward_arrow} alt="button_log_2"/> : ''}
 
+    }
+
+    return (
+        <section className="token-allocation">
+            <div className="container-wrapper">
+                <div className="token-allocation-wrapper">
+                    <div className="main-column">
+                        <h2 className="title">Tokenomics</h2>
+                    </div>
+                    <img src={tokend} alt="icon_image" className="tokenomics web" />
+                    <img src={tokendm} alt="icon_image" className="tokenomics mobile" />
+                    <div className="token-allocation-list-column">
+
+
+                        <div className="token-allocation-first-row">
+                            tokend
+                            <ul className="status-bars-list">
+                                <li style={{ '--color': '#CC0000', '--height': '152px', '--mobile-height': '85px' }} onMouseEnter={() => handleOnMouseEnter(1)} onMouseLeave={() => setShowCards(0)}>
+                                    <h4>10%</h4>
+                                    <div className="icon"><img src={mobile_package_tracking} alt="icon_image" /></div>
                                 </li>
-                                {/*<li className={`${showCards === 3 ? 'active' : ''}`} onClick={()=> handleButtonClick(3)}>
-                                    <div className="icon"><img src={timer} alt="button_logo_1"/></div>
-                                    <div className="button-text">
-                                        <h2 className="heading_1">Coming soon</h2>
-                                        <h4 className="heading_2">Staking & Validator Node</h4>
-                                    </div>
-                                    {showCards === 3 ? <img src={forward_arrow} alt="button_log_2"/> : ''}
-                                </li>*/}
+                                <li style={{ '--color': '#E76126', '--height': '386px', '--mobile-height': '185px' }} onMouseEnter={() => handleOnMouseEnter(2)} onMouseLeave={() => setShowCards(0)}>
+                                    <h4>25%</h4>
+                                    <div className="icon"><img src={people} alt="icon_image" /></div>
+                                </li>
+                                <li style={{ '--color': '#3C551C', '--height': '175px', '--mobile-height': '93px' }} onMouseEnter={() => handleOnMouseEnter(3)} onMouseLeave={() => setShowCards(0)}>
+                                    <h4>13%</h4>
+                                    <div className="icon"><img src={trophy} alt="icon_image" /></div>
+                                </li>
+                                <li style={{ '--color': '#806BEC', '--height': '240px', '--mobile-height': '135px' }} onMouseEnter={() => handleOnMouseEnter(4)} onMouseLeave={() => setShowCards(0)}>
+                                    <h4>17%</h4>
+                                    <div className="icon"><img src={project_manager} alt="icon_image" /></div>
+                                </li>
+                                <li style={{ '--color': '#215292', '--height': '187px', '--mobile-height': '115px' }} onMouseEnter={() => handleOnMouseEnter(5)} onMouseLeave={() => setShowCards(0)}>
+                                    <h4>15%</h4>
+                                    <div className="icon"><img src={sankey} alt="icon_image" /></div>
+                                </li>
+                                <li style={{ '--color': '#00ADAB', '--height': '320px', '--mobile-height': '160px' }} onMouseEnter={() => handleOnMouseEnter(6)} onMouseLeave={() => setShowCards(0)}>
+                                    <h4>20%</h4>
+                                    <div className="icon"><img src={sale} alt="icon_image" /></div>
+                                </li>
                             </ul>
                         </div>
-                        <div className="block-chain-right-side">
-                            <ul className="block-chain-detail-cards">
-                                {
-                                    list.map((item, index) => {
-                                        return <li className="card">
-                                            <img src={item?.icon} alt="button_logo_1"/>
-                                            <div className="card-text">
-                                                <h2 className="heading_1">{item?.title}</h2>
-                                                <h4 className="heading_2">{item?.subtitle}</h4>
-                                            </div>
-                                            <div className="market-cap">
-                                                <div className="left-col">
-                                                    <div className="amount">{item?.amount_1}</div>
-                                                    <div className="label">{item?.label_1}</div>
-                                                </div>
-                                                <div className="divider"></div>
-                                                <div className="right-col">
-                                                    <div className="amount">{item?.amount_2}</div>
-                                                    <div className="label">{item?.label_2}</div>
-                                                </div>
-                                            </div>
-                                        </li>
-                                    })
-                                }
-
-                                {/*<li className="card">*/}
-                                {/*    <img src={solana} alt="button_logo_1"/>*/}
-                                {/*    <div className="card-text">*/}
-                                {/*        <h2 className="heading_1">Solana 2.0</h2>*/}
-                                {/*        <h4 className="heading_2">Validator Node</h4>*/}
-                                {/*    </div>*/}
-                                {/*    <div className="market-cap">*/}
-                                {/*        <div className="left-col">*/}
-                                {/*            <div className="amount">$193B</div>*/}
-                                {/*            <div className="label">Market cap</div>*/}
-                                {/*        </div>*/}
-                                {/*        <div className="divider"></div>*/}
-                                {/*        <div className="right-col">*/}
-                                {/*            <div className="amount">5.46%</div>*/}
-                                {/*            <div className="label">APR</div>*/}
-                                {/*        </div>*/}
-                                {/*    </div>*/}
-                                {/*</li>*/}
-                                {/*<li className="card">*/}
-                                {/*    <img src={chain_link} alt="button_logo_1"/>*/}
-                                {/*    <div className="card-text">*/}
-                                {/*        <h2 className="heading_1">Chainlink</h2>*/}
-                                {/*        <h4 className="heading_2">Validator Node</h4>*/}
-                                {/*    </div>*/}
-                                {/*    <div className="market-cap">*/}
-                                {/*        <div className="left-col">*/}
-                                {/*            <div className="amount">$193B</div>*/}
-                                {/*            <div className="label">Market cap</div>*/}
-                                {/*        </div>*/}
-                                {/*        <div className="divider"></div>*/}
-                                {/*        <div className="right-col">*/}
-                                {/*            <div className="amount">5.46%</div>*/}
-                                {/*            <div className="label">APR</div>*/}
-                                {/*        </div>*/}
-                                {/*    </div>*/}
-                                {/*</li>*/}
+                        <div className="token-allocation-second-row">
+                            <ul className="row-1">
+                                <li className={showCards === 1 ? 'active' : ''} style={{ '--color': '#CC0000' }}>
+                                    <div className="dot"></div>
+                                    <h4>Mobile ad Platform</h4></li>
+                                <li className={showCards === 2 ? 'active' : ''} style={{ '--color': '#E76126' }}>
+                                    <div className="dot"></div>
+                                    <h4>Team and advisor</h4></li>
+                                <li className={showCards === 3 ? 'active' : ''} style={{ '--color': '#3C551C' }}>
+                                    <div className="dot"></div>
+                                    <h4>Reward Program</h4></li>
+                            </ul>
+                            <ul className="row-2">
+                                <li className={showCards === 4 ? 'active' : ''} style={{ '--color': '#806BEC' }}>
+                                    <div className="dot"></div>
+                                    <h4>Promotion Marketing</h4></li>
+                                <li className={showCards === 5 ? 'active' : ''} style={{ '--color': '#215292' }}>
+                                    <div className="dot"></div>
+                                    <h4>Marketing & General</h4></li>
+                                <li className={showCards === 6 ? 'active' : ''} style={{ '--color': '#00ADAB' }}>
+                                    <div className="dot"></div>
+                                    <h4>Private/Pre-sale</h4></li>
                             </ul>
                         </div>
                     </div>
@@ -150,4 +91,4 @@ const Supported_Block_Chain = () => {
     );
 }
 
-export default Supported_Block_Chain;
+export default Token_Allocation_Funds_Distribution;

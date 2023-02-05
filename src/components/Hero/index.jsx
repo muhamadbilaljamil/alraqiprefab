@@ -1,13 +1,18 @@
 import React from 'react';
-import NavBar from "../Nav_Bar/NavBar";
-import MainBanner from "../MainBanner";
+import './Hero.css';
+import Nav_Bar from "./Nav_Bar";
+import Main_Banner_1 from "./Main_Banner_1";
 
-const Hero = () => {
+const Hero = (props) => {
+
+
+
+
     return (
         <div className="hero">
             <div className="glass-layer"></div>
-            <NavBar />
-            <MainBanner />
+            <Nav_Bar props={props} />
+            <Main_Banner_1 />
         </div>
     );
 }

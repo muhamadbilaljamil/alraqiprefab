@@ -1,57 +1,268 @@
 import React from 'react';
-import './Why_Choose_FRX.css';
-import mobile_payment from '../../assets/images/Mobile Payment.svg';
-import no_hidden_fee from '../../assets/images/No Hidden Fees.svg';
-import protect from '../../assets/images/Protect.svg';
-import transaction from '../../assets/images/Transaction.svg';
-const Whu_Choose_FRX = () => {
+import './Experts_Investor_Board.css';
+import ceo from '../../assets/images/ceo.jpg';
+import mm from '../../assets/images/mm.jpg';
+import cd from '../../assets/images/cd.jpg';
+import pd from '../../assets/images/pd.jpg';
+import pm from '../../assets/images/pm.png';
+import bc from '../../assets/images/bc.png';
+import fd from '../../assets/images/fd.png';
+import dv from '../../assets/images/dv.png';
+
+import sm from '../../assets/images/sm.png';
+import cm from '../../assets/images/cm.png';
+import as from '../../assets/images/as.png';
+
+
+import twitter from '../../assets/images/Twitter.svg';
+import linkIn from '../../assets/images/LinkedIn.svg';
+import facebook from '../../assets/images/Facebook F.svg';
+
+const Experts_Investor_Board = () => {
     return (
-        <section className="why-choose-frx">
+        <section className="experts-investor-board" id="team">
             <div className="container-wrapper">
-                <div className="why-choose-frx-wrapper">
+                <div className="experts-investor-board-wrapper">
                     <div className="bg-layer"></div>
                     <div className="main-content">
                         <div className="header">
-                            <h2>Why Choose our coin?</h2>
-                            <p>The first Community which simplifies and standardizes data with blockchain technology to
-                                incentives its community.</p>
+                            <h2>Meet our Experts</h2>
                         </div>
                         <div className="cards-list">
                             <div className="card">
                                 <div className="icon">
-                                    <img src={mobile_payment} alt="Payment logo" />
+                                    <img src={ceo} alt="Payment logo" />
                                 </div>
-                                <div className="card-title">Easy Mobile Payment</div>
-                                <div className="card-description">You can use a Mobile device to with simple steps</div>
+                                <div className="card-title">Naveed Hussain</div>
+                                <div className="card-subtitle">CEO</div>
+                                {/* <p className="card-description">
+                                    "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                                    incididunt ut labore .
+                                </p> */}
+                                {/* <ul className="social-links">
+                                    <li><img src={twitter} alt="Payment logo" /></li>
+                                    <li><img src={linkIn} alt="Payment logo" /></li>
+                                    <li><img src={facebook} alt="Payment logo" /></li>
+                                </ul> */}
                             </div>
                             <div className="card">
                                 <div className="icon">
-                                    <img src={no_hidden_fee} alt="Payment logo" />
+                                    <img src={mm} alt="Payment logo" />
                                 </div>
-                                <div className="card-title">Easy Mobile Payment</div>
-                                <div className="card-description">You can use a Mobile device to with simple steps</div>
+                                <div className="card-title">Junaid Kazmi</div>
+                                <div className="card-subtitle">Marketing Manager</div>
+                                {/* <p className="card-description">
+                                    "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                                    incididunt ut labore .
+                                </p>
+                                <ul className="social-links">
+                                    <li><img src={twitter} alt="Payment logo" /></li>
+                                    <li><img src={linkIn} alt="Payment logo" /></li>
+                                    <li><img src={facebook} alt="Payment logo" /></li>
+                                </ul> */}
                             </div>
                             <div className="card">
                                 <div className="icon">
-                                    <img src={protect} alt="Payment logo" />
+                                    <img src={cm} alt="Payment logo" />
                                 </div>
-                                <div className="card-title">Easy Mobile Payment</div>
-                                <div className="card-description">You can use a Mobile device to with simple steps</div>
+                                <div className="card-title">Emily Brown </div>
+                                <div className="card-subtitle">Community Manager</div>
+                                {/* <p className="card-description">
+                                    "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                                    incididunt ut labore .
+                                </p>
+                                <ul className="social-links">
+                                    <li><img src={twitter} alt="Payment logo" /></li>
+                                    <li><img src={linkIn} alt="Payment logo" /></li>
+                                    <li><img src={facebook} alt="Payment logo" /></li>
+                                </ul> */}
                             </div>
                             <div className="card">
                                 <div className="icon">
-                                    <img src={transaction} alt="Payment logo" />
+                                    <img src={pm} className="pm" alt="Payment logo" />
                                 </div>
-                                <div className="card-title">Easy Mobile Payment</div>
-                                <div className="card-description">You can use a Mobile device to with simple steps</div>
+                                <div className="card-title">Abdulah Ahmed </div>
+                                <div className="card-subtitle">Project Manager</div>
+                                {/* <p className="card-description">
+                                    "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                                    incididunt ut labore .
+                                </p>
+                                <ul className="social-links">
+                                    <li><img src={twitter} alt="Payment logo" /></li>
+                                    <li><img src={linkIn} alt="Payment logo" /></li>
+                                    <li><img src={facebook} alt="Payment logo" /></li>
+                                </ul> */}
+                            </div>
+                            <div className="card">
+                                <div className="icon">
+                                    <img src={as} alt="Payment logo" />
+                                </div>
+                                <div className="card-title">Alex Stoia </div>
+                                <div className="card-subtitle">Teamlead Infra</div>
+                                {/* <p className="card-description">
+                                    "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                                    incididunt ut labore .
+                                </p>
+                                <ul className="social-links">
+                                    <li><img src={twitter} alt="Payment logo" /></li>
+                                    <li><img src={linkIn} alt="Payment logo" /></li>
+                                    <li><img src={facebook} alt="Payment logo" /></li>
+                                </ul> */}
+                            </div>
+                            <div className="card">
+                                <div className="icon">
+                                    <img src={bc} alt="Payment logo" />
+                                </div>
+                                <div className="card-title">Qasim Raheem</div>
+                                <div className="card-subtitle">Sr. Blockchain Developer</div>
+                                {/* <p className="card-description">
+                                    "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                                    incididunt ut labore .
+                                </p>
+                                <ul className="social-links">
+                                    <li><img src={twitter} alt="Payment logo" /></li>
+                                    <li><img src={linkIn} alt="Payment logo" /></li>
+                                    <li><img src={facebook} alt="Payment logo" /></li>
+                                </ul> */}
+                            </div>
+                            <div className="card">
+                                <div className="icon">
+                                    <img src={fd} className="fd" alt="Payment logo" />
+                                </div>
+                                <div className="card-title">Afaq Rajputt</div>
+                                <div className="card-subtitle">UI/UX Developer</div>
+                                {/* <p className="card-description">
+                                    "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                                    incididunt ut labore .
+                                </p>
+                                <ul className="social-links">
+                                    <li><img src={twitter} alt="Payment logo" /></li>
+                                    <li><img src={linkIn} alt="Payment logo" /></li>
+                                    <li><img src={facebook} alt="Payment logo" /></li>
+                                </ul> */}
+                            </div>
+                            <div className="card">
+                                <div className="icon">
+                                    <img className="cd" src={sm} alt="Payment logo" />
+                                </div>
+                                <div className="card-title">Samuel Broad</div>
+                                <div className="card-subtitle">Lead Designer</div>
+                                {/* <p className="card-description">
+                                    "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                                    incididunt ut labore .
+                                </p>
+                                <ul className="social-links">
+                                    <li><img src={twitter} alt="Payment logo" /></li>
+                                    <li><img src={linkIn} alt="Payment logo" /></li>
+                                    <li><img src={facebook} alt="Payment logo" /></li>
+                                </ul> */}
+                            </div>
+                            <div className="card">
+                                <div className="icon">
+                                    <img className="cd" src={cd} alt="Payment logo" />
+                                </div>
+                                <div className="card-title">Syed Maratab Nazir</div>
+                                <div className="card-subtitle">Creative Designer</div>
+                                {/* <p className="card-description">
+                                    "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                                    incididunt ut labore .
+                                </p>
+                                <ul className="social-links">
+                                    <li><img src={twitter} alt="Payment logo" /></li>
+                                    <li><img src={linkIn} alt="Payment logo" /></li>
+                                    <li><img src={facebook} alt="Payment logo" /></li>
+                                </ul> */}
+                            </div>
+                            <div className="card">
+                                <div className="icon">
+                                    <img src={pd} alt="Payment logo" />
+                                </div>
+                                <div className="card-title">Saqib Hussain</div>
+                                <div className="card-subtitle">Sr. Developer</div>
+                                {/* <p className="card-description">
+                                    "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                                    incididunt ut labore .
+                                </p>
+                                <ul className="social-links">
+                                    <li><img src={twitter} alt="Payment logo" /></li>
+                                    <li><img src={linkIn} alt="Payment logo" /></li>
+                                    <li><img src={facebook} alt="Payment logo" /></li>
+                                </ul> */}
+                            </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+                            <div className="card">
+                                <div className="icon">
+                                    <img src={dv} className="dv" alt="Payment logo" />
+                                </div>
+                                <div className="card-title">Hammad Hassan</div>
+                                <div className="card-subtitle">Sr. Devops Engg</div>
+                                {/* <p className="card-description">
+                                    "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                                    incididunt ut labore .
+                                </p>
+                                <ul className="social-links">
+                                    <li><img src={twitter} alt="Payment logo" /></li>
+                                    <li><img src={linkIn} alt="Payment logo" /></li>
+                                    <li><img src={facebook} alt="Payment logo" /></li>
+                                </ul> */}
                             </div>
                         </div>
-                        <div className="gradient-border"></div>
                     </div>
+                    {/* <div className="main-content">
+                        <div className="header">
+                            <h2>Investor Board</h2>
+                        </div>
+                        <div className="cards-list">
+                            <div className="card">
+                                <div className="icon">
+                                    <img src={cristiano} alt="Payment logo" />
+                                </div>
+                                <div className="card-title">Cristiano</div>
+                                <div className="card-subtitle">CEO &COO</div>
+                                <p className="card-description">
+                                    "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                                    incididunt ut labore .
+                                </p>
+                                <ul className="social-links">
+                                    <li><img src={twitter} alt="Payment logo" /></li>
+                                    <li><img src={linkIn} alt="Payment logo" /></li>
+                                    <li><img src={facebook} alt="Payment logo" /></li>
+                                </ul>
+                            </div>
+                            <div className="card">
+                                <div className="icon">
+                                    <img src={cristiano} alt="Payment logo" />
+                                </div>
+                                <div className="card-title">Cristiano</div>
+                                <div className="card-subtitle">CEO &COO</div>
+                                <p className="card-description">
+                                    "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                                    incididunt ut labore .
+                                </p>
+                                <ul className="social-links">
+                                    <li><img src={twitter} alt="Payment logo" /></li>
+                                    <li><img src={linkIn} alt="Payment logo" /></li>
+                                    <li><img src={facebook} alt="Payment logo" /></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div> */}
                 </div>
             </div>
         </section>
     );
 }
 
-export default Whu_Choose_FRX;
+export default Experts_Investor_Board;

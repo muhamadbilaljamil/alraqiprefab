@@ -1,1 +1,21 @@
-<svg xmlns="http://www.w3.org/2000/svg" class="ionicon" viewBox="0 0 512 512"><title>Wallet</title><path d="M95.5 104h320a87.73 87.73 0 0111.18.71 66 66 0 00-77.51-55.56L86 94.08h-.3a66 66 0 00-41.07 26.13A87.57 87.57 0 0195.5 104zM415.5 128h-320a64.07 64.07 0 00-64 64v192a64.07 64.07 0 0064 64h320a64.07 64.07 0 0064-64V192a64.07 64.07 0 00-64-64zM368 320a32 32 0 1132-32 32 32 0 01-32 32z"/><path d="M32 259.5V160c0-21.67 12-58 53.65-65.87C121 87.5 156 87.5 156 87.5s23 16 4 16-18.5 24.5 0 24.5 0 23.5 0 23.5L85.5 236z"/></svg>
+<svg width="35" height="35" viewBox="0 0 35 35" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<g filter="url(#filter0_d_4_76)">
+<rect x="4" width="27" height="27" fill="url(#pattern0)" shape-rendering="crispEdges"/>
+</g>
+<defs>
+<filter id="filter0_d_4_76" x="0" y="0" width="35" height="35" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+<feFlood flood-opacity="0" result="BackgroundImageFix"/>
+<feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
+<feOffset dy="4"/>
+<feGaussianBlur stdDeviation="2"/>
+<feComposite in2="hardAlpha" operator="out"/>
+<feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.25 0"/>
+<feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_4_76"/>
+<feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_4_76" result="shape"/>
+</filter>
+<pattern id="pattern0" patternContentUnits="objectBoundingBox" width="1" height="1">
+<use xlink:href="#image0_4_76" transform="scale(0.0111111)"/>
+</pattern>
+<image id="image0_4_76" width="90" height="90" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAFoAAABaCAYAAAA4qEECAAAACXBIWXMAAAsTAAALEwEAmpwYAAACf0lEQVR4nO3cvWoVQRiH8VW08A6000RNaVoFxcSPG9DGXIQQ0wj2FjaCWBjttdIL8OPoHYgEEpNCe79AE7QQfGRxCpUzqzs7+855z/5/EEg1Z+ZhOWcyObtVJSIiIiIiIiIyUMACcBfYAHYYnp2w9lXgdB+BZ4FnpVc5gZ4Ah3JFPgF8KL2iCfYeON418kHgXemVOFBfiLNdQj8tvQJHRqmRF0vP3KH2H5BhdzHON2AZ2F8NDHAAuBIajHMnZdDXkcGWq4EDViJt1lMG244MNrgr+W91g0ibL1VbkYFoPdCUIlcfhW6m0NMSGrgNrA34rGMtNOg9tDRQaCMKbUShjSi0w9A66yB61pE1tM46iJ51ZA2tsw6iZx36Ezw3hTai0EYs3qN11oHOOorLeUVLA4U2otBGFNphaJ11oLMOEzrrMKKzDkO9v0f3MmuHFNqIxa6ji6/AG+A+cAHY00uF8evZC1wEHgBvw1yyS5mYhU3gXC9l/1zLeWDLYkEpk7PyA7jaS+Ff67gWXsNEygStXe4hcv2FeVMeQn8HjmWMPB/GNOUhdPoNN+PnP6IAL6FrC5nu8C3CU+iXXbZ9YRv3qtTkPYWu3ewQ+hYFeQtduw7sajHf3cANCvMYuvYYOPofc50LN8AX5zU0YYv2ELgEzAD7wk/9+xLwqMQ2bhpDu6LQRhTaiEIbUWgjCm1EoY0otBGFnuDQsQejSNznnI/6kbikR/3caxhQMj686mxkMIlbbB265P/dnHqRFDmEngnP3pRmH4HDyaFD7FPAp3+80NAjn+wU+bfYR4DnpVc0gUadr+RI8DPhIdXrA91nb4e1ryZ/8ImIiIiIiIiIVP79BFmsI4MFd3GGAAAAAElFTkSuQmCC"/>
+</defs>
+</svg>
