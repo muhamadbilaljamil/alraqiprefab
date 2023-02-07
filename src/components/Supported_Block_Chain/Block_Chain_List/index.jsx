@@ -59,7 +59,7 @@ const Block_Chain_List = ({list, activeLink}) => {
                                 <h4 className="heading_2">{item?.subtitle}</h4>
                             </div>
                             <div className="market-cap">
-                                <div className="left-col">
+                               {/* <div className="left-col">
                                     <div className="amount">{item?.amount_1}</div>
                                     <div className="label">{item?.label_1}</div>
                                 </div>
@@ -67,7 +67,8 @@ const Block_Chain_List = ({list, activeLink}) => {
                                 <div className="right-col">
                                     <div className="amount">{item?.amount_2}</div>
                                     <div className="label">{item?.label_2}</div>
-                                </div>
+                                </div>*/}
+                                Coming Soon
                             </div>
                         </div>
 

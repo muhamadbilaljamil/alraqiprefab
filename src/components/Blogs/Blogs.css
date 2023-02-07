@@ -1,15 +1,15 @@
-.featured-in-wrapper {
+.blogs-wrapper {
     background: #041122;
     padding: 50px 0;
 }
 
-.featured-in-content {
+.blogs-content {
     position: relative;
     background: url(../../assets/images/experts_background.jpeg) no-repeat;
     background-size: cover;
 }
 
-.featured-in-content .bg-layer {
+.blogs-content .bg-layer {
     background: rgba(20, 39, 67, 0.9);
     position: absolute;
     z-index: 0;
@@ -19,7 +19,7 @@
     height: 100%;
 }
 
-.featured-in-content .content {
+.blogs-content .content {
     min-height: 220px;
     position: relative;
     display: flex;
@@ -29,9 +29,10 @@
     overflow: hidden;
 }
 
-.featured-in-content .title {
+.blogs-content .title {
     width: 534px;
     text-transform: uppercase;
+    text-align: right;
     font-weight: 700;
     font-size: 36px;
     line-height: 42px;
@@ -42,9 +43,9 @@
     text-fill-color: transparent;
 }
 
-.featured-in-content .description-list {
+.blogs-content .description-list {
     position: absolute;
-    right: -32px;
+    left: -32px;
     bottom: -92px;
     width: 400px;
     height: 400px;
@@ -59,8 +60,8 @@
 }
 
 @media screen and (max-width: 768px) {
-    .featured-in-content .description-list {
-        right: -74px;
+    .blogs-content .description-list {
+        left: -74px;
         bottom: -44px;
         width: 300px;
         height: 300px;
@@ -68,12 +69,12 @@
 }
 
 @media screen and (max-width: 630px) {
-    .featured-in-content .content {
+    .blogs-content .content {
         min-height: 170px;
     }
 
-    .featured-in-content .description-list {
-        right: -45px;
+    .blogs-content .description-list {
+        left: -45px;
         bottom: -16px;
         width: 200px;
         height: 200px;
@@ -83,20 +84,20 @@
 }
 
 @media screen and (max-width: 580px) {
-    .featured-in-wrapper {
-        padding: 20px 0  0;
+    .blogs-wrapper {
+        padding: 30px 0 ;
     }
-    .featured-in-content .content {
+    .blogs-content .content {
         padding: 0 30px;
         min-height: 110px;
     }
 
-    .featured-in-content .title {
+    .blogs-content .title {
         font-size: 24px;
     }
 
-    .featured-in-content .description-list {
-        right: -18px;
+    .blogs-content .description-list {
+        left: -18px;
         bottom: -33px;
         width: 180px;
         height: 180px;

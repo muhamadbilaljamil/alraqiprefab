@@ -1,14 +1,14 @@
 import React from 'react';
-import './FeaturedIn.css';
+import './Blogs.css';
 
-const FeaturedIn = () => {
+const Blogs = () => {
     return (
-        <div className="featured-in-wrapper">
+        <div className="blogs-wrapper" id="blogs-wrapper">
             <div className="container-wrapper">
-                <div className="featured-in-content">
+                <div className="blogs-content">
                     <div className="bg-layer"></div>
                     <div className="content">
-                        <div className="title">Featured In</div>
+                        <div className="title">Blogs</div>
                         <div className="description-list">Coming Soon</div>
                     </div>
 
@@ -19,4 +19,4 @@ const FeaturedIn = () => {
     );
 }
 
-export default FeaturedIn
+export default Blogs

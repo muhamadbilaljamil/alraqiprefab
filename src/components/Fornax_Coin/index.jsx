@@ -1,10 +1,10 @@
-import React, { useState } from 'react';
+import React, {useState} from 'react';
 import './Fornax_Coin.css'
 import '../Why_Choose_FRX/Why_Choose_FRX.css'
 import logo from '../../assets/images/main-banner-logo.svg';
 import Day_Counter from "../Day_Counter";
-import { useCtx } from "../../context/UseContext";
-import { ethers } from "ethers";
+import {useCtx} from "../../context/UseContext";
+import {ethers} from "ethers";
 import mobile_payment from '../../assets/images/Mobile Payment.svg';
 import no_hidden_fee from '../../assets/images/No Hidden Fees.svg';
 import protect from '../../assets/images/Protect.svg';
@@ -12,7 +12,7 @@ import downarrow from '../../assets/images/Down Arrow.svg';
 import ethericon from '../../assets/images/ether.png';
 import usdticon from '../../assets/images/usdt.png';
 import transaction from '../../assets/images/Transaction.svg';
-import { Toast_Message } from "../Toast";
+import {Toast_Message} from "../Toast";
 
 const Fornax_Coin = () => {
     const {
@@ -46,13 +46,13 @@ const Fornax_Coin = () => {
             "constant": true,
             "inputs": [],
             "name": "name",
-            "outputs": [{ "name": "", "type": "string" }],
+            "outputs": [{"name": "", "type": "string"}],
             "payable": false,
             "stateMutability": "view",
             "type": "function"
         }, {
             "constant": false,
-            "inputs": [{ "name": "_upgradedAddress", "type": "address" }],
+            "inputs": [{"name": "_upgradedAddress", "type": "address"}],
             "name": "deprecate",
             "outputs": [],
             "payable": false,
@@ -60,7 +60,7 @@ const Fornax_Coin = () => {
             "type": "function"
         }, {
             "constant": false,
-            "inputs": [{ "name": "_spender", "type": "address" }, { "name": "_value", "type": "uint256" }],
+            "inputs": [{"name": "_spender", "type": "address"}, {"name": "_value", "type": "uint256"}],
             "name": "approve",
             "outputs": [],
             "payable": false,
@@ -70,13 +70,13 @@ const Fornax_Coin = () => {
             "constant": true,
             "inputs": [],
             "name": "deprecated",
-            "outputs": [{ "name": "", "type": "bool" }],
+            "outputs": [{"name": "", "type": "bool"}],
             "payable": false,
             "stateMutability": "view",
             "type": "function"
         }, {
             "constant": false,
-            "inputs": [{ "name": "_evilUser", "type": "address" }],
+            "inputs": [{"name": "_evilUser", "type": "address"}],
             "name": "addBlackList",
             "outputs": [],
             "payable": false,
@@ -86,13 +86,13 @@ const Fornax_Coin = () => {
             "constant": true,
             "inputs": [],
             "name": "totalSupply",
-            "outputs": [{ "name": "", "type": "uint256" }],
+            "outputs": [{"name": "", "type": "uint256"}],
             "payable": false,
             "stateMutability": "view",
             "type": "function"
         }, {
             "constant": false,
-            "inputs": [{ "name": "_from", "type": "address" }, { "name": "_to", "type": "address" }, {
+            "inputs": [{"name": "_from", "type": "address"}, {"name": "_to", "type": "address"}, {
                 "name": "_value",
                 "type": "uint256"
             }],
@@ -105,15 +105,15 @@ const Fornax_Coin = () => {
             "constant": true,
             "inputs": [],
             "name": "upgradedAddress",
-            "outputs": [{ "name": "", "type": "address" }],
+            "outputs": [{"name": "", "type": "address"}],
             "payable": false,
             "stateMutability": "view",
             "type": "function"
         }, {
             "constant": true,
-            "inputs": [{ "name": "", "type": "address" }],
+            "inputs": [{"name": "", "type": "address"}],
             "name": "balances",
-            "outputs": [{ "name": "", "type": "uint256" }],
+            "outputs": [{"name": "", "type": "uint256"}],
             "payable": false,
             "stateMutability": "view",
             "type": "function"
@@ -121,7 +121,7 @@ const Fornax_Coin = () => {
             "constant": true,
             "inputs": [],
             "name": "decimals",
-            "outputs": [{ "name": "", "type": "uint256" }],
+            "outputs": [{"name": "", "type": "uint256"}],
             "payable": false,
             "stateMutability": "view",
             "type": "function"
@@ -129,7 +129,7 @@ const Fornax_Coin = () => {
             "constant": true,
             "inputs": [],
             "name": "maximumFee",
-            "outputs": [{ "name": "", "type": "uint256" }],
+            "outputs": [{"name": "", "type": "uint256"}],
             "payable": false,
             "stateMutability": "view",
             "type": "function"
@@ -137,7 +137,7 @@ const Fornax_Coin = () => {
             "constant": true,
             "inputs": [],
             "name": "_totalSupply",
-            "outputs": [{ "name": "", "type": "uint256" }],
+            "outputs": [{"name": "", "type": "uint256"}],
             "payable": false,
             "stateMutability": "view",
             "type": "function"
@@ -151,17 +151,17 @@ const Fornax_Coin = () => {
             "type": "function"
         }, {
             "constant": true,
-            "inputs": [{ "name": "_maker", "type": "address" }],
+            "inputs": [{"name": "_maker", "type": "address"}],
             "name": "getBlackListStatus",
-            "outputs": [{ "name": "", "type": "bool" }],
+            "outputs": [{"name": "", "type": "bool"}],
             "payable": false,
             "stateMutability": "view",
             "type": "function"
         }, {
             "constant": true,
-            "inputs": [{ "name": "", "type": "address" }, { "name": "", "type": "address" }],
+            "inputs": [{"name": "", "type": "address"}, {"name": "", "type": "address"}],
             "name": "allowed",
-            "outputs": [{ "name": "", "type": "uint256" }],
+            "outputs": [{"name": "", "type": "uint256"}],
             "payable": false,
             "stateMutability": "view",
             "type": "function"
@@ -169,15 +169,15 @@ const Fornax_Coin = () => {
             "constant": true,
             "inputs": [],
             "name": "paused",
-            "outputs": [{ "name": "", "type": "bool" }],
+            "outputs": [{"name": "", "type": "bool"}],
             "payable": false,
             "stateMutability": "view",
             "type": "function"
         }, {
             "constant": true,
-            "inputs": [{ "name": "who", "type": "address" }],
+            "inputs": [{"name": "who", "type": "address"}],
             "name": "balanceOf",
-            "outputs": [{ "name": "", "type": "uint256" }],
+            "outputs": [{"name": "", "type": "uint256"}],
             "payable": false,
             "stateMutability": "view",
             "type": "function"
@@ -193,7 +193,7 @@ const Fornax_Coin = () => {
             "constant": true,
             "inputs": [],
             "name": "getOwner",
-            "outputs": [{ "name": "", "type": "address" }],
+            "outputs": [{"name": "", "type": "address"}],
             "payable": false,
             "stateMutability": "view",
             "type": "function"
@@ -201,7 +201,7 @@ const Fornax_Coin = () => {
             "constant": true,
             "inputs": [],
             "name": "owner",
-            "outputs": [{ "name": "", "type": "address" }],
+            "outputs": [{"name": "", "type": "address"}],
             "payable": false,
             "stateMutability": "view",
             "type": "function"
@@ -209,13 +209,13 @@ const Fornax_Coin = () => {
             "constant": true,
             "inputs": [],
             "name": "symbol",
-            "outputs": [{ "name": "", "type": "string" }],
+            "outputs": [{"name": "", "type": "string"}],
             "payable": false,
             "stateMutability": "view",
             "type": "function"
         }, {
             "constant": false,
-            "inputs": [{ "name": "_to", "type": "address" }, { "name": "_value", "type": "uint256" }],
+            "inputs": [{"name": "_to", "type": "address"}, {"name": "_value", "type": "uint256"}],
             "name": "transfer",
             "outputs": [],
             "payable": false,
@@ -223,7 +223,7 @@ const Fornax_Coin = () => {
             "type": "function"
         }, {
             "constant": false,
-            "inputs": [{ "name": "newBasisPoints", "type": "uint256" }, { "name": "newMaxFee", "type": "uint256" }],
+            "inputs": [{"name": "newBasisPoints", "type": "uint256"}, {"name": "newMaxFee", "type": "uint256"}],
             "name": "setParams",
             "outputs": [],
             "payable": false,
@@ -231,7 +231,7 @@ const Fornax_Coin = () => {
             "type": "function"
         }, {
             "constant": false,
-            "inputs": [{ "name": "amount", "type": "uint256" }],
+            "inputs": [{"name": "amount", "type": "uint256"}],
             "name": "issue",
             "outputs": [],
             "payable": false,
@@ -239,7 +239,7 @@ const Fornax_Coin = () => {
             "type": "function"
         }, {
             "constant": false,
-            "inputs": [{ "name": "amount", "type": "uint256" }],
+            "inputs": [{"name": "amount", "type": "uint256"}],
             "name": "redeem",
             "outputs": [],
             "payable": false,
@@ -247,9 +247,9 @@ const Fornax_Coin = () => {
             "type": "function"
         }, {
             "constant": true,
-            "inputs": [{ "name": "_owner", "type": "address" }, { "name": "_spender", "type": "address" }],
+            "inputs": [{"name": "_owner", "type": "address"}, {"name": "_spender", "type": "address"}],
             "name": "allowance",
-            "outputs": [{ "name": "remaining", "type": "uint256" }],
+            "outputs": [{"name": "remaining", "type": "uint256"}],
             "payable": false,
             "stateMutability": "view",
             "type": "function"
@@ -257,21 +257,21 @@ const Fornax_Coin = () => {
             "constant": true,
             "inputs": [],
             "name": "basisPointsRate",
-            "outputs": [{ "name": "", "type": "uint256" }],
+            "outputs": [{"name": "", "type": "uint256"}],
             "payable": false,
             "stateMutability": "view",
             "type": "function"
         }, {
             "constant": true,
-            "inputs": [{ "name": "", "type": "address" }],
+            "inputs": [{"name": "", "type": "address"}],
             "name": "isBlackListed",
-            "outputs": [{ "name": "", "type": "bool" }],
+            "outputs": [{"name": "", "type": "bool"}],
             "payable": false,
             "stateMutability": "view",
             "type": "function"
         }, {
             "constant": false,
-            "inputs": [{ "name": "_clearedUser", "type": "address" }],
+            "inputs": [{"name": "_clearedUser", "type": "address"}],
             "name": "removeBlackList",
             "outputs": [],
             "payable": false,
@@ -281,13 +281,13 @@ const Fornax_Coin = () => {
             "constant": true,
             "inputs": [],
             "name": "MAX_UINT",
-            "outputs": [{ "name": "", "type": "uint256" }],
+            "outputs": [{"name": "", "type": "uint256"}],
             "payable": false,
             "stateMutability": "view",
             "type": "function"
         }, {
             "constant": false,
-            "inputs": [{ "name": "newOwner", "type": "address" }],
+            "inputs": [{"name": "newOwner", "type": "address"}],
             "name": "transferOwnership",
             "outputs": [],
             "payable": false,
@@ -295,38 +295,38 @@ const Fornax_Coin = () => {
             "type": "function"
         }, {
             "constant": false,
-            "inputs": [{ "name": "_blackListedUser", "type": "address" }],
+            "inputs": [{"name": "_blackListedUser", "type": "address"}],
             "name": "destroyBlackFunds",
             "outputs": [],
             "payable": false,
             "stateMutability": "nonpayable",
             "type": "function"
         }, {
-            "inputs": [{ "name": "_initialSupply", "type": "uint256" }, {
+            "inputs": [{"name": "_initialSupply", "type": "uint256"}, {
                 "name": "_name",
                 "type": "string"
-            }, { "name": "_symbol", "type": "string" }, { "name": "_decimals", "type": "uint256" }],
+            }, {"name": "_symbol", "type": "string"}, {"name": "_decimals", "type": "uint256"}],
             "payable": false,
             "stateMutability": "nonpayable",
             "type": "constructor"
         }, {
             "anonymous": false,
-            "inputs": [{ "indexed": false, "name": "amount", "type": "uint256" }],
+            "inputs": [{"indexed": false, "name": "amount", "type": "uint256"}],
             "name": "Issue",
             "type": "event"
         }, {
             "anonymous": false,
-            "inputs": [{ "indexed": false, "name": "amount", "type": "uint256" }],
+            "inputs": [{"indexed": false, "name": "amount", "type": "uint256"}],
             "name": "Redeem",
             "type": "event"
         }, {
             "anonymous": false,
-            "inputs": [{ "indexed": false, "name": "newAddress", "type": "address" }],
+            "inputs": [{"indexed": false, "name": "newAddress", "type": "address"}],
             "name": "Deprecate",
             "type": "event"
         }, {
             "anonymous": false,
-            "inputs": [{ "indexed": false, "name": "feeBasisPoints", "type": "uint256" }, {
+            "inputs": [{"indexed": false, "name": "feeBasisPoints", "type": "uint256"}, {
                 "indexed": false,
                 "name": "maxFee",
                 "type": "uint256"
@@ -335,7 +335,7 @@ const Fornax_Coin = () => {
             "type": "event"
         }, {
             "anonymous": false,
-            "inputs": [{ "indexed": false, "name": "_blackListedUser", "type": "address" }, {
+            "inputs": [{"indexed": false, "name": "_blackListedUser", "type": "address"}, {
                 "indexed": false,
                 "name": "_balance",
                 "type": "uint256"
@@ -344,33 +344,33 @@ const Fornax_Coin = () => {
             "type": "event"
         }, {
             "anonymous": false,
-            "inputs": [{ "indexed": false, "name": "_user", "type": "address" }],
+            "inputs": [{"indexed": false, "name": "_user", "type": "address"}],
             "name": "AddedBlackList",
             "type": "event"
         }, {
             "anonymous": false,
-            "inputs": [{ "indexed": false, "name": "_user", "type": "address" }],
+            "inputs": [{"indexed": false, "name": "_user", "type": "address"}],
             "name": "RemovedBlackList",
             "type": "event"
         }, {
             "anonymous": false,
-            "inputs": [{ "indexed": true, "name": "owner", "type": "address" }, {
+            "inputs": [{"indexed": true, "name": "owner", "type": "address"}, {
                 "indexed": true,
                 "name": "spender",
                 "type": "address"
-            }, { "indexed": false, "name": "value", "type": "uint256" }],
+            }, {"indexed": false, "name": "value", "type": "uint256"}],
             "name": "Approval",
             "type": "event"
         }, {
             "anonymous": false,
-            "inputs": [{ "indexed": true, "name": "from", "type": "address" }, {
+            "inputs": [{"indexed": true, "name": "from", "type": "address"}, {
                 "indexed": true,
                 "name": "to",
                 "type": "address"
-            }, { "indexed": false, "name": "value", "type": "uint256" }],
+            }, {"indexed": false, "name": "value", "type": "uint256"}],
             "name": "Transfer",
             "type": "event"
-        }, { "anonymous": false, "inputs": [], "name": "Pause", "type": "event" }, {
+        }, {"anonymous": false, "inputs": [], "name": "Pause", "type": "event"}, {
             "anonymous": false,
             "inputs": [],
             "name": "Unpause",
@@ -411,7 +411,7 @@ const Fornax_Coin = () => {
     }
 
     const isMainnet = async (provider) => {
-        const { chainId } = await provider.getNetwork();
+        const {chainId} = await provider.getNetwork();
         if (chainId !== 1) {
             setToastData({
                 title: 'Info',
@@ -558,15 +558,15 @@ const Fornax_Coin = () => {
                                 <ul>
                                     <li>
                                         <div className="circle-out-logo"></div>
-                                        <div className="logo"><img width={68} src={logo} alt="logo" /></div>
+                                        <div className="logo"><img width={68} src={logo} alt="logo"/></div>
                                         <div className="info-text">
                                             <h3>Start</h3>
-                                            <h5>Feb 5, 2023 </h5>
+                                            <h5>Feb 8, 2023 </h5>
                                         </div>
                                     </li>
                                     <li>
                                         <div className="circle-out-logo"></div>
-                                        <div className="logo"><img width={68} src={logo} alt="logo" /></div>
+                                        <div className="logo"><img width={68} src={logo} alt="logo"/></div>
                                         <div className="info-text">
                                             <h3>End</h3>
                                             <h5>April 15, 2023 </h5>
@@ -582,23 +582,23 @@ const Fornax_Coin = () => {
                                 </li> */}
                                     <li>
                                         <div className="circle-out-logo"></div>
-                                        <div className="logo"><img width={68} src={logo} alt="logo" /></div>
+                                        <div className="logo"><img width={68} src={logo} alt="logo"/></div>
                                         <div className="info-text">
                                             <h3>Number of coin for sale</h3>
-                                            <h5>20,00,000 FRX </h5>
+                                            <h5>4 Million FRX </h5>
                                         </div>
                                     </li>
                                     <li>
                                         <div className="circle-out-logo"></div>
-                                        <div className="logo"><img width={68} src={logo} alt="logo" /></div>
+                                        <div className="logo"><img width={68} src={logo} alt="logo"/></div>
                                         <div className="info-text">
                                             <h3>Coins Presale Price</h3>
-                                            <h5>$ 0.5 </h5>
+                                            <h5>$ 0.50 </h5>
                                         </div>
                                     </li>
                                     <li>
                                         <div className="circle-out-logo"></div>
-                                        <div className="logo"><img width={68} src={logo} alt="logo" /></div>
+                                        <div className="logo"><img width={68} src={logo} alt="logo"/></div>
                                         <div className="info-text">
                                             <h3>Minimal Transaction</h3>
                                             <h5>$ 50 </h5>
@@ -608,18 +608,18 @@ const Fornax_Coin = () => {
                             </div>
                             <div className="timer">
 
-                                <h3 style={{ "textAlign": "cneter" }}>
-                                    Presale @ 50% Discount<br />
-                                    1 FRX = 0.5 USDT<br />
+                                <h3 style={{"textAlign": "cneter"}}>
+                                    Presale @ 50% Discount<br/>
+                                    1 FRX = 0.5 USDT<br/>
                                     Ends in
                                 </h3>
                                 <div className="counter">
-                                    <Day_Counter />
+                                    <Day_Counter/>
                                 </div>
                                 <div className="center">
-                                    Presale Ends April 15th<br />
+                                    Presale Ends April 15th<br/>
 
-                                    CEX Listings 1st May 2023<br />
+                                    CEX Listings 1st May 2023<br/>
 
                                     Listing Price 1 FRX = 1 USDT
                                 </div>
@@ -655,16 +655,16 @@ const Fornax_Coin = () => {
                                             <div className="input-group">
 
                                                 <input value={amount}
-                                                    onChange={(e) => setAmount(e.target.value)} type="number" min="10"
-                                                    max="500" />
+                                                       onChange={(e) => setAmount(e.target.value)} type="number" min="10"
+                                                       max="500"/>
                                                 <ul className="dropdown">
                                                     <li className="option" onClick={() => setShowList(!show_list)}>
                                                         <div className='icon'><img width={20} height={20}
-                                                            src={selected_item['icon']}
-                                                            alt={"ether icon"} /></div>
+                                                                                   src={selected_item['icon']}
+                                                                                   alt={"ether icon"}/></div>
                                                         {selected_item['name']}
                                                         <div className="downarrow"><img src={downarrow}
-                                                            alt={"down arrow icon"} /></div>
+                                                                                        alt={"down arrow icon"}/></div>
                                                     </li>
                                                     <div className={`list ${show_list ? 'active' : ""}`}>
                                                         <li className="option" onClick={() => {
@@ -672,8 +672,8 @@ const Fornax_Coin = () => {
                                                             setShowList(!show_list)
                                                         }}>
                                                             <div className='icon'><img width={24} height={25}
-                                                                src={ethericon}
-                                                                alt={"ether icon"} /></div>
+                                                                                       src={ethericon}
+                                                                                       alt={"ether icon"}/></div>
                                                             ETH
                                                         </li>
                                                         <li className="option" onClick={() => {
@@ -681,8 +681,8 @@ const Fornax_Coin = () => {
                                                             setShowList(!show_list)
                                                         }}>
                                                             <div className='icon'><img width={18} height={18}
-                                                                src={usdticon}
-                                                                alt={"usdt icon"} /></div>
+                                                                                       src={usdticon}
+                                                                                       alt={"usdt icon"}/></div>
                                                             USDT
                                                         </li>
                                                     </div>
@@ -712,36 +712,37 @@ const Fornax_Coin = () => {
                         <div className="main-content">
                             <div className="header">
                                 <h2>Benefits</h2>
-                                <p>Participating in Presle will enable you get these benifites @ half the price </p>
+                                <p>Join the FornaxCoin presale and unlock the potential for financial growth and
+                                    stability as you become a part of the future of decentralized finance.</p>
                                 {/* <p>The first Community which simplifies and standardizes data with blockchain technology to
                                 incentives its community.</p> */}
                             </div>
                             <div className="cards-list">
                                 <div className="card">
                                     <div className="icon">
-                                        <img src={mobile_payment} alt="Payment logo" />
+                                        <img src={mobile_payment} alt="Payment logo"/>
                                     </div>
                                     <div className="card-title">Value Appreciation</div>
                                     <div className="card-description">With fornax being a blockchain to have great
-                                    potential value appreciation over time is the key benifit
+                                        potential value appreciation over time is the key benefit
                                     </div>
                                 </div>
                                 <div className="card">
                                     <div className="icon">
-                                        <img src={no_hidden_fee} alt="Payment logo" />
+                                        <img src={no_hidden_fee} alt="Payment logo"/>
                                     </div>
                                     <div className="card-title">Passive Staking Income</div>
                                     <div className="card-description">With Fornax POS masternodes it will be investor's
-                                    choice for passive income with high APY
+                                        choice for passive income with high APY
                                     </div>
                                 </div>
                                 <div className="card">
                                     <div className="icon">
-                                        <img src={protect} alt="Payment logo" />
+                                        <img src={protect} alt="Payment logo"/>
                                     </div>
                                     <div className="card-title">Reachability</div>
                                     <div className="card-description">Fornax being a income source for every single
-                                    human on earth will be highly reachable
+                                        human on earth will be highly reachable
                                     </div>
                                 </div>
 

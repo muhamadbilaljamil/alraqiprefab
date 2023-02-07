@@ -15,22 +15,12 @@ import Experts_Investor_Board from "./components/Meet_Experts_Investor_Board";
 import Get_In_Touch from './components/Get_In_Touch';
 import MobileMenu from "./components/Mobile_Menu";
 import { ContextProvider } from "./context/Context_Provider";
-import { useCtx } from "./context/UseContext";
-import { Toast_Message } from './components/Toast'
-
-
+import Blogs from './components/Blogs';
+import FeatureIn from './components/FeaturedIn';
+import NewsLetter from "./components/NewsLetter";
 
 function App() {
     const [menuOpen, setMenuOpen] = useState(false)
-    const {
-        user,
-        setIsModal,
-        setToastData,
-        setIsToast,
-        handleTransaction,
-        isToast,
-        toastData
-    } = useCtx();
 
     const handleClickScroll = (e) => {
         const element = document.getElementById(e);
@@ -43,7 +33,6 @@ function App() {
 
     return (
         <div className="main-app">
-            {isToast && <Toast_Message data={toastData} />}
             <ContextProvider>
                 <Router>
                     <MobileMenu menuOpen={menuOpen} setMenuOpen={setMenuOpen} handleClickScroll={handleClickScroll} />
@@ -55,7 +44,11 @@ function App() {
                     <Why_Choose_FRX />
                     <Token_Allocation_Funds_Distribution />
                     <Road_Map />
+                    <FeatureIn />
+                    <Blogs />
+                    <NewsLetter />
                     <Experts_Investor_Board />
+
                     <Get_In_Touch />
                     <Footer />
                 </Router>

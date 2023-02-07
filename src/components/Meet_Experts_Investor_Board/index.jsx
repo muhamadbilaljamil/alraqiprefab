@@ -47,10 +47,10 @@ const Experts_Investor_Board = () => {
                             </div>
                             <div className="card">
                                 <div className="icon">
-                                    <img src={mm} alt="Payment logo" />
+                                    <img src={mm} className="mm" alt="Payment logo" />
                                 </div>
                                 <div className="card-title">Junaid Kazmi</div>
-                                <div className="card-subtitle">Marketing Manager</div>
+                                <div className="card-subtitle">Social media executive</div>
                                 {/* <p className="card-description">
                                     "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
                                     incididunt ut labore .
@@ -63,7 +63,7 @@ const Experts_Investor_Board = () => {
                             </div>
                             <div className="card">
                                 <div className="icon">
-                                    <img src={cm} alt="Payment logo" />
+                                    <img src={cm} className="cm" alt="Payment logo" />
                                 </div>
                                 <div className="card-title">Emily Brown </div>
                                 <div className="card-subtitle">Community Manager</div>
@@ -129,7 +129,7 @@ const Experts_Investor_Board = () => {
                                 <div className="icon">
                                     <img src={fd} className="fd" alt="Payment logo" />
                                 </div>
-                                <div className="card-title">Afaq Rajputt</div>
+                                <div className="card-title">Aafaq Rajput</div>
                                 <div className="card-subtitle">UI/UX Developer</div>
                                 {/* <p className="card-description">
                                     "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor

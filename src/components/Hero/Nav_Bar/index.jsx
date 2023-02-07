@@ -4,18 +4,18 @@ import img from '../../../assets/images/top-menu-logo.svg'
 import wallet from '../../../assets/images/wallet1.svg'
 
 import Profile_Information from "../../Profile_Information";
-import { Link } from "react-router-dom";
-import { useCtx } from "../../../context/UseContext";
-import { Toast_Message } from "../../Toast";
+import {Link} from "react-router-dom";
+import {useCtx} from "../../../context/UseContext";
+import {Toast_Message} from "../../Toast";
 import Wallets_Modal from "../../Modals/Wallets_Modal";
 
-const Wallet_Button = ({ label, click_function }) => {
-    return (<div onClick={click_function} className="wallet btn"><img src={wallet} alt={"wallet image"} />
+const Wallet_Button = ({label, click_function}) => {
+    return (<div onClick={click_function} className="wallet btn"><img src={wallet} alt={"wallet image"}/>
         <button>{label}</button>
     </div>)
 }
 
-function Nav_Bar({ props }) {
+function Nav_Bar({props}) {
     const {
         user,
         showProfile,
@@ -27,7 +27,7 @@ function Nav_Bar({ props }) {
     } = useCtx();
 
 
-    const { menuOpen, setMenuOpen, handleClickScroll } = props;
+    const {menuOpen, setMenuOpen, handleClickScroll} = props;
 
     return (
         <header>
@@ -35,7 +35,7 @@ function Nav_Bar({ props }) {
                 <div className="top-menu-container">
                     <Link to={"/"}>
                         <div className="nav-bar-logo">
-                            <img className="pointer" src={img} alt="Main Logo SVG" />
+                            <img className="pointer" src={img} alt="Main Logo SVG"/>
                             <h2>FORNAX</h2>
                         </div>
                     </Link>
@@ -45,6 +45,10 @@ function Nav_Bar({ props }) {
                         <div className="menu pointer" onClick={() => handleClickScroll('why_frx_token')}>Why FRX</div>
                         <div className="menu pointer" onClick={() => handleClickScroll('token_sale')}>Coin Sale</div>
                         <div className="menu pointer" onClick={() => handleClickScroll('roadmap')}>Roadmap</div>
+                        <div className="menu pointer" onClick={() => handleClickScroll('blogs-wrapper')}>Blogs</div>
+                        <a href={"https://watchfornax.com/"} target={"_blank"}>
+                            <div className="menu pointer">Fornax Explorer</div>
+                        </a>
                         {/* <div className="menu pointer" onClick={() => handleClickScroll('team')}>Team</div> */}
                     </div>
                     <div className="left-side-buttons">
@@ -55,13 +59,13 @@ function Nav_Bar({ props }) {
                                     label={`${user['wallet_address'].slice(0, 5)} ... ${user['wallet_address'].slice(user['wallet_address'].length - 5)}`}
                                     click_function={() => {
                                         setShowProfile(!showProfile)
-                                    }} />
-                                : <Wallet_Button label="Connect Wallet" click_function={() => setIsModal(true)} />
+                                    }}/>
+                                : <Wallet_Button label="Connect Wallet" click_function={() => setIsModal(true)}/>
                             // : <Wallet_Button label="Connect Wallet" click_function={handleWalletConnect}/>
 
                         }
                         {showProfile &&
-                            <Profile_Information />}
+                            <Profile_Information/>}
                         {/* <div className="language btn">
                             <button>ENGLISH</button>
                             <img src={down_arrow} alt={"down_arrow image"}/></div> */}
@@ -76,7 +80,7 @@ function Nav_Bar({ props }) {
                 </div>
             </div>
 
-            {isModal && <Wallets_Modal />}
+            {isModal && <Wallets_Modal/>}
         </header>
     );
 }

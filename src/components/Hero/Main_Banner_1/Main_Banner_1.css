@@ -15,7 +15,7 @@ canvas {
 
 .main-banner {
     width: 100%;
-    padding: 150px;
+    padding:  80px 100px;
     background-image: url("../../../assets/images/bg-1.svg");
 }
 
@@ -73,6 +73,11 @@ canvas {
     animation-timing-function: linear;
     z-index: 3;
 }
+
+.title-logo img {
+    width: 150px;
+}
+
 
 .title-logo::after, .title-logo::before {
     content: "";
@@ -150,10 +155,7 @@ canvas {
 
 .main-banner-title {
     display: flex;
-    font-family: 'Inter', sans-serif;
-    font-style: normal;
-    font-weight: 400;
-    font-size: 250px;
+    column-gap: 15px;
     line-height: 303px;
     background: linear-gradient(180deg, #B27F29 0%, rgba(178, 127, 41, 0) 100%);
     -webkit-background-clip: text;
@@ -165,7 +167,7 @@ canvas {
     font-family: 'Inter', sans-serif;
     font-style: normal;
     font-weight: 400;
-    font-size: 250px;
+    font-size: 180px;
 
 }
 
@@ -173,7 +175,7 @@ canvas {
     font-family: 'Inter', sans-serif;
     font-style: normal;
     font-weight: 400;
-    font-size: 250px;
+    font-size: 180px;
     background: linear-gradient(180deg, #B27F29 0%, rgba(178, 127, 41, 0) 100%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
@@ -185,12 +187,47 @@ canvas {
     font-family: 'Roboto';
     font-style: normal;
     font-weight: 400;
-    font-size: 48px;
+    font-size: 30px;
     line-height: 56px;
 
     background: linear-gradient(180deg, #B27F29 0%, #F5F5F5 97.4%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
+}
+
+@media  screen and (max-width: 1350px) {
+    .main-banner {
+        padding: 50px 0;
+        background-size: contain;
+    }
+
+    .main-banner-title {
+        display: flex;
+        align-items: center;
+        column-gap: 15px;
+        line-height: 110px;
+        margin-bottom: 20px;
+    }
+
+    .main-banner-title-F {
+        font-size: 120px;
+    }
+
+    .main-banner-title-RNAX {
+        font-size: 120px;
+    }
+
+    .main-banner-title img {
+        width: 80px;
+        height: 80px;
+    }
+
+    .main-banner-subtitle {
+        font-size: 24px;
+        width: 500px;
+        line-height: 35px;
+        margin-bottom: 20px;
+    }
 }
 
 
@@ -225,5 +262,25 @@ canvas {
         font-size: 20px;
         width: 350px;
         line-height: 35px;
+    }
+}
+
+@media  screen and (max-width: 400px) {
+
+    .main-banner-title-F {
+        font-size: 70px;
+    }
+
+    .main-banner-title-RNAX {
+        font-size: 70px;
+    }
+
+    .main-banner-title img {
+        width: 80px;
+        height: 80px;
+    }
+
+    .main-banner-subtitle {
+        font-size: 18px;
     }
 }

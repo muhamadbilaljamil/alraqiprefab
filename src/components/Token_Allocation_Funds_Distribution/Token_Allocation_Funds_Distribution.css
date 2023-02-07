@@ -159,6 +159,7 @@
     display: none;
 }
 .web{
+    scale: 0.8;
     display: block;
 }
 
@@ -205,6 +206,7 @@
 
 @media screen and (max-width: 450px){
     .mobile{
+        scale: 0.8;
         display: block;
     }
     .web{

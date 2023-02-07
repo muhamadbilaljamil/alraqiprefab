@@ -8,19 +8,22 @@ const NewsLetter = () => {
                 <div className="news-letter-container">
                     <div className="bg-layer"></div>
                     <div className="news-letter-content">
-                        <div className="title">
-                            OUR NEWSLETTER
+                        <div className="sign-up-form">
+                            <div className="title">
+                                OUR NEWSLETTER
+                            </div>
+                            <div className="description-1">
+                                Signup our newsletter for latest update about FORNAX!
+                            </div>
+                            <div className="input-field">
+                                <input type="email" className="input-email" placeholder="Enter your email"/>
+                                <button>SIGN UP</button>
+                            </div>
+                            <div className="description-2">
+                                By clicking Sign Up you're confirming that you agree with our Terms & Conditions
+                            </div>
                         </div>
-                        <div className="description-1">
-                            Signup to our newsletter and be first to hear about Fight Out news!
-                        </div>
-                        <div className="input-field">
-                            <input type="email" className="input-email" placeholder="Enter your email"/>
-                            <button>SIGN UP</button>
-                        </div>
-                        <div className="description-2">
-                            By clicking Sign Up you're confirming that you agree with our Terms & Conditions
-                        </div>
+
                     </div>
                 </div>
             </div>
