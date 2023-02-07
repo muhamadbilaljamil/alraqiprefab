@@ -1,0 +1,6 @@
+.news-letter-container {
+    position: relative;
+    background: url(../../assets/images/experts_background.jpeg) no-repeat;
+    background-size: cover;
+}
+

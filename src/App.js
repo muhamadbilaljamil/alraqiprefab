@@ -46,8 +46,6 @@ function App() {
             {isToast && <Toast_Message data={toastData} />}
             <ContextProvider>
                 <Router>
-
-
                     <MobileMenu menuOpen={menuOpen} setMenuOpen={setMenuOpen} handleClickScroll={handleClickScroll} />
                     <Hero menuOpen={menuOpen} setMenuOpen={setMenuOpen} handleClickScroll={handleClickScroll} />
                     <Fornax_Coin />
