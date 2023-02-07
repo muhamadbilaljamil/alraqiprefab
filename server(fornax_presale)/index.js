@@ -40,7 +40,3 @@ app.get('/get_balance_all', get_balance_all);
         });
     }
 })();
-
-
-
-

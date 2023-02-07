@@ -1,6 +1,9 @@
 .App {
   text-align: center;
 }
+body{
+  background-color: #041122;
+}
 .pointer {
   cursor: pointer;
 }
