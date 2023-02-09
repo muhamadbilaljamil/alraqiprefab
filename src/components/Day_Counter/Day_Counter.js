@@ -29,32 +29,36 @@ export const day_counter = () => {
     }
 
     function flip(flipCard, newNumber) {
-        const topHalf = flipCard.querySelector(".top")
-        const startNumber = parseInt(topHalf.textContent)
-        if (newNumber === startNumber) return
+        if(flipCard !== null){
+            const topHalf = flipCard.querySelector(".top")
+            const startNumber = parseInt(topHalf.textContent)
+            if (newNumber === startNumber) return
 
-        const bottomHalf = flipCard.querySelector(".bottom")
-        const topFlip = document.createElement("div")
-        topFlip.classList.add("top-flip")
-        const bottomFlip = document.createElement("div")
-        bottomFlip.classList.add("bottom-flip")
+            const bottomHalf = flipCard.querySelector(".bottom")
+            const topFlip = document.createElement("div")
+            topFlip.classList.add("top-flip")
+            const bottomFlip = document.createElement("div")
+            bottomFlip.classList.add("bottom-flip")
 
-        topFlip.textContent = startNumber
-        bottomHalf.textContent = startNumber
-        topFlip.textContent = startNumber
-        bottomFlip.textContent = newNumber
+            topFlip.textContent = startNumber
+            bottomHalf.textContent = startNumber
+            topFlip.textContent = startNumber
+            bottomFlip.textContent = newNumber
 
-        topFlip.addEventListener("animationstart", e => {
-            topHalf.textContent = newNumber
-        })
-        topFlip.addEventListener("animationend", e => {
-            topFlip.remove()
-        })
-        bottomFlip.addEventListener("animationend", e => {
-            bottomHalf.textContent = newNumber
-            bottomFlip.remove()
-        })
-        flipCard.append(topFlip, bottomFlip)
+            topFlip.addEventListener("animationstart", e => {
+                topHalf.textContent = newNumber
+            })
+            topFlip.addEventListener("animationend", e => {
+                topFlip.remove()
+            })
+            bottomFlip.addEventListener("animationend", e => {
+                bottomHalf.textContent = newNumber
+                bottomFlip.remove()
+            })
+            flipCard.append(topFlip, bottomFlip)
+
+        }
+
     }
 }
 

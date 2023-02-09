@@ -15,8 +15,11 @@ const Wallet_Button = ({label, click_function}) => {
     </div>)
 }
 
-function Nav_Bar({props}) {
+const Nav_Bar = () => {
     const {
+        menuOpen,
+        setMenuOpen,
+        handleClickScroll,
         user,
         showProfile,
         setShowProfile,
@@ -26,8 +29,6 @@ function Nav_Bar({props}) {
         toastData,
     } = useCtx();
 
-
-    const {menuOpen, setMenuOpen, handleClickScroll} = props;
 
     return (
         <header>
@@ -40,12 +41,23 @@ function Nav_Bar({props}) {
                         </div>
                     </Link>
                     <div className="menu-list">
-                        <div className="menu pointer" onClick={() => handleClickScroll('what_is_fornax')}>What is FRX
-                        </div>
-                        <div className="menu pointer" onClick={() => handleClickScroll('why_frx_token')}>Why FRX</div>
-                        <div className="menu pointer" onClick={() => handleClickScroll('token_sale')}>Coin Sale</div>
-                        <div className="menu pointer" onClick={() => handleClickScroll('roadmap')}>Roadmap</div>
-                        <div className="menu pointer" onClick={() => handleClickScroll('blogs-wrapper')}>Blogs</div>
+                        <Link to={"/what_is_fornax"}>
+                            <div className="menu pointer">What is FRX</div>
+                        </Link>
+                        <Link to={"/why_frx_token"}>
+                            <div className="menu pointer">Why FRX</div>
+                        </Link>
+                        <Link to={"/token_sale"}>
+                            <div className="menu pointer">Coin Sale</div>
+                        </Link>
+                        <Link to={"/roadmap"}>
+                            <div className="menu pointer">Roadmap</div>
+                        </Link>
+                        <Link to={"/blogs"}>
+                            <div className="menu pointer">Blogs</div>
+                        </Link>
+
+
                         <a href={"https://watchfornax.com/"} target={"_blank"}>
                             <div className="menu pointer">Fornax Explorer</div>
                         </a>
@@ -79,8 +91,8 @@ function Nav_Bar({props}) {
                     </div>
                 </div>
             </div>
-
-            {isModal && <Wallets_Modal/>}
+           {/* {isToast && <Toast_Message data={toastData}/>}
+            {isModal && <Wallets_Modal/>}*/}
         </header>
     );
 }

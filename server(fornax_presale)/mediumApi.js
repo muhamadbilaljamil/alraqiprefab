@@ -1,12 +1,13 @@
 const axios = require('axios');
 
-// const baseURL = "https://presale.fornax.network";
-const baseURL = 'http://localhost:4242';
+const baseURL = 'https://api.medium.com';
+const Authorization = 'Bearer 225461bfe8ea7aeb6d5378137accd4433f93e8be2217b75eeee2ea13801e3fbe3';
 
 const client = axios.create({
     baseURL,
     headers: {
         'Content-Type': 'application/json',
+        Authorization,
     },
 });
 
@@ -35,35 +36,23 @@ client.interceptors.response.use(
     }
 );
 
-
-const getNonce = async (wallet_address) => {
-    const response = await client.post("/getNonce", {
-        wallet_address
-    });
-    return response.data;
+const getMediumUser = async (req, res) => {
+    const {data} = await client.get("/v1/me");
+    const userId = data["data"].id;
+    console.log("Response : ",userId);
+    const blogsList = await getBlogsList(userId);
+    return res.json({blogsList});
 }
 
-const signatureAuthentication = async (payload) => {
-    const response = await client.post("/signatureAuthentication", payload);
-    return response.data;
+const getBlogsList = async (userId) => {
+    console.log("User Id : ", userId);
+    const {data} = await client.get(`/v1/users/${userId}/publications`)
+    const blogsList = data["data"];
+    console.log("Data : ", blogsList);
+    return blogsList;
+
 }
 
-const send_transaction = async (payload) => {
-    const response = await client.post("/send_transaction", payload);
-    return response.data;
-}
-
-const get_balance = async (payload) => {
-    const response = await client.post("/get_balance", payload);
-    return response.data;
-}
-
-const getUserData = async () => {
-    const response = await client.get("/getMediumUser");
-    return response.data;
-}
-
-
-export { getNonce, signatureAuthentication, send_transaction, get_balance, getUserData }
+module.exports = {getMediumUser}
 
 

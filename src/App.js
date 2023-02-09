@@ -1,5 +1,5 @@
-import React, { useState } from 'react';
-import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import React, {useState, useEffect} from 'react';
+import {BrowserRouter as Router, Routes, Route, useLocation,} from "react-router-dom";
 import './App.css';
 
 import Hero from "./components/Hero";
@@ -14,43 +14,40 @@ import Token_Allocation_Funds_Distribution from "./components/Token_Allocation_F
 import Experts_Investor_Board from "./components/Meet_Experts_Investor_Board";
 import Get_In_Touch from './components/Get_In_Touch';
 import MobileMenu from "./components/Mobile_Menu";
-import { ContextProvider } from "./context/Context_Provider";
+import {ContextProvider} from "./context/Context_Provider";
 import Blogs from './components/Blogs';
 import FeatureIn from './components/FeaturedIn';
 import NewsLetter from "./components/NewsLetter";
+import ModalAndToast from "./components/ModalAndToast";
 
 function App() {
-    const [menuOpen, setMenuOpen] = useState(false)
-
-    const handleClickScroll = (e) => {
-        const element = document.getElementById(e);
-        console.log("Element: ", element);
-        setMenuOpen(false);
-        if (element) {
-            element.scrollIntoView({ behavior: 'smooth' });
-        }
-    }
 
     return (
         <div className="main-app">
             <ContextProvider>
                 <Router>
-                    <MobileMenu menuOpen={menuOpen} setMenuOpen={setMenuOpen} handleClickScroll={handleClickScroll} />
-                    <Hero menuOpen={menuOpen} setMenuOpen={setMenuOpen} handleClickScroll={handleClickScroll} />
-                    <Fornax_Coin />
-                    <Buying_FRX_Tokens />
-                    <What_FRX_Coin />
-                    <Supported_Block_Chain />
-                    <Why_Choose_FRX />
-                    <Token_Allocation_Funds_Distribution />
-                    <Road_Map />
-                    <FeatureIn />
-                    <Blogs />
-                    <NewsLetter />
-                    <Experts_Investor_Board />
-
-                    <Get_In_Touch />
-                    <Footer />
+                    <ModalAndToast />
+                    <MobileMenu />
+                    <Hero />
+                    <Routes>
+                        <Route exat path="/blogs" element={<Blogs/>}/>
+                        <Route path="/*" element={
+                            <>
+                                <Fornax_Coin/>
+                                <Buying_FRX_Tokens/>
+                                <What_FRX_Coin/>
+                                <Supported_Block_Chain/>
+                                <Why_Choose_FRX/>
+                                <Token_Allocation_Funds_Distribution/>
+                                <Road_Map/>
+                                <FeatureIn/>
+                                <NewsLetter/>
+                                <Experts_Investor_Board/>
+                                <Get_In_Touch/>
+                            </>
+                        }/>
+                    </Routes>
+                    <Footer/>
                 </Router>
             </ContextProvider>
             {/*<Footer/>*/}

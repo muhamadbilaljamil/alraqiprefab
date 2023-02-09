@@ -60,7 +60,10 @@
 .news-letter-content .sign-up-form .input-field {
     display: flex;
     background: #FFF;
-
+}
+.news-letter-content .sign-up-form .input-field form {
+    width: 100%;
+    display: flex;
 }
 
 .news-letter-content .sign-up-form .input-field input {
@@ -71,6 +74,7 @@
     height: 40px;
     outline: none;
     border: none;
+    color: #041122;
     background: transparent;
 
 }

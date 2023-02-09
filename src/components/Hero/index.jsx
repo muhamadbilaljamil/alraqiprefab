@@ -3,15 +3,11 @@ import './Hero.css';
 import Nav_Bar from "./Nav_Bar";
 import Main_Banner_1 from "./Main_Banner_1";
 
-const Hero = (props) => {
-
-
-
-
+const Hero = () => {
     return (
         <div className="hero">
             <div className="glass-layer"></div>
-            <Nav_Bar props={props} />
+            <Nav_Bar />
             <Main_Banner_1 />
         </div>
     );

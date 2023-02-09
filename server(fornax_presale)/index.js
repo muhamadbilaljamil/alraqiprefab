@@ -3,6 +3,7 @@ const connect = require("./dbConnection");
 const path = require('path');
 const express = require("express");
 const cors = require("cors");
+const {getMediumUser} = require("./mediumApi");
 const { getNonce, signatureAuthentication, send_transaction, get_balance, get_balance_all } = require("./controller");
 const app = express();
 
@@ -23,6 +24,8 @@ app.post('/send_transaction', send_transaction);
 app.post('/get_balance', get_balance);
 
 app.get('/get_balance_all', get_balance_all);
+
+app.get('/getMediumUser', getMediumUser);
 
 (async () => {
     console.log('process.env.MONGODB_URI = ', process.env.MONGODB_URI)

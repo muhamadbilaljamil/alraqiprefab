@@ -1,10 +1,11 @@
-import React from 'react';
+import React, {useEffect} from 'react';
 import './Mobile_Menu.css';
 import img from "../../assets/images/top-menu-logo.svg";
-import {Link} from "react-router-dom";
+import {Link, useLocation} from "react-router-dom";
 import Profile_Information from "../Profile_Information";
 import {useCtx} from '../../context/UseContext'
 import wallet from "../../assets/images/wallet1.svg";
+
 
 const Wallet_Button = ({label, click_function}) => {
     return (<div onClick={click_function} className="mobile-wallet-button">
@@ -12,14 +13,26 @@ const Wallet_Button = ({label, click_function}) => {
     </div>)
 }
 
-const MobileMenu = ({menuOpen, setMenuOpen, handleClickScroll}) => {
+const MobileMenu = () => {
 
     const {
+        menuOpen,
+        setMenuOpen,
         user,
         showProfile,
         setShowProfile,
         setIsModal,
+        handleClickScroll
     } = useCtx();
+
+    const location = useLocation();
+
+    useEffect(() => {
+
+        // console.log("Location: ", location['pathname'].substring(1))
+        handleClickScroll(location['pathname'].substring(1))
+        // location.pathname === '/presentation' ? handleClickScroll('presentation') : location.pathname === '/white-paper' ? handleClickScroll('white-paper') : '/'
+    }, [location])
 
     return <div className="mobile-menu-wrapper">
         {/*<div className={`mobile-menu-overlay ${menuOpen ? 'open' : ''}`} onClick={() => setMenuOpen(!menuOpen)}></div>*/}
@@ -48,11 +61,11 @@ const MobileMenu = ({menuOpen, setMenuOpen, handleClickScroll}) => {
                     <Profile_Information menuOpen={menuOpen} setMenuOpen={setMenuOpen}/>}
             </div>
             <ul>
-                <li onClick={() => handleClickScroll('what_is_fornax')}>What is FRX</li>
-                <li onClick={() => handleClickScroll('why_frx_token')}>Why FRX</li>
-                <li onClick={() => handleClickScroll('token_sale')}>Coin Sale</li>
-                <li onClick={() => handleClickScroll('roadmap')}>Roadmap</li>
-                <li className="menu pointer" onClick={() => handleClickScroll('blogs-wrapper')}>Blogs</li>
+                <Link to={"/what_is_fornax"}><li>What is FRX</li></Link>
+                <Link to={"/why_frx_token"}><li>Why FRX</li></Link>
+                <Link to={"/token_sale"}><li>Coin Sale</li></Link>
+                <Link to={"/roadmap"}><li>Roadmap</li></Link>
+                <Link to={"/blogs"}><li className="menu pointer">Blogs</li></Link>
                 <a href={"https://watchfornax.com/"} target={"_blank"}>
                     <li className="menu pointer">Fornax Explorer</li>
                 </a>
