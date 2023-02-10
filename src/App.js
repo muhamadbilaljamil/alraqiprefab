@@ -30,7 +30,7 @@ function App() {
                     <MobileMenu />
                     <Hero />
                     <Routes>
-                        <Route exat path="/blogs" element={<Blogs/>}/>
+                        {/*<Route exat path="/blogs" element={<Blogs/>}/>*/}
                         <Route path="/*" element={
                             <>
                                 <Fornax_Coin/>
@@ -40,6 +40,7 @@ function App() {
                                 <Why_Choose_FRX/>
                                 <Token_Allocation_Funds_Distribution/>
                                 <Road_Map/>
+                                <Blogs/>
                                 <FeatureIn/>
                                 <NewsLetter/>
                                 <Experts_Investor_Board/>

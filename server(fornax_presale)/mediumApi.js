@@ -1,7 +1,7 @@
 const axios = require('axios');
 
 const baseURL = 'https://api.medium.com';
-const Authorization = 'Bearer 225461bfe8ea7aeb6d5378137accd4433f93e8be2217b75eeee2ea13801e3fbe3';
+const Authorization = 'Bearer 27db333ea114f51bcadc86f08470221121b93dee390c242168355f95816e3e58d';
 
 const client = axios.create({
     baseURL,
