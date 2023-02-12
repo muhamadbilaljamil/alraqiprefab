@@ -29,7 +29,8 @@ const defaultProvider = {
     handleClickScroll: () => {
     },
     loading: false,
-    setLoading : () => Boolean,
+    setLoading: () => Boolean,
+    scroll: 0,
 }
 const Context = createContext(defaultProvider)
 
@@ -43,6 +44,7 @@ const ContextProvider = ({children}) => {
     const [toastData, setToastData] = useState(defaultProvider.toastData);
     const [loading, setLoading] = useState(defaultProvider.loading)
     const [isInitialized, setIsInitialized] = useState(defaultProvider.isInitialized)
+    const [scroll, setScroll] = useState(0);
 
     useEffect(() => {
         const initAuth = () => {
@@ -55,8 +57,16 @@ const ContextProvider = ({children}) => {
                 setUser(null)
         }
         initAuth()
+        const handleScroll = () => {
+            setScroll(window.pageYOffset);
+        };
+        window.addEventListener('scroll', handleScroll);
+        return () => {
+            window.removeEventListener('scroll', handleScroll);
+        };
     }, [])
 
+    console.log("Event Listeners: ", scroll);
     const showToast = (title, description) => {
         setToastData({
             title,
@@ -111,23 +121,6 @@ const ContextProvider = ({children}) => {
         setUser(verify_response);
         showToast("info", "Wallet connected successfully");
 
-
-        // setIsModal(false);
-        // if (!window.ethereum) {
-        //     setToastData({
-        //         title: 'Warning',
-        //         description: 'Please install your wallet',
-        //         setIsToast,
-        //     })
-        //     return setIsToast(true);
-        // }
-        // const sign_message_response = await signMessage();
-        // // console.log("Sign message response: ", sign_message_response);
-        // const verify_response = await signatureAuthentication(sign_message_response);
-        // window.localStorage.setItem("user_wallet", JSON.stringify(verify_response));
-        // setUser(verify_response);
-        // // console.log("Verify response: ", verify_response);
-
     }
 
     const handleClickScroll = (e) => {
@@ -158,6 +151,7 @@ const ContextProvider = ({children}) => {
         handleClickScroll,
         loading,
         setLoading,
+        scroll
     }
 
     return <Context.Provider value={values}>{children}</Context.Provider>

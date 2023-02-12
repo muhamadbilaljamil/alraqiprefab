@@ -6,8 +6,7 @@ import wallet from '../../../assets/images/wallet1.svg'
 import Profile_Information from "../../Profile_Information";
 import {Link} from "react-router-dom";
 import {useCtx} from "../../../context/UseContext";
-import {Toast_Message} from "../../Toast";
-import Wallets_Modal from "../../Modals/Wallets_Modal";
+
 
 const Wallet_Button = ({label, click_function}) => {
     return (<div onClick={click_function} className="wallet btn"><img src={wallet} alt={"wallet image"}/>
@@ -24,14 +23,12 @@ const Nav_Bar = () => {
         showProfile,
         setShowProfile,
         setIsModal,
-        isToast,
-        isModal,
-        toastData,
+        scroll,
     } = useCtx();
 
 
     return (
-        <header>
+        <header className={`fixed ${scroll > 68 ? 'active' : ""}`}>
             <div className="container-wrapper">
                 <div className="top-menu-container">
                     <Link to={"/"}>
@@ -91,8 +88,6 @@ const Nav_Bar = () => {
                     </div>
                 </div>
             </div>
-           {/* {isToast && <Toast_Message data={toastData}/>}
-            {isModal && <Wallets_Modal/>}*/}
         </header>
     );
 }

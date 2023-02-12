@@ -1,0 +1,82 @@
+.top-screen-button-wrapper {
+    position: fixed;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    right: 20px;
+    bottom: 20px;
+    z-index: 5555;
+}
+
+.top-screen-button-wrapper button {
+    cursor: pointer;
+    border: none;
+    outline: none;
+    width: 40px;
+    height: 40px;
+    background: linear-gradient(180deg, #F79C04 100%, #B27F29 0%);
+    border-radius: 50%;
+    transform: translateY(-400px);
+    opacity: 0;
+    transition: all 0.9s;
+}
+
+.top-screen-button-wrapper.active button {
+    transform: translateY(0px);
+    opacity: 1;
+}
+
+
+.top-screen-button-wrapper button::after, .top-screen-button-wrapper button::before {
+    content: "";
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    z-index: -1;
+    width: px;
+    height: 200px;
+    display: block;
+    border: 3px solid #e4a40c;
+    border-radius: 50%;
+    transform: translateX(-50%) translateY(-50%);
+    animation: zoomBig 3.25s linear infinite;
+    -webkit-animation-delay: 0s;
+    animation-delay: 0s;
+}
+
+@keyframes zoomBig {
+    0% {
+        transform: translate(-50%, -50%) scale(0.5);
+        opacity: 1;
+        border-width: 3px;
+    }
+    40% {
+        opacity: .5;
+        border-width: 2px;
+    }
+    65% {
+        border-width: 1px;
+    }
+    100% {
+        transform: translate(-50%, -50%) scale(1);
+        opacity: 0;
+        border-width: 1px;
+    }
+}
+
+.top-screen-button-wrapper button::before {
+    width: 75px;
+    height: 75px;
+    border: 5px solid #B37F29;
+    -webkit-animation-delay: .75s;
+    animation-delay: .75s;
+}
+
+.top-screen-button-wrapper button::after {
+    width: 95px;
+    height: 95px;
+    display: block;
+    border: 3px solid #e4a40c;
+    -webkit-animation-delay: 0s;
+    animation-delay: 0s;
+}

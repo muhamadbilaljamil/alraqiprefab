@@ -30,8 +30,8 @@ const FeaturedIn = () => {
                                 className="slide-swiper"
                                 modules={[Navigation, Pagination, Autoplay]}
                                 slidesPerView={2}
-                                onSlideChange={() => console.log('slide change')}
-                                onSwiper={(swiper) => console.log(swiper)}
+                                // onSlideChange={() => console.log('slide change')}
+                                // onSwiper={(swiper) => console.log(swiper)}
                                 autoplay={{delay: 5000}}
                                 loop={true}
                                 loopPreventsSliding={true}

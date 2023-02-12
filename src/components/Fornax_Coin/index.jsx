@@ -41,7 +41,7 @@ const Fornax_Coin = () => {
     }
     if (provider) {
         //const provider = new ethers.providers.Web3Provider(window.ethereum);
-        console.log(provider, "provider")
+        // console.log(provider, "provider")
         signer = provider.getSigner();
         contract = new ethers.Contract(smartContract.address, contractABI, signer);
     }

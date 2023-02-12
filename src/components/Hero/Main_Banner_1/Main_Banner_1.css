@@ -1,7 +1,3 @@
-.main-banner {
-    position: relative;
-}
-
 canvas {
     position: absolute;
     background: transparent;
@@ -14,8 +10,9 @@ canvas {
 }
 
 .main-banner {
+    position: relative;
     width: 100%;
-    padding:  80px 100px;
+    padding:  170px 100px 80px;
     background-image: url("../../../assets/images/bg-1.svg");
 }
 
@@ -197,7 +194,7 @@ canvas {
 
 @media  screen and (max-width: 1350px) {
     .main-banner {
-        padding: 50px 0;
+        padding: 170px 0 50px;
         background-size: contain;
     }
 
@@ -234,7 +231,7 @@ canvas {
 @media  screen and (max-width: 768px) {
 
     .main-banner {
-        padding: 50px 0;
+       /* padding: 170px 0 50px;*/
         background-size: contain;
     }
 

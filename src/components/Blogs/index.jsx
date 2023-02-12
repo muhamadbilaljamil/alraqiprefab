@@ -4,14 +4,14 @@ import {getUserData} from "../../api/api";
 
 const Blogs = () => {
 
-    useEffect(() => {
-        const getMediumUser = async() => {
-            const user = await getUserData();
-            console.log("Medium user: ", user);
-            return user
-        }
-        getMediumUser();
-    })
+    // useEffect(() => {
+    //     const getMediumUser = async() => {
+    //         const user = await getUserData();
+    //         console.log("Medium user: ", user);
+    //         return user
+    //     }
+    //     getMediumUser();
+    // })
     return (
         <div className="blogs-wrapper" id="blogs">
             <div className="container-wrapper">
