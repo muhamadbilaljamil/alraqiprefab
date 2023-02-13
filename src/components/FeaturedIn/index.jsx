@@ -50,19 +50,26 @@ const FeaturedIn = () => {
                                     <h4 className="slide-title">COIN JOURNAL</h4>
                                     <div className="slide-title-b-border"></div>
                                 </SwiperSlide>
-                                <SwiperSlide className="slide">
+                                {/*  <SwiperSlide className="slide">
                                     <div className="slide-image">
                                         <img width={190} src={dailyHodl} alt="Daily Hodl" className="the-crypto"/>
                                     </div>
                                     <h4 className="slide-title">THE DAILY HODL</h4>
                                     <div className="slide-title-b-border"></div>
-                                </SwiperSlide>
+                                </SwiperSlide>*/}
                                 <SwiperSlide className="slide">
                                     <div className="slide-image">
                                         <img width={170} style={{background: "#000"}} src={cryptoMode} alt="Crypto Mode"
                                              className="the-crypto"/>
                                     </div>
                                     <h4 className="slide-title">CRYPTO MODE</h4>
+                                    <div className="slide-title-b-border"></div>
+                                </SwiperSlide>
+                                <SwiperSlide className="slide">
+                                    <div className="slide-image">
+                                        <img src={coinJournal} alt="Featured in" className="the-crypto"/>
+                                    </div>
+                                    <h4 className="slide-title">COIN JOURNAL</h4>
                                     <div className="slide-title-b-border"></div>
                                 </SwiperSlide>
                             </Swiper>
