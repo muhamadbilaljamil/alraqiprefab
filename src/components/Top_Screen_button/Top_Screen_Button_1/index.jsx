@@ -1,5 +1,6 @@
 import React from 'react';
 import './Top_Screen_Button_1.css';
+import topArrow from '../../../assets/images/arrow-next-2825.svg';
 import {useCtx} from '../../../context/UseContext'
 
 const Top_Screen_Button_1 = () => {
@@ -18,7 +19,7 @@ const Top_Screen_Button_1 = () => {
     } = useCtx();
     return (
         <div className={`top-screen-button-wrapper ${scroll > 150 ? 'active' : ''}`}>
-            <button onClick={handleScrollTop}>T</button>
+            <button onClick={handleScrollTop}><img  src={topArrow} alt="top arrow icon" /> </button>
         </div>
     );
 }

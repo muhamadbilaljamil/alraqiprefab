@@ -5,7 +5,8 @@ header{
     transition: all .3s;
     width: 100%;
     background: rgba(4, 17, 34, 0.55);
-    margin: 0 auto
+    margin: 0 auto;
+    z-index:5;
 }
 
 header.active {

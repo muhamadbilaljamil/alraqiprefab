@@ -6,6 +6,7 @@
     right: 20px;
     bottom: 20px;
     z-index: 5555;
+    color: #041122;
 }
 
 .top-screen-button-wrapper button {
@@ -14,6 +15,9 @@
     outline: none;
     width: 40px;
     height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     background: linear-gradient(180deg, #F79C04 100%, #B27F29 0%);
     border-radius: 50%;
     transform: translateY(-400px);
@@ -24,6 +28,13 @@
 .top-screen-button-wrapper.active button {
     transform: translateY(0px);
     opacity: 1;
+}
+
+.top-screen-button-wrapper button img {
+    width: 20px;
+    height: 20px;
+    transform: rotate(-90deg);
+    color: #FFF;
 }
 
 

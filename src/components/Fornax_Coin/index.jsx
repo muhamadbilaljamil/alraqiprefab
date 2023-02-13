@@ -36,7 +36,7 @@ const Fornax_Coin = () => {
     try {
         provider = new ethers.providers.Web3Provider(window.ethereum);
     } catch {
-        console.log("provider")
+        // console.log("provider")
         provider = null
     }
     if (provider) {

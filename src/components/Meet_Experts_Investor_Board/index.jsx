@@ -82,7 +82,7 @@ const Experts_Investor_Board = () => {
                                     <img src={pm} className="pm" alt="Payment logo" />
                                 </div>
                                 <div className="card-title">Abdulah Ahmed </div>
-                                <div className="card-subtitle">Project Manager</div>
+                                <div className="card-subtitle">CTO</div>
                                 {/* <p className="card-description">
                                     "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
                                     incididunt ut labore .
@@ -173,13 +173,13 @@ const Experts_Investor_Board = () => {
                                     <li><img src={facebook} alt="Payment logo" /></li>
                                 </ul> */}
                             </div>
-                            <div className="card">
+                          {/*  <div className="card">
                                 <div className="icon">
                                     <img src={pd} alt="Payment logo" />
                                 </div>
                                 <div className="card-title">Saqib Hussain</div>
                                 <div className="card-subtitle">Sr. Developer</div>
-                                {/* <p className="card-description">
+                                 <p className="card-description">
                                     "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
                                     incididunt ut labore .
                                 </p>
@@ -187,20 +187,8 @@ const Experts_Investor_Board = () => {
                                     <li><img src={twitter} alt="Payment logo" /></li>
                                     <li><img src={linkIn} alt="Payment logo" /></li>
                                     <li><img src={facebook} alt="Payment logo" /></li>
-                                </ul> */}
+                                </ul>
                             </div>
-
-
-
-
-
-
-
-
-
-
-
-
 
                             <div className="card">
                                 <div className="icon">
@@ -208,7 +196,7 @@ const Experts_Investor_Board = () => {
                                 </div>
                                 <div className="card-title">Hammad Hassan</div>
                                 <div className="card-subtitle">Sr. Devops Engg</div>
-                                {/* <p className="card-description">
+                                 <p className="card-description">
                                     "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
                                     incididunt ut labore .
                                 </p>
@@ -216,8 +204,8 @@ const Experts_Investor_Board = () => {
                                     <li><img src={twitter} alt="Payment logo" /></li>
                                     <li><img src={linkIn} alt="Payment logo" /></li>
                                     <li><img src={facebook} alt="Payment logo" /></li>
-                                </ul> */}
-                            </div>
+                                </ul>
+                            </div>*/}
                         </div>
                     </div>
                     {/* <div className="main-content">

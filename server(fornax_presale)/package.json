@@ -13,12 +13,16 @@
     "axios": "^1.2.2",
     "cors": "^2.8.5",
     "ethers": "^5.7.2",
+    "fs": "^0.0.1-security",
     "get-eth-price": "^1.0.0",
     "mongoose": "^6.9.0",
     "nodemon": "^2.0.20",
+    "rss-to-json": "^2.1.1",
     "stripe": "^11.6.0",
     "web3": "^1.8.2",
-    "web3-eth-contract": "^1.8.2"
+    "web3-eth-contract": "^1.8.2",
+    "xml-js": "^1.6.11",
+    "xml2js": "^0.4.23"
   },
   "devDependencies": {
     "assert": "^2.0.0",
