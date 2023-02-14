@@ -45,7 +45,7 @@ const Block_Chain_List = ({list, activeLink}) => {
             </div>
             {
                 list.map((item, index) => {
-                    return <li className="card">
+                    return <li className="card" key={index}>
                         <div className="card-logo">
                             <div className="logo">
                                 <img src={item?.icon} alt="button_logo_1"/>
@@ -59,7 +59,7 @@ const Block_Chain_List = ({list, activeLink}) => {
                                 <h4 className="heading_2">{item?.subtitle}</h4>
                             </div>
                             <div className="market-cap">
-                               {/* <div className="left-col">
+                                {/* <div className="left-col">
                                     <div className="amount">{item?.amount_1}</div>
                                     <div className="label">{item?.label_1}</div>
                                 </div>

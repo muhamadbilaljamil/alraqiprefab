@@ -11,7 +11,6 @@ const ModalAndToast = () => {
         isModal,
         toastData,
         loading,
-        scroll
     } = useCtx();
 
     // console.log("isLoading: ", loading);

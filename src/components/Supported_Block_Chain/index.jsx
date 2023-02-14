@@ -19,17 +19,17 @@ const Supported_Block_Chain = () => {
 
     useEffect(() => {
         const searchData = handleButtonOption(showCards);
-        console.log("Parameter: ", searchData);
+        // console.log("Parameter: ", searchData);
         listFilter(searchData)
     }, []);
 
     const listFilter = (value) => {
         const filterData = blockchains.filter((item, index) => {
-            console.log("new data", item['category'].toString().toLowerCase());
+            // console.log("new data", item['category'].toString().toLowerCase());
             const bigString = item['category'].toString().toLowerCase();
             return bigString.includes(value)
         })
-        console.log('Staking: ', filterData)
+        // console.log('Staking: ', filterData)
         setList(filterData);
         // return filterData;
     }
@@ -57,7 +57,7 @@ const Supported_Block_Chain = () => {
     const handleButtonClick = (value) => {
         setShowCards(value);
         const searchData = handleButtonOption(value);
-        console.log("Parameter: ", searchData);
+        // console.log("Parameter: ", searchData);
         listFilter(searchData);
     }
     return (

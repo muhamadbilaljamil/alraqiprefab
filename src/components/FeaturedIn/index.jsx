@@ -2,7 +2,7 @@ import React from 'react';
 import './FeaturedIn.css';
 import featuredIN from '../../assets/images/featured-in-1.png';
 import coinJournal from '../../assets/images/coin-journal.webp';
-import dailyHodl from '../../assets/images/Daily-Hodl.webp';
+import cryptoPolitan from '../../assets/images/cryptopolitan.svg';
 import cryptoMode from '../../assets/images/cryptomode.png';
 
 // import Swiper core and required modules
@@ -50,26 +50,19 @@ const FeaturedIn = () => {
                                     <h4 className="slide-title">COIN JOURNAL</h4>
                                     <div className="slide-title-b-border"></div>
                                 </SwiperSlide>
-                                {/*  <SwiperSlide className="slide">
+                                  <SwiperSlide className="slide">
                                     <div className="slide-image">
-                                        <img width={190} src={dailyHodl} alt="Daily Hodl" className="the-crypto"/>
+                                        <img width={190} src={cryptoPolitan} alt="crypto politan" className="the-crypto"/>
                                     </div>
-                                    <h4 className="slide-title">THE DAILY HODL</h4>
+                                    <h4 className="slide-title">CRYPTO POLITAN</h4>
                                     <div className="slide-title-b-border"></div>
-                                </SwiperSlide>*/}
+                                </SwiperSlide>
                                 <SwiperSlide className="slide">
                                     <div className="slide-image">
                                         <img width={170} style={{background: "#000"}} src={cryptoMode} alt="Crypto Mode"
                                              className="the-crypto"/>
                                     </div>
                                     <h4 className="slide-title">CRYPTO MODE</h4>
-                                    <div className="slide-title-b-border"></div>
-                                </SwiperSlide>
-                                <SwiperSlide className="slide">
-                                    <div className="slide-image">
-                                        <img src={coinJournal} alt="Featured in" className="the-crypto"/>
-                                    </div>
-                                    <h4 className="slide-title">COIN JOURNAL</h4>
                                     <div className="slide-title-b-border"></div>
                                 </SwiperSlide>
                             </Swiper>

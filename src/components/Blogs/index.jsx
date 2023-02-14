@@ -17,7 +17,6 @@ const Blogs = () => {
         getMediumUser();
     }, [])
 
-    console.log("Medium user: ", postList);
     return (
         <div className="blogs-wrapper" id="blogs">
             <div className="container-wrapper">
@@ -34,18 +33,22 @@ const Blogs = () => {
                                     {
                                         postList.map((post, index) => {
                                             return (
-                                                <a href={post.link} target="_blank">
+                                                <a href={post.link} target="_blank" key={index}>
                                                     <div className="card">
                                                         <div className="icon">
                                                             <img src={post.coverPhoto} alt="Payment logo"/>
                                                         </div>
-                                                        <div className="card-title">{post.title}</div>
-                                                        <div className="card-description">
-                                                        </div>
-                                                        <div className="published-info">
-                                                            <div className="publish-by">By: {post.author}</div>
-                                                            <div className="divider"></div>
-                                                            <div className="publish-at">On: {post.publishAt}</div>
+                                                        <div className="card-info">
+                                                            <div className="headings">
+                                                                <div className="card-title">{post.title}</div>
+                                                                <div className="card-description">
+                                                                </div>
+                                                            </div>
+                                                            <div className="published-info">
+                                                                <div className="publish-by">By: {post.author}</div>
+                                                                <div className="divider"></div>
+                                                                <div className="publish-at">On: {post.publishAt}</div>
+                                                            </div>
                                                         </div>
                                                     </div>
                                                 </a>
@@ -87,4 +90,4 @@ const Blogs = () => {
     );
 }
 
-    export default Blogs
+export default Blogs

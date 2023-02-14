@@ -22,7 +22,7 @@ import ModalAndToast from "./components/ModalAndToast";
 
 function App() {
 
-    return (
+        return (
         <div className="main-app">
             <ContextProvider>
                 <Router>

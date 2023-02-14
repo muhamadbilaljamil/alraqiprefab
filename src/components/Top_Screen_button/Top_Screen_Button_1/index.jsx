@@ -6,7 +6,7 @@ import {useCtx} from '../../../context/UseContext'
 const Top_Screen_Button_1 = () => {
 
     const handleScrollTop = () => {
-        console.log("Handle Scroll");
+        // console.log("Handle Scroll");
         window.scroll({
             top: 0,
             // left: 0,
@@ -18,7 +18,7 @@ const Top_Screen_Button_1 = () => {
         scroll
     } = useCtx();
     return (
-        <div className={`top-screen-button-wrapper ${scroll > 150 ? 'active' : ''}`}>
+        <div className="top-screen-button-wrapper" id="top-screen-button">
             <button onClick={handleScrollTop}><img  src={topArrow} alt="top arrow icon" /> </button>
         </div>
     );

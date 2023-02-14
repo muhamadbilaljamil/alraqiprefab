@@ -52,18 +52,18 @@ const getMediumUser = async (req, res) => {
 }
 
 const convertXMLtoJSON = async (items) => {
+    console.log("List Medium blogs: ", items);
     let blogList = [];
-    let post = {
-        coverPhoto: '',
-        title: '',
-        description: '',
-        author: '',
-        publishAt: '',
-        link: '',
-        content: ''
-    }
-
-    items.map(async (item, index) => {
+    items.map((item, index) => {
+        let post = {
+            coverPhoto: '',
+            title: '',
+            description: [],
+            author: '',
+            publishAt: '',
+            link: '',
+        }
+        console.log('Post ', (item['content'].split("\<").filter(t => t.startsWith("<p>"))));
         const currentDate = new Date(item.published);
         const month = getMonthName(currentDate.getMonth());
         const date = currentDate.getDate();
@@ -72,11 +72,13 @@ const convertXMLtoJSON = async (items) => {
         post.publishAt = date + ' ' + month + ' ' + year;
         post.author = item['author'];
         post.title = item['title'];
+        post.description = (item['content'].split("\<").filter(t => t.startsWith("<p>")))
         post.link = item.link;
-        post.content = item.content;
-        console.log("Published blogs list : ", item);
+        // console.log("Published blogs list : ", item);
         blogList.push(post);
     })
+    // console.log("Blogs post list :", blogList);
+
     return blogList;
 }
 

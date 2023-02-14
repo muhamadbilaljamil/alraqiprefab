@@ -30,7 +30,6 @@ const defaultProvider = {
     },
     loading: false,
     setLoading: () => Boolean,
-    scroll: 0,
 }
 const Context = createContext(defaultProvider)
 
@@ -44,7 +43,6 @@ const ContextProvider = ({children}) => {
     const [toastData, setToastData] = useState(defaultProvider.toastData);
     const [loading, setLoading] = useState(defaultProvider.loading)
     const [isInitialized, setIsInitialized] = useState(defaultProvider.isInitialized)
-    const [scroll, setScroll] = useState(0);
 
     useEffect(() => {
         const initAuth = () => {
@@ -57,16 +55,8 @@ const ContextProvider = ({children}) => {
                 setUser(null)
         }
         initAuth()
-        const handleScroll = () => {
-            setScroll(window.pageYOffset);
-        };
-        window.addEventListener('scroll', handleScroll);
-        return () => {
-            window.removeEventListener('scroll', handleScroll);
-        };
     }, [])
 
-    console.log("Event Listeners: ", scroll);
     const showToast = (title, description) => {
         setToastData({
             title,
@@ -80,12 +70,11 @@ const ContextProvider = ({children}) => {
         try {
             const provider = new ethers.providers.Web3Provider(window.ethereum);
             const accounts = await provider.send("eth_requestAccounts", []);
-            console.log('Accounts :', accounts);
+            // console.log('Accounts :', accounts);
             if (accounts.length > 0) {
                 const {message} = await getNonce(accounts[0]);
                 const signer = await provider.getSigner()
                 const signature = await signer.signMessage(message)
-                console.log()
                 const address = await signer.getAddress()
                 return {
                     wallet_address: address,
@@ -100,10 +89,10 @@ const ContextProvider = ({children}) => {
     }
 
     const handleTransaction = async (payload) => {
-        console.log('payload', payload);
+        // console.log('payload', payload);
         const response = await send_transaction(payload);
         const user_wallet = {...user, balance: response.balance}
-        console.log("user_wallet", user_wallet);
+        // console.log("user_wallet", user_wallet);
         window.localStorage.setItem('user_wallet', JSON.stringify(user_wallet));
         setUser(user_wallet);
 
@@ -125,7 +114,7 @@ const ContextProvider = ({children}) => {
 
     const handleClickScroll = (e) => {
         const element = document.getElementById(e);
-        console.log("Element: ", element);
+        // console.log("Element: ", element);
         setMenuOpen(false);
         if (element) {
             element.scrollIntoView({behavior: 'smooth'});
@@ -151,7 +140,6 @@ const ContextProvider = ({children}) => {
         handleClickScroll,
         loading,
         setLoading,
-        scroll
     }
 
     return <Context.Provider value={values}>{children}</Context.Provider>

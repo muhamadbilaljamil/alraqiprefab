@@ -28,7 +28,7 @@ const Nav_Bar = () => {
 
 
     return (
-        <header className={`fixed ${scroll > 68 ? 'active' : ""}`}>
+        <header className="fixed" id="header-section">
             <div className="container-wrapper">
                 <div className="top-menu-container">
                     <Link to={"/"}>

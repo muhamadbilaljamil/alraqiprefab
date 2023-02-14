@@ -7,7 +7,7 @@
     max-width: 1233px;
     margin: 0 auto;
     width: 100%;
-    padding: 50px 5px 80px;
+    padding: 30px 5px 0;
     background: #041122;
     border-radius: 20px;
 }
@@ -155,10 +155,12 @@
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
     transform: scale(1.1);
 }
-.mobile{
+.tokenomics.mobile{
     display: none;
 }
-.web{
+.tokenomics.web{
+    width: 95%;
+    margin: 0 auto;
     scale: 0.8;
     display: block;
 }
@@ -167,16 +169,12 @@
 @media screen and (max-width: 748px){
 
     .token-allocation-wrapper {
-
-        padding: 50px 0 80px; /*new*/
-
+        padding: 30px 0; /*new*/
     }
 
     .token-allocation-wrapper .main-column .title {
-
         font-size: 28px;
         line-height: 42px;
-
     }
 
     .status-bars-list li {
@@ -194,10 +192,10 @@
         margin-top: 10px;
         transition: transform .4s ease-in-out
     }
-    .mobile{
+    .tokenomics.mobile{
         display: none;
     }
-    .web{
+    .tokenomics.web{
         display: block;
     }
 
@@ -205,11 +203,10 @@
 }
 
 @media screen and (max-width: 450px){
-    .mobile{
-        scale: 0.8;
+    .tokenomics.mobile{
         display: block;
     }
-    .web{
+    .tokenomics.web{
         display: none;
     }
 .tokenomics{
@@ -217,7 +214,7 @@
     margin-top: 0px;
 }
     .token-allocation-wrapper {
-        padding: 30px 0 50px; /*new*/
+        padding: 30px 0;
     }
 
     .token-allocation-list-column {
