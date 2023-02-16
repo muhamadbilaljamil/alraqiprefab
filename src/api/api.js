@@ -1,8 +1,8 @@
 const axios = require('axios');
 
 // const baseURL = "https://presale.fornax.network";
-// const baseURL = 'http://localhost:4242';
-const baseURL = 'http://192.168.18.124:4242';
+const baseURL = 'http://localhost:4242';
+// const baseURL = 'http://192.168.18.124:4242';
 
 const client = axios.create({
     baseURL,

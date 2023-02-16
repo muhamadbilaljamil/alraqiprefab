@@ -61,9 +61,8 @@
 
 .blog-post-wrapper .main-content .cards-list {
     color: var(--SECONDARY_COLOR);
-    display: grid;
-    gap: 1.8rem;
-    grid-template-columns: repeat(auto-fit, minmax(min(100%, 286px), 1fr));
+    display: flex;
+
 }
 
 .blog-post-wrapper .main-content .cards-list .card {
