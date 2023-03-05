@@ -1,0 +1,11 @@
+.naveed-hussain-card {
+    width: 100vw;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.naveed-hussain-card img {
+    height: 100vh;
+}

@@ -19,18 +19,36 @@ import Blogs from './components/Blogs';
 import FeatureIn from './components/FeaturedIn';
 import NewsLetter from "./components/NewsLetter";
 import ModalAndToast from "./components/ModalAndToast";
+import Naveed_Hussain from "./components/Naveed_Hussain";
+
+// const Layouts = ({showFooter, showHeader, children}) => {
+//     return (<>
+//             {showHeader && <Header/>}
+//             {children}
+//             {showFooter && <Footer/>}
+//         </>
+//     )
+// }
 
 function App() {
 
-        return (
+    const linkpath = '/naveed_hussainVnoCDcq9DlAsfVNpimIJjx6oXprD429b';
+    return (
         <div className="main-app">
             <ContextProvider>
                 <Router>
-                    <ModalAndToast />
-                    <MobileMenu />
-                    <Hero />
+                    {
+                        (window.location.pathname !== linkpath) ?
+                            <>
+                                <ModalAndToast/>
+                                <MobileMenu/>
+                                <Hero/>
+                            </>
+                            : ""
+                    }
+
                     <Routes>
-                        {/*<Route exat path="/blogs" element={<Blogs/>}/>*/}
+                        <Route exat path={linkpath} element={<Naveed_Hussain/>}/>
                         <Route path="/*" element={
                             <>
                                 <Fornax_Coin/>
@@ -48,7 +66,12 @@ function App() {
                             </>
                         }/>
                     </Routes>
-                    <Footer/>
+                    {
+                        (window.location.pathname !== linkpath) ?
+                            <Footer/>
+                            : ""
+                    }
+
                 </Router>
             </ContextProvider>
             {/*<Footer/>*/}
