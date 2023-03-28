@@ -29,9 +29,8 @@ const FRX_Coin_Less_1270px = () => {
                             <img src={medical_mobile_app} alt="anchor node"/>
                         </div>
                         <div className="description-column">
-                            <h2>Fitforward App</h2>
-                            <p>Modren Day human energy monitization app to track your real life movments and return
-                                amazing rewards.</p>
+                            <h2>FornaxSwap</h2>
+                            <p>With FornaxSwap, trade confidently knowing that your digital assets are secure on the high-performance Fornax Blockchain. Take advantage of customizable liquidity pools and the ability to launch your own tokens to create a truly personalized trading experience.</p>
                         </div>
                     </li>
                     <li style={{"--i": "1", "--clr": "#ff0000"}}>

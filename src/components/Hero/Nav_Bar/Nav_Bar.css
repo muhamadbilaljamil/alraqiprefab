@@ -1,4 +1,4 @@
-header{
+header {
     position: fixed;
     top: 0;
     padding: 10px 20px;
@@ -6,7 +6,7 @@ header{
     width: 100%;
     background: rgba(4, 17, 34, 0.55);
     margin: 0 auto;
-    z-index:5;
+    z-index: 5;
 }
 
 header.active {
@@ -21,6 +21,7 @@ header.active {
     align-items: center;
     /*background: #041122;*/
 }
+
 .top-menu-container .nav-bar-logo {
     width: 100%;
     display: flex;
@@ -99,7 +100,47 @@ header.active {
     margin-left: 10px;
 }
 
-.top-menu-container img, .top-menu-container .menu, .top-menu-container .login-btn {
+.left-side-buttons .user-menu {
+    position: relative;
+    cursor: pointer;
+    /* overflow: hidden; */
+}
+
+.left-side-buttons .user-menu .user-menu-list {
+    position: absolute;
+    min-width: 150px;
+    /* border: 1px solid #e4a40c; */
+    background: #d7d7d7;
+    top: 62px;
+    right: 0px;
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+    transform: translateX(120px);
+    opacity: 0;
+    visibility: hidden;
+    transition: all .5s;
+}
+
+.left-side-buttons .user-menu .user-menu-list .menu-item {
+    margin: 0 8px 0 12px;
+    padding: 12px 8px;
+    font-size: 16px;
+    border-bottom: 1px solid #f1f1f1;
+    /* color:rgb(4, 17, 34); */
+    /* font-weight: 500; */
+}
+
+.left-side-buttons .user-menu:hover .user-menu-list {
+    opacity: 1;
+    visibility: visible;
+    transform: translateX(0);
+    display: block;
+}
+
+.top-menu-container img,
+.top-menu-container .menu,
+.top-menu-container .login-btn {
     transform: translateX(10px);
     opacity: 0;
 }
@@ -161,27 +202,28 @@ header.active {
     display: none;
 }
 
-@media screen and (max-width: 1100px){
+@media screen and (max-width: 1100px) {
     .top-menu-container {
         grid-template-columns: 130px 1fr;
         /*padding: 18px 12px;*/
     }
-   .menu-list {
-       display: none;
-   }
+
+    .menu-list {
+        display: none;
+    }
+
     .left-side-buttons {
         display: none;
     }
+
     .mobile-menu {
         display: flex;
         justify-content: flex-end;
     }
+
     .top-menu-container img {
         width: 30px;
     }
 }
 
-@media screen and (max-width: 768px){
-
-
-}
+@media screen and (max-width: 768px) {}

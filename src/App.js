@@ -3,9 +3,9 @@ import {BrowserRouter as Router, Routes, Route, useLocation,} from "react-router
 import './App.css';
 
 import Hero from "./components/Hero";
-import Fornax_Coin from "./components/Fornax_Coin";
-import Buying_FRX_Tokens from "./components/Buy_FRX_Tokens";
 import What_FRX_Coin from "./components/What_FRX_Coin";
+import Documents from './components/Documents';
+import Statistics from "./components/Statistics";
 import Supported_Block_Chain from "./components/Supported_Block_Chain";
 import Road_Map from "./components/Road_Map";
 import Why_Choose_FRX from "./components/Why_Choose_FRX";
@@ -14,21 +14,16 @@ import Token_Allocation_Funds_Distribution from "./components/Token_Allocation_F
 import Experts_Investor_Board from "./components/Meet_Experts_Investor_Board";
 import Get_In_Touch from './components/Get_In_Touch';
 import MobileMenu from "./components/Mobile_Menu";
+import Login from './components/Login';
+import Signup from './components/Signup';
 import {ContextProvider} from "./context/Context_Provider";
 import Blogs from './components/Blogs';
+import Intro_Vidow from './components/Intro_Video';
 import FeatureIn from './components/FeaturedIn';
 import NewsLetter from "./components/NewsLetter";
 import ModalAndToast from "./components/ModalAndToast";
 import Naveed_Hussain from "./components/Naveed_Hussain";
 
-// const Layouts = ({showFooter, showHeader, children}) => {
-//     return (<>
-//             {showHeader && <Header/>}
-//             {children}
-//             {showFooter && <Footer/>}
-//         </>
-//     )
-// }
 
 function App() {
 
@@ -49,17 +44,20 @@ function App() {
 
                     <Routes>
                         <Route exat path={linkpath} element={<Naveed_Hussain/>}/>
+                        <Route exat path={'/login'} element={<Login />}/>
+                        <Route exat path={'/signup'} element={<Signup />}/>
                         <Route path="/*" element={
                             <>
-                                <Fornax_Coin/>
-                                <Buying_FRX_Tokens/>
+                                <Statistics />
                                 <What_FRX_Coin/>
                                 <Supported_Block_Chain/>
                                 <Why_Choose_FRX/>
-                                <Token_Allocation_Funds_Distribution/>
-                                <Road_Map/>
+                                {/* <Token_Allocation_Funds_Distribution/> */}
+                                {/* <Road_Map/> */}
                                 <Blogs/>
+                                <Intro_Vidow />
                                 <FeatureIn/>
+                                <Documents/>
                                 <NewsLetter/>
                                 <Experts_Investor_Board/>
                                 <Get_In_Touch/>

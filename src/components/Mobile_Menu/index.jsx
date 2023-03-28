@@ -61,16 +61,37 @@ const MobileMenu = () => {
                     <Profile_Information menuOpen={menuOpen} setMenuOpen={setMenuOpen}/>}
             </div>
             <ul>
-                <Link to={"/what_is_fornax"}><li>What is FRX</li></Link>
-                <Link to={"/why_frx_token"}><li>Why FRX</li></Link>
-                <Link to={"/token_sale"}><li>Coin Sale</li></Link>
-                <Link to={"/roadmap"}><li>Roadmap</li></Link>
-                <Link to={"/blogs"}><li className="menu pointer">Blogs</li></Link>
+                <Link to={"/what_is_fornax"}>
+                    <li>What is FRX</li>
+                </Link>
+                <Link to={"/why_frx_token"}>
+                    <li>Why FRX</li>
+                </Link>
+                <Link to={"/roadmap"}>
+                    <li>Roadmap</li>
+                </Link>
+                <Link to={"/blogs"}>
+                    <li className="menu pointer">Blogs</li>
+                </Link>
+
+                <Link to={"/documents"}>
+                    <li className="menu pointer">Presentation</li>
+                </Link>
+                <Link to={"/documents"}>
+                    <li className="menu pointer">Documents</li>
+                </Link>
+                <Link to={"/login"}>
+                    <li className="menu pointer">Login</li>
+                </Link>
+                <Link to={"/signup"}>
+                    <li className="menu pointer">Signup</li>
+                </Link>
+
                 <a href={"https://watchfornax.com/"} target={"_blank"}>
                     <li className="menu pointer">Fornax Explorer</li>
                 </a>
 
-                {/* <li onClick={() => handleClickScroll('team')}>Team</li> */}
+
             </ul>
             <button onClick={() => setMenuOpen(!menuOpen)}>Back</button>
         </div>

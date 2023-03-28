@@ -72,15 +72,20 @@
         max-width: 600px;
     }
 
+
     .frx-coin-less-1270px .links .left-side-col li {
         display: flex;
         flex-direction: row-reverse;
-        align-items: flex-end;
+        align-items: center;
         padding: 40px;
         column-gap: 30px;
         border-radius: 10px;
         transition: all 0.5s;
         text-align: right;
+    }
+
+    .frx-coin-less-1270px .links .left-side-col li:first-child {
+        padding: 20px 40px;
     }
 
     .frx-coin-less-1270px .links .left-side-col li:hover{

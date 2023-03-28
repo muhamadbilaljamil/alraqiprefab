@@ -1,0 +1,278 @@
+.signup-section {
+    width: 100%;
+    margin: 0 auto;
+    position: relative;
+    padding: 100px 0;
+    background: url('../../assets/images/01_MSR_SIGCOMM_Data_Network_1400x788.png') no-repeat;
+    /* Keep the inherited background full size. */
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+.signup-section .bg-layer {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0.9;
+    z-index: 2;
+    background: #041122;
+}
+
+
+.signup-form {
+    margin: 0 auto;
+    background: rgba(241, 241, 241, 0.14);
+    /* border-radius: 16px; */
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(3.0px);
+    -webkit-backdrop-filter: blur(3.0px);
+    border: 1px solid rgba(241, 241, 241, 0.1);
+    position: relative;
+    z-index: 3;
+    width: 100%;
+    height: max-content;
+    max-width: 900px;
+    min-width: 360px;
+    padding: 30px 64px;
+    /* background: linear-gradient(180deg, #1E2959 0%, #334CBA 100%); */
+    /* border: 1px solid #BEBEBE; */
+    border-radius: 10px;
+}
+
+.signup-form .title-1 {
+    margin: 20px auto 10px;
+    font-weight: 700;
+    font-size: 27px;
+    line-height: 33px;
+    text-align: center;
+
+    background: linear-gradient(180deg, #C7881A 0%, #EDC26E 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    text-fill-color: transparent;
+}
+
+.signup-form .title-2 {
+    margin: 0 auto;
+    font-weight: 700;
+    font-size: 27px;
+    line-height: 33px;
+    text-align: center;
+
+    background: linear-gradient(180deg, #C7881A 0%, #EDC26E 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    text-fill-color: transparent;
+}
+
+.signup-form .description {
+    margin: 20px auto;
+    width: 100%;
+    max-width: 466px;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 22px;
+    text-align: center;
+    color: #FFFFFF;
+}
+
+.signup-form .form-list {
+    list-style: none;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    row-gap: 20px;
+}
+
+.signup-form .form-list .row {
+    width: 100%;
+    display: flex;
+    column-gap: 20px;
+    justify-content: center;
+}
+
+.signup-form .form-list .row .input-label {
+    width: 100%;
+    display: flex;
+}
+
+.signup-form .form-list .row .input-label label {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #B27F29;
+    /* color: #041122; */
+    color: #FFFFFF;
+    height: 48px;
+    min-width: 120px;
+    border-top-left-radius: 4px;
+    border-bottom-left-radius: 4px;
+}
+
+.signup-form .form-list .row .input-label label.c-pass {
+    font-size: 12px;
+}
+
+.signup-form .form-list .row input.form-control,
+.signup-form .form-list .row select.form-control {
+    padding: 4px 10px;
+    width: 100%;
+    display: flex;
+    height: 48px;
+    border: none;
+    outline: none;
+    border-top-right-radius: 4px;
+    border-bottom-right-radius: 4px;
+    color: rgb(114, 114, 114);
+}
+
+.signup-form .form-list .row select.form-control option {
+    color: rgb(114, 114, 114);
+}
+
+.signup-form .form-list .row textarea.form-control {
+    padding: 18px 10px;
+    width: 100%;
+    display: flex;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+    color: rgb(114, 114, 114);
+}
+
+::placeholder {
+    /* Chrome, Firefox, Opera, Safari 10.1+ */
+    color: rgb(114, 114, 114);
+}
+
+:-ms-input-placeholder {
+    /* Internet Explorer 10-11 */
+    color: rgb(114, 114, 114);
+}
+
+::-ms-input-placeholder {
+    /* Microsoft Edge */
+    color: rgb(114, 114, 114);
+}
+
+
+.signup-form .form-list .row.check-agree {
+    display: flex;
+    justify-content: left;
+    column-gap: 10px;
+    padding: 4px 10px;
+    border-radius: 5px;
+    /* background: #FFFFFF; */
+}
+
+
+
+.signup-form .form-list .row .robot {
+    color: rgb(114, 114, 114);
+}
+
+.signup-form .form-list .row.check-agree .check-text {
+
+    /* font-weight: 700;
+    font-size: 12px; */
+    /* line-height: 15px; */
+
+    color: #FFFFFF;
+}
+
+.signup-form .form-list .row .submit-btn {
+    cursor: pointer;
+    border: none;
+    outline: none;
+    padding: 12px 36px;
+    color: #FFFFFF;
+    font-size: 16px;
+    font-weight: 700;
+    background: radial-gradient(50% 50% at 50% 50%, #cf9e4a 0%, #B27F29 100%);
+    /* border-radius: 25px; */
+}
+
+/* @media screen and (max-width: 1580px) {
+    .signup-form {
+        max-width: 730px;
+        padding: 30px 20px;
+    }
+} */
+
+
+@media screen and (max-width: 900px) {
+    .signup-form {
+        border: none;
+        border-radius: 0px;
+        padding: 30px;
+    }
+
+    .signup-form .title-1 {
+        font-size: 24px;
+    }
+
+    .signup-form .title-2 {
+        font-size: 24px;
+    }
+
+    .signup-form .description {
+        max-width: 410px;
+        font-size: 16px;
+    }
+}
+
+@media screen and (max-width: 750px) {
+    .signup-form .form-list .row {
+        row-gap: 20px;
+        flex-direction: column;
+    }
+
+    .signup-form .form-list .row.check-agree {
+        display: flex;
+        flex-direction: row;
+        justify-content: left;
+        column-gap: 10px;
+        padding: 4px 10px;
+        border-radius: 5px;
+        /* background: #FFFFFF; */
+    }
+
+    .signup-form .form-list .row .submit-btn {
+        max-width: 160px;
+        margin: 0 auto;
+    }
+    
+}
+
+@media screen and (max-width: 450px) {
+    .signup-form {
+        border-radius: 0;
+        border: none;
+        padding: 30px 15px;
+    }
+
+    .signup-form .title-1 {
+        font-size: 20px !important;
+        margin: 20px auto 0;
+    }
+
+    .signup-form .title-2 {
+        font-size: 20px !important;
+    }
+
+    .signup-form .description {
+        font-size: 14px !important;
+        line-height: 17px !important;
+    }
+
+    .signup-form .form-list .two-inputs {
+        flex-direction: column;
+        row-gap: 20px;
+    }
+}
