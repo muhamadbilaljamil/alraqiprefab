@@ -1,5 +1,6 @@
 import React, { useEffect } from 'react';
 import './Main_Banner_1.css'
+import { Link } from 'react-router-dom';
 import banner_img from '../../../assets/images/main-banner-logo.svg'
 import { animate } from "./Main_Banner_1";
 
@@ -25,7 +26,14 @@ function Main_Banner_1() {
                     Innovate with Fornax: The Blockchain for Master Nodes, NFTs, Smart Contracts, and Lightning-Fast
                     Transactions. World’s first Layer1 Blockchain with its own Native Apps & Dex.
                 </div>
-                <a href="/static/doc/litepaper.pdf" target="_blank">LITE PAPER 1.0</a>
+                <div className='login-signup'>
+                    <Link to={'/login'}>
+                        <button className='btn'>SIGNIN</button>
+                    </Link>
+                    <Link to={'/signup'}>
+                        <button className='btn'>SIGNUP</button>
+                    </Link>
+                </div>
             </div>
         </section>
     );

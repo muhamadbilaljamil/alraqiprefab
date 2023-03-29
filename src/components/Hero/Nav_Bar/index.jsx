@@ -84,7 +84,7 @@ const Nav_Bar = () => {
                         {/* <div className="language btn">
                             <button>ENGLISH</button>
                             <img src={down_arrow} alt={"down_arrow image"}/></div> */}
-                        <div className="user-menu">
+                        {/* <div className="user-menu">
                             <img className="user_logo" src={user1} alt="user logo" />
                             <ul className="user-menu-list"  >
                                 <Link to={"/login"}>
@@ -94,7 +94,7 @@ const Nav_Bar = () => {
                                     <li className="menu-item pointer">Signup</li>
                                 </Link>
                             </ul>
-                        </div>
+                        </div> */}
 
                     </div>
 

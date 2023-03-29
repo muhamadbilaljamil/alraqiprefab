@@ -12,7 +12,6 @@ import Why_Choose_FRX from "./components/Why_Choose_FRX";
 import Footer from "./components/Footer";
 import Token_Allocation_Funds_Distribution from "./components/Token_Allocation_Funds_Distribution";
 import Experts_Investor_Board from "./components/Meet_Experts_Investor_Board";
-import Get_In_Touch from './components/Get_In_Touch';
 import MobileMenu from "./components/Mobile_Menu";
 import Login from './components/Login';
 import Signup from './components/Signup';
@@ -59,8 +58,7 @@ function App() {
                                 <FeatureIn/>
                                 <Documents/>
                                 <NewsLetter/>
-                                <Experts_Investor_Board/>
-                                <Get_In_Touch/>
+                                {/* <Experts_Investor_Board/> */}
                             </>
                         }/>
                     </Routes>

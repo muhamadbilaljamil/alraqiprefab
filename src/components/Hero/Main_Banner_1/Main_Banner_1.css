@@ -12,7 +12,7 @@ canvas {
 .main-banner {
     position: relative;
     width: 100%;
-    padding:  170px 100px 80px;
+    padding: 170px 100px 80px;
     background-image: url("../../../assets/images/bg-1.svg");
 }
 
@@ -27,7 +27,13 @@ canvas {
     z-index: 0;
 
 }
-.main-banner-content a {
+
+.main-banner-content .login-signup{
+    display: flex;
+    gap: 20px;
+}
+
+.main-banner-content .login-signup .btn {
     width: 159px;
     height: 49px;
     margin-top: 30px;
@@ -44,11 +50,13 @@ canvas {
 
 
 }
-.main-banner-content a:hover {
+
+.main-banner-content .login-signup .btn:hover {
     background: transparent;
     border: var(--PRIMARY_COLOR) solid 1px;
     transition: 1s;
 }
+
 .main-banner-content {
     height: inherit;
     display: flex;
@@ -76,7 +84,8 @@ canvas {
 }
 
 
-.title-logo::after, .title-logo::before {
+.title-logo::after,
+.title-logo::before {
     content: "";
     position: absolute;
     left: 50%;
@@ -99,13 +108,16 @@ canvas {
         opacity: 1;
         border-width: 3px;
     }
+
     40% {
         opacity: .5;
         border-width: 2px;
     }
+
     65% {
         border-width: 1px;
     }
+
     100% {
         transform: translate(-50%, -50%) scale(1);
         opacity: 0;
@@ -192,7 +204,7 @@ canvas {
     -webkit-text-fill-color: transparent;
 }
 
-@media  screen and (max-width: 1350px) {
+@media screen and (max-width: 1350px) {
     .main-banner {
         padding: 170px 0 50px;
         background-size: contain;
@@ -228,10 +240,10 @@ canvas {
 }
 
 
-@media  screen and (max-width: 768px) {
+@media screen and (max-width: 768px) {
 
     .main-banner {
-       /* padding: 170px 0 50px;*/
+        /* padding: 170px 0 50px;*/
         background-size: contain;
     }
 
@@ -262,7 +274,7 @@ canvas {
     }
 }
 
-@media  screen and (max-width: 400px) {
+@media screen and (max-width: 400px) {
 
     .main-banner-title-F {
         font-size: 70px;
@@ -279,5 +291,9 @@ canvas {
 
     .main-banner-subtitle {
         font-size: 18px;
+    }
+
+    .main-banner-content .login-signup{
+        gap: 10px;
     }
 }

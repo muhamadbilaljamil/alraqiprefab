@@ -21,7 +21,16 @@ const Documents = () => {
                         <div className="cards-list">
                             <div className="card">
                                 <div className="icon">
-                                    <img src={white_paper} alt="Payment logo"/>
+                                    <img src={white_paper} alt="Payment logo" />
+                                </div>
+                                <div className="card-title">LITE PAPER 1.0</div>
+                                <a href="https://fornaxcoin.com/#" target="_blank" rel="noreferrer">
+                                    <button className="btn-9 pointer">DOWNLOAD</button></a>
+                            </div>
+
+                            <div className="card">
+                                <div className="icon">
+                                    <img src={white_paper} alt="Payment logo" />
                                 </div>
                                 <div className="card-title">WHITE PAPER</div>
                                 <a href="https://fornaxcoin.com/whitepaper.pdf?time=1670391733" target="_blank" rel="noreferrer">
@@ -29,14 +38,14 @@ const Documents = () => {
                             </div>
                             <div className="card">
                                 <div className="icon">
-                                    <img src={presentation} alt="Payment logo"/>
+                                    <img src={presentation} alt="Payment logo" />
                                 </div>
                                 <div className="card-title">PRESENTATION</div>
                                 <a href="https://fornaxcoin.com/presentations" target="_blank" rel="noreferrer"><button className="btn-9 pointer">VIEW</button></a>
                             </div>
                             <div className="card">
                                 <div className="icon">
-                                    <img src={certificate} alt="Payment logo"/>
+                                    <img src={certificate} alt="Payment logo" />
                                 </div>
                                 <div className="card-title">CERTIFICATE</div>
                                 <div className="card-description">
