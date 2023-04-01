@@ -1,5 +1,8 @@
 .login-section {
     position: relative;
+    display: flex;
+    align-items: center;
+    min-height: calc(100vh - 200px);
     padding: 90px 0;
     background: url('../../assets/images/01_MSR_SIGCOMM_Data_Network_1400x788.png') no-repeat;
     background-attachment: fixed;

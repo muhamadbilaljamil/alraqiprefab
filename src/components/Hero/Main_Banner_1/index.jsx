@@ -24,11 +24,11 @@ function Main_Banner_1() {
                 </div>
                 <div className="main-banner-subtitle">
                     Innovate with Fornax: The Blockchain for Master Nodes, NFTs, Smart Contracts, and Lightning-Fast
-                    Transactions. World’s first Layer1 Blockchain with its own Native Apps & Dex.
+                    Transactions. Fastest Growing Layer1 Blockchain Community with its own Native Apps.
                 </div>
                 <div className='login-signup'>
                     <Link to={'/login'}>
-                        <button className='btn'>SIGNIN</button>
+                        <button className='btn'>LOGIN</button>
                     </Link>
                     <Link to={'/signup'}>
                         <button className='btn'>SIGNUP</button>
