@@ -132,13 +132,7 @@ const Supported_Block_Chain = () => {
                                                     <div className="amount">216% to 270%</div>
                                                     <div className="label">IN 3 YEARS</div>
                                                 </div>
-
-
                                             </div>
-                                            {/*<p className='description'>*/}
-                                            {/*Fornax Shared Staking Pools 0.2% / Daily APY*/}
-                                            {/*216% + in 3 years</p>*/}
-
                                         </li>
                                     })
                                 }
