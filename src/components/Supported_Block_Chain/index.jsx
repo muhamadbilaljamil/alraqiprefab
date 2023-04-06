@@ -120,22 +120,25 @@ const Supported_Block_Chain = () => {
                                                     <h4 className="heading_2">{item?.subtitle}</h4>
                                                 </div>
                                             </div>
-
+                                            <p className="paragraph"></p>
                                             <div className="market-cap">
-                                                {/* <div className="left-col">
-                                                    <div className="amount">{item?.amount_1}</div>
-                                                    <div className="label">{item?.label_1}</div>
-                                                </div>
+                                                 <div className="left-col">
+                                                    <div className="amount">0.20% to 0.25%</div>
+                                                    <div className="label">Shared Staking Pools</div>
+                                                     <div className="label"> (Daily APY)</div>
+                                                 </div>
                                                 <div className="divider"></div>
                                                 <div className="right-col">
-                                                    <div className="amount">{item?.amount_2}</div>
-                                                    <div className="label">{item?.label_2}</div>
-                                                </div> */}
-                                                <p className='description'>
-                                                Fornax Shared Staking Pools 0.2% / Daily APY
-                                                216% + in 3 years</p>
-                                                
+                                                    <div className="amount">216% to 270%</div>
+                                                    <div className="label">IN 3 YEARS</div>
+                                                </div>
+
+
                                             </div>
+                                            {/*<p className='description'>*/}
+                                            {/*Fornax Shared Staking Pools 0.2% / Daily APY*/}
+                                            {/*216% + in 3 years</p>*/}
+
                                         </li>
                                     })
                                 }
