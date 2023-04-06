@@ -4,6 +4,7 @@ import mobile_payment from '../../assets/images/Mobile Payment.svg';
 import white_paper from '../../assets/images/white_paper.png';
 import presentation from '../../assets/images/presentation.png';
 import certificate from '../../assets/images/certificate.png';
+import presentationDoc from '../../assets/images/Fornax Draft1.4.pdf';
 
 const Documents = () => {
     return (
@@ -19,14 +20,14 @@ const Documents = () => {
                             {/*    Blockchain.</p>*/}
                         </div>
                         <div className="cards-list">
-                            <div className="card">
-                                <div className="icon">
-                                    <img src={white_paper} alt="Payment logo" />
-                                </div>
-                                <div className="card-title">LITE PAPER 1.0</div>
-                                <a href="https://fornaxcoin.com/#" target="_blank" rel="noreferrer">
-                                    <button className="btn-9 pointer">DOWNLOAD</button></a>
-                            </div>
+                            {/*<div className="card">*/}
+                            {/*    <div className="icon">*/}
+                            {/*        <img src={white_paper} alt="Payment logo" />*/}
+                            {/*    </div>*/}
+                            {/*    <div className="card-title">LITE PAPER 1.0</div>*/}
+                            {/*    <a href="https://fornaxcoin.com/#" target="_blank" rel="noreferrer">*/}
+                            {/*        <button className="btn-9 pointer">DOWNLOAD</button></a>*/}
+                            {/*</div>*/}
 
                             <div className="card">
                                 <div className="icon">
@@ -41,7 +42,7 @@ const Documents = () => {
                                     <img src={presentation} alt="Payment logo" />
                                 </div>
                                 <div className="card-title">PRESENTATION</div>
-                                <a href="https://fornaxcoin.com/presentations" target="_blank" rel="noreferrer"><button className="btn-9 pointer">VIEW</button></a>
+                                <a href={presentationDoc} target="_blank" rel="noreferrer"><button className="btn-9 pointer">VIEW</button></a>
                             </div>
                             <div className="card">
                                 <div className="icon">
