@@ -1,10 +1,6 @@
-import React, { useEffect } from "react";
-// import "./Mobile_Menu.css";
-import img from "../../assets/images/top-menu-logo.svg";
-import { Link, useLocation } from "react-router-dom";
-import Profile_Information from "../Profile_Information";
+import React from "react";
+import { Link } from "react-router-dom";
 import { useCtx } from "../../context/UseContext";
-import wallet from "../../assets/images/wallet1.svg";
 
 const MobileMenu = () => {
   const { menuOpen, setMenuOpen } = useCtx();

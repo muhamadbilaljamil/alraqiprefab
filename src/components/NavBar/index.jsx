@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 import { useCtx } from "../../context/UseContext";
 
@@ -11,11 +11,22 @@ const menus = [
 
 const NavBar = () => {
   const { menuOpen, setMenuOpen } = useCtx();
-  console.log("Menu Open: ", menuOpen);
+  const [isScrolled , setIsScrolled] = useState(false);
+
+  useEffect(() => {
+    window.addEventListener('scroll', () => {
+      window.scrollY > 40 ? setIsScrolled(true) : setIsScrolled(false)
+    }, { passive: true });
+
+    return () => {
+        window.removeEventListener('scroll', () => {});
+    };
+}, []);
+  
   return (
     <section className="fixed right-0 left-0">
       <header
-        className="bg-secondary flex h-24 justify-between px-10 "
+        className={`transition duration-300 flex h-24 justify-between px-10  ${isScrolled ? 'bg-white shadow-lg' : 'bg-transparent'}`}
         id="header-section"
       >
         <div className="w-[260px] flex justify-start items-center">
@@ -32,7 +43,7 @@ const NavBar = () => {
             {menus.map((item, index) => {
               return (
                 <Link to={item.path} key={index}>
-                  <div className="py-4 px-8 border-b-[4px] border-secondary transition duration-500 hover:border-b-[4px] hover:border-blue">
+                  <div className="py-4 px-8 border-b-[4px] border-transparent transition duration-500 hover:border-b-[4px] hover:border-blue">
                     {item.title}
                   </div>
                 </Link>

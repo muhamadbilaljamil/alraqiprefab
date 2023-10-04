@@ -64,8 +64,7 @@ export const Hero = () => {
                 <source src={conferences_connection} type="video/mp4" />
               </video>
             </div>
-          </div>
-          <div className="w-[224px] h-[224px] flex justify-center items-center">
+            <div className="w-[224px] h-[224px] flex justify-center items-center">
             <video
               loop="true"
               autoplay="autoplay"
@@ -75,6 +74,8 @@ export const Hero = () => {
               <source src={conferences_innovate} type="video/mp4" />
             </video>
           </div>
+          </div>
+          
         </div>
       </div>
     </div>
