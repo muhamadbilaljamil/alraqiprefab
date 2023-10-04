@@ -13,7 +13,7 @@ canvas {
     position: relative;
     width: 100%;
     padding: 170px 100px 80px;
-    background-image: url("../../../assets/images/bg-1.svg");
+    /* background-image: url("../../../assets/images/bg-1.svg"); */
 }
 
 .main-banner::before {

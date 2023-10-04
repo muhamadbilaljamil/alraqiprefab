@@ -1,39 +1,52 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+  font-family: "SpaceGrotesk";
+  src: local("SpaceGrotesk"),
+  url("./assets/fonts/Space_Grotesk/SpaceGrotesk.ttf") format("truetype");
+}
+
 :root {
-  --PRIMARY_COLOR:  #B27F29;
-  --SECONDARY_COLOR: #041122;
-  /*--clr: var(--PRIMARY_COLOR);*/
+  --primary:  #183c47;
+  --secondary: #eaf3f6;
+  --blue: #059ecc;
+  --orange: #f1754e;
 }
 
 * {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
-  color: var(--PRIMARY_COLOR);
-  /*overflow: hidden;*/
+}
+
+h1, h2, h3, h4, h5, h6, a, p {
+  color: var(--primary)
+}
+
+a {
+  font-family: 'SpaceGrotesk', sans-serif;
+  font-weight: 500;
+  font-size: 18px;
 }
 
 body {
   width: 100%;
-  font-family: 'Roboto', sans-serif;
+  font-family: 'SpaceGrotesk', sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 15px;
   line-height: 18px;
-  background-color: #041020;
+  background-color: var(--secondary);
 }
 
 a {
   text-decoration: none;
 }
 
-.container-wrapper {
+/* .container-wrapper {
   margin: 0 auto;
   max-width: 1440px;
-}
+} */
 
-@font-face {
-  font-family: "Satisfy";
-  src: local("Satisfy"),
-  url("./assets/fonts/Satisfy/Satisfy-Regular.ttf") format("truetype");
-  font-weight: bold;
-}

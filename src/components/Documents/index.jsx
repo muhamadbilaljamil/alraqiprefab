@@ -16,18 +16,10 @@ const Documents = () => {
                         <div className="header">
                             <h2>Documents</h2>
                             <p></p>
-                            {/*<p>Empowering the Defi Future with Trust, Transparency, and Efficiency on the Fornax*/}
-                            {/*    Blockchain.</p>*/}
+
                         </div>
                         <div className="cards-list">
-                            {/*<div className="card">*/}
-                            {/*    <div className="icon">*/}
-                            {/*        <img src={white_paper} alt="Payment logo" />*/}
-                            {/*    </div>*/}
-                            {/*    <div className="card-title">LITE PAPER 1.0</div>*/}
-                            {/*    <a href="https://fornaxcoin.com/#" target="_blank" rel="noreferrer">*/}
-                            {/*        <button className="btn-9 pointer">DOWNLOAD</button></a>*/}
-                            {/*</div>*/}
+
 
                             <div className="card">
                                 <div className="icon">
