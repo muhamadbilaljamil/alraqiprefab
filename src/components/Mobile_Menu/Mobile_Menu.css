@@ -1,109 +1,143 @@
 .nav-bar .mobile-menu {
-    display: none;
+  display: none;
 }
 
 .mobile-menu .hamburger {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    row-gap: 6px;
-    width: 30px;
-    height: 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  row-gap: 6px;
+  width: 30px;
+  height: 30px;
 }
 
 .mobile-menu .hamburger div {
-    width: 30px;
-    height: 3px;
-    background: #e4a40c;
-    border-radius: 5px;
+  width: 30px;
+  height: 3px;
+  background: #e4a40c;
+  border-radius: 5px;
 }
 
 .mobile-menu .hamburger :is(.bar1, .bar3) {
-    transition: all .6s;
+  transition: all 0.6s;
 }
 
 .mobile-menu .hamburger .bar2 {
-    transition: 0.6s 0.1s;
+  transition: 0.6s 0.1s;
 }
 
 .mobile-menu .hamburger.open .bar1 {
-    -webkit-transform: rotate(-45deg) translate(-7px, 7px);
-    transform: rotate(-45deg) translate(-7px, 7px);
+  -webkit-transform: rotate(-45deg) translate(-7px, 7px);
+  transform: rotate(-45deg) translate(-7px, 7px);
 }
 
 .mobile-menu .hamburger.open .bar2 {
-    transition: 0.6s 0s;
-    width: 5px;
+  transition: 0.6s 0s;
+  width: 5px;
 }
 
 .mobile-menu .hamburger.open .bar3 {
-    -webkit-transform: rotate(45deg) translate(-6px, -6px);
-    transform: rotate(45deg) translate(-6px, -6px);
+  -webkit-transform: rotate(45deg) translate(-6px, -6px);
+  transform: rotate(45deg) translate(-6px, -6px);
 }
 
 .mobile-menu-list {
-    display: flex;
-    flex-direction: column;
-    position: fixed;
-    width: 200px;
-    bottom: 0;
-    top: 0;
-    background: #041122;
-    /*background: #192733;*/
-    z-index: 10;
-    transform: translateX(-205px);
-    transition: all 0.5s;
+  display: flex;
+  flex-direction: column;
+  position: fixed;
+  width: 200px;
+  bottom: 0;
+  top: 0;
+  background: #041122;
+  /*background: #192733;*/
+  z-index: 10;
+  transform: translateX(-205px);
+  transition: all 0.5s;
 }
 
 .mobile-menu-list .logo {
-    /*height: 100px;*/
-    display: flex;
-    align-items: center;
-    padding: 5px 20px;
-    justify-content: flex-start;
-    border-bottom: 0.1px solid #B27F29;
+  /*height: 100px;*/
+  display: flex;
+  align-items: center;
+  padding: 5px 20px;
+  justify-content: flex-start;
+  border-bottom: 0.1px solid #b27f29;
 }
 
 .mobile-menu-list .logo img {
-    width: 40px;
-    margin-right: 8px;
+  width: 40px;
+  margin-right: 8px;
 }
 
 .mobile-menu-list .wallet-button-wrapper .mobile-wallet-button {
-    width: 100%;
-    padding: 0;
-
+  width: 100%;
+  padding: 0;
 }
 
 .mobile-menu-list .wallet-button-wrapper .mobile-wallet-button img {
-    width: 30px;
+  width: 30px;
 }
 
 .wallet-button-wrapper .mobile-wallet-button button {
-    margin: 0 12px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    column-gap: 10px;
-    background: transparent;
-    /*border: none;*/
-    /*outline: none;*/
-
+  margin: 0 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  column-gap: 10px;
+  background: transparent;
+  /*border: none;*/
+  /*outline: none;*/
 }
 
 .mobile-menu-list ul li {
+  border-top: 0.1pt solid #fff;
+  cursor: pointer;
+  padding: 15px 20px;
+  -webkit-tap-highlight: none;
+}
+
+.mobile-menu-list ul li:last-child {
+  border-bottom: 1px solid #fff;
+}
+
+.mobile-menu-list button {
+  width: 150px;
+  /*height: 100px;*/
+  border-radius: 3px;
+  padding: 0.5rem 0;
+  /*outline: none;*/
+  border: none;
+  margin: 20px auto;
+}
+
+.mobile-menu-list.open {
+  transform: translateX(0);
+}
+
+.mobile-menu-overlay.open {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: rgba(0, 0, 0, 0.8);
+  z-index: 2;
+}
+
+@media screen and (max-width: 1080px) {
+  .mobile-menu-list ul li {
     border-top: 0.1pt solid #fff;
     cursor: pointer;
     padding: 15px 20px;
     -webkit-tap-highlight: none;
-}
+  }
 
-.mobile-menu-list ul li:last-child {
+  .mobile-menu-list ul li:last-child {
     border-bottom: 1px solid #fff;
-}
+  }
 
-.mobile-menu-list button {
+  .mobile-menu-list button {
     width: 150px;
     /*height: 100px;*/
     border-radius: 3px;
@@ -111,83 +145,19 @@
     /*outline: none;*/
     border: none;
     margin: 20px auto;
-}
+  }
 
-.mobile-menu-list.open {
+  .mobile-menu-list.open {
     transform: translateX(0);
-}
+  }
 
-.mobile-menu-overlay.open {
+  .mobile-menu-overlay.open {
     position: absolute;
     top: 0;
     bottom: 0;
     left: 0;
     right: 0;
-    background: rgba(0, 0, 0, 0.8);
+    background: rgba(0, 0, 0, 0);
     z-index: 2;
-}
-
-@media screen and (max-width: 1080px) {
-    .mobile-menu-list .wallet-button .wallet img {
-        width: 30px;
-    }
-
-
-    .mobile-menu-list .wallet-button .wallet {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        column-gap: 10px;
-        background: transparent;
-    }
-
-
-    .mobile-menu-list .wallet-button .wallet button {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        column-gap: 10px;
-        background: transparent;
-        /*border: none;*/
-        /*outline: none;*/
-
-    }
-
-    .mobile-menu-list ul li {
-        border-top: 0.1pt solid #fff;
-        cursor: pointer;
-        padding: 15px 20px;
-        -webkit-tap-highlight: none;
-    }
-
-    .mobile-menu-list ul li:last-child {
-        border-bottom: 1px solid #fff;
-    }
-
-    .mobile-menu-list button {
-        width: 150px;
-        /*height: 100px;*/
-        border-radius: 3px;
-        padding: 0.5rem 0;
-        /*outline: none;*/
-        border: none;
-        margin: 20px auto;
-    }
-
-    .mobile-menu-list.open {
-        transform: translateX(0);
-    }
-
-    .mobile-menu-overlay.open {
-        position: absolute;
-        top: 0;
-        bottom: 0;
-        left: 0;
-        right: 0;
-        background: rgba(0, 0, 0, 0);
-        z-index: 2;
-    }
-
-
-
+  }
 }

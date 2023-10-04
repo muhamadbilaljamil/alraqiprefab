@@ -1,101 +1,46 @@
-import React, {useEffect} from 'react';
-import './Mobile_Menu.css';
+import React, { useEffect } from "react";
+// import "./Mobile_Menu.css";
 import img from "../../assets/images/top-menu-logo.svg";
-import {Link, useLocation} from "react-router-dom";
+import { Link, useLocation } from "react-router-dom";
 import Profile_Information from "../Profile_Information";
-import {useCtx} from '../../context/UseContext'
+import { useCtx } from "../../context/UseContext";
 import wallet from "../../assets/images/wallet1.svg";
 
-
-const Wallet_Button = ({label, click_function}) => {
-    return (<div onClick={click_function} className="mobile-wallet-button">
-        <button><img src={wallet} alt={"wallet image"}/>{label}</button>
-    </div>)
-}
-
 const MobileMenu = () => {
+  const { menuOpen, setMenuOpen } = useCtx();
+  const menus = [
+    { path: "/topic-area", title: "Brands" },
+    { path: "/services", title: "Services" },
+    { path: "/about", title: "About" },
+    { path: "/oxford-global-plus", title: "Oxford Global PLUS" },
+  ];
 
-    const {
-        menuOpen,
-        setMenuOpen,
-        user,
-        showProfile,
-        setShowProfile,
-        setIsModal,
-        handleClickScroll
-    } = useCtx();
-
-    const location = useLocation();
-
-    useEffect(() => {
-
-        // console.log("Location: ", location['pathname'].substring(1))
-        handleClickScroll(location['pathname'].substring(1))
-        // location.pathname === '/presentation' ? handleClickScroll('presentation') : location.pathname === '/white-paper' ? handleClickScroll('white-paper') : '/'
-    }, [location])
-
-    return <div className="mobile-menu-wrapper">
-        {/*<div className={`mobile-menu-overlay ${menuOpen ? 'open' : ''}`} onClick={() => setMenuOpen(!menuOpen)}></div>*/}
-        <div className={`mobile-menu-list ${menuOpen ? 'open' : ''}`}>
-            <Link to={"/"}>
-                <div className="nav-bar-logo logo">
-                    <img className="pointer" src={img} alt="Main Logo SVG"/>
-                    <h2>FORNAX</h2>
-                </div>
-            </Link>
-            <div className="wallet-button-wrapper">
-                {
-                    user
-                        ? <Wallet_Button
-                            label={`${user['wallet_address'].slice(0, 5)} ... ${user['wallet_address'].slice(user['wallet_address'].length - 5)}`}
-                            click_function={() => {
-                                setShowProfile(!showProfile)
-                            }}/>
-                        : <Wallet_Button label="Connect Wallet" click_function={() => {
-                            setIsModal(true);
-                            setMenuOpen(!menuOpen)
-                        }}/>
-
-                }
-                {showProfile &&
-                    <Profile_Information menuOpen={menuOpen} setMenuOpen={setMenuOpen}/>}
-            </div>
-            <ul>
-                <Link to={"/what_is_fornax"}>
-                    <li>What is FRX</li>
-                </Link>
-                <Link to={"/why_frx_token"}>
-                    <li>Why FRX</li>
-                </Link>
-                <Link to={"/roadmap"}>
-                    <li>Roadmap</li>
-                </Link>
-                <Link to={"/blogs"}>
-                    <li className="menu pointer">Blogs</li>
-                </Link>
-
-                <Link to={"/documents"}>
-                    <li className="menu pointer">Presentation</li>
-                </Link>
-                <Link to={"/documents"}>
-                    <li className="menu pointer">Documents</li>
-                </Link>
-                <Link to={"/login"}>
-                    <li className="menu pointer">Login</li>
-                </Link>
-                <Link to={"/signup"}>
-                    <li className="menu pointer">Signup</li>
-                </Link>
-
-                <a href={"https://watchfornax.com/"} target={"_blank"}>
-                    <li className="menu pointer">Fornax Explorer</li>
-                </a>
-
-
-            </ul>
-            <button onClick={() => setMenuOpen(!menuOpen)}>Back</button>
-        </div>
+  return (
+    <div
+      className={` w-80 bg-secondary border fixed top-0 bottom-0 transitation duration-300 ${
+        menuOpen ? "-translate-x-0" : "-translate-x-80"
+      }`}
+    >
+      <div>
+        <Link to={"/"}>
+          <div className="flex relative h-20 justify-center items-center border">
+            <h1 className="font-bold text-[24px]">Conferences</h1>
+            <h2 className="absolute bottom-2 right-[100px]"> & co</h2>
+          </div>
+        </Link>
+        <ul className="flex flex-col items-center gap-3">
+          {menus.map((item, index) => {
+            return (
+              <Link to={item.path} key={index}>
+                <div className="py-4 px-8">{item.title}</div>
+              </Link>
+            );
+          })}
+          <button onClick={() => setMenuOpen(!menuOpen)}>Back</button>
+        </ul>
+      </div>
     </div>
-}
+  );
+};
 
 export default MobileMenu;

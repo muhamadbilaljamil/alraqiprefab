@@ -1,23 +1,22 @@
-import React, { useState, useEffect } from "react";
-import {
-  BrowserRouter as Router,
-  Routes,
-  Route,
-  useLocation,
-} from "react-router-dom";
+import React from "react";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import "./App.css";
 
 import { ContextProvider } from "./context/Context_Provider";
 import NavBar from "./components/NavBar";
+import MobileMenu from "./components/Mobile_Menu";
+import { HomePage } from "./Pages";
 
 function App() {
-  const linkpath = "/naveed_hussainVnoCDcq9DlAsfVNpimIJjx6oXprD429b";
   return (
     <div className="main-app">
       <ContextProvider>
         <Router>
           <NavBar />
-          <Routes>{/* <Route path="/" element={<Home />} /> */}</Routes>
+          <MobileMenu />
+          <Routes>
+            <Route path="/" element={<HomePage />} />
+          </Routes>
         </Router>
       </ContextProvider>
     </div>
