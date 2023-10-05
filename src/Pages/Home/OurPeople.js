@@ -1,6 +1,5 @@
 import React from "react";
-import biologics from "../../assets/images/biologics.png";
-import home_page from "../../assets/images/home_page.png";
+import { Slider } from "./Slider";
 
 export const OurPeople = () => {
   const styles = {
@@ -12,14 +11,14 @@ export const OurPeople = () => {
   return (
     <div className="w-full px-[50px] py-[80px] bg-white relative">
       <div className="max-w-[1500px] mx-auto flex z-10 relative">
-        <div className="max-w-[600px] pr-[60px]">
+        <div className="max-w-[555px] pr-[60px]">
           <div className="mb-5">
-            <h1 className="font-medium text-base first-line:leading-normal">
+            <h1 className="uppercase tracking-[3px] font-thin text-base">
               OUR PEOPLE
             </h1>
           </div>
           <div>
-            <h1 className="text-[58px] leading-[1.2] font-medium mb-10">
+            <h1 className="text-[38px] leading-[1.2] font-medium mb-10">
               What our community is saying...
             </h1>
           </div>
@@ -30,7 +29,9 @@ export const OurPeople = () => {
             </h2>
           </div>
         </div>
-        <div className="max-w-[900px] w-full p-3"></div>
+        <div className="max-w-[945px] w-full p-3">
+          <Slider />
+        </div>
       </div>
     </div>
   );

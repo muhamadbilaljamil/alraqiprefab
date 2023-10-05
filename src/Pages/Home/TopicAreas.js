@@ -72,7 +72,7 @@ export const TopicAreas = () => {
     <div className="p-12">
       <div className="max-w-[1500px] mx-auto p-3">
         <div className="mb-5">
-          <h1 className="font-medium text-base text-center leading-normal">
+          <h1 className="uppercase tracking-[3px] font-thin text-base text-center">
             TOPIC AREAS
           </h1>
         </div>

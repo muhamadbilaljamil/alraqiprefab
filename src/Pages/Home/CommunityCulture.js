@@ -21,7 +21,7 @@ export const CommunityCulture = () => {
         <div className="max-w-[900px] w-full p-3">
           <div className="">
             <div className="mb-5">
-              <h1 className="font-medium text-base first-line:leading-normal">
+              <h1 className="uppercase tracking-[3px] font-thin text-base">
                 COMMUNITY & CULTURE
               </h1>
             </div>

@@ -1,9 +1,18 @@
 import React, { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 import { useCtx } from "../../context/UseContext";
+import { ReactComponent as CaretDown } from "../../assets/icons/caret-down-solid.svg";
 
 const menus = [
-  { path: "/topic-area", title: "Topic area" },
+  {
+    path: "/topic-area",
+    title: "Topic area",
+    icon: true,
+    children: [
+      { path: "/services", title: "Services" },
+      { path: "/services", title: "Services" },
+    ],
+  },
   { path: "/services", title: "Services" },
   { path: "/about", title: "About" },
   // { path: "/oxford-global-plus", title: "Oxford Global PLUS" },
@@ -11,22 +20,28 @@ const menus = [
 
 const NavBar = () => {
   const { menuOpen, setMenuOpen } = useCtx();
-  const [isScrolled , setIsScrolled] = useState(false);
+  const [isScrolled, setIsScrolled] = useState(false);
 
   useEffect(() => {
-    window.addEventListener('scroll', () => {
-      window.scrollY > 40 ? setIsScrolled(true) : setIsScrolled(false)
-    }, { passive: true });
+    window.addEventListener(
+      "scroll",
+      () => {
+        window.scrollY > 40 ? setIsScrolled(true) : setIsScrolled(false);
+      },
+      { passive: true }
+    );
 
     return () => {
-        window.removeEventListener('scroll', () => {});
+      window.removeEventListener("scroll", () => {});
     };
-}, []);
-  
+  }, []);
+
   return (
-    <section className="fixed right-0 left-0">
+    <section className="fixed right-0 left-0 z-30">
       <header
-        className={`transition duration-300 flex h-24 justify-between px-10  ${isScrolled ? 'bg-white shadow-lg' : 'bg-transparent'}`}
+        className={`transition duration-300 flex h-24 justify-between px-10  ${
+          isScrolled ? "bg-white shadow-lg" : "bg-transparent"
+        }`}
         id="header-section"
       >
         <div className="w-[260px] flex justify-start items-center">
@@ -43,8 +58,24 @@ const NavBar = () => {
             {menus.map((item, index) => {
               return (
                 <Link to={item.path} key={index}>
-                  <div className="py-4 px-8 border-b-[4px] border-transparent transition duration-500 hover:border-b-[4px] hover:border-blue">
+                  <div
+                    className={`relative py-4 px-8 border-b-[4px] border-transparent transition duration-500 hover:border-b-[4px] hover:border-blue ${
+                      item.icon && "flex gap-[10px]"
+                    }`}
+                  >
                     {item.title}
+                    {item.icon && <CaretDown height={20} />}
+                    {item.children && (
+                      <div className="absolute top-10">
+                        {item.children.map((child, index) => {
+                          return (
+                            <Link to={item.path}>
+                              <div>{item.title}</div>
+                            </Link>
+                          );
+                        })}
+                      </div>
+                    )}
                   </div>
                 </Link>
               );

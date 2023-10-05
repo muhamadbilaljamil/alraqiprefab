@@ -6,6 +6,7 @@ import { ContextProvider } from "./context/Context_Provider";
 import NavBar from "./components/NavBar";
 import MobileMenu from "./components/Mobile_Menu";
 import { HomePage } from "./Pages";
+import Footer from "./components/Footer";
 
 function App() {
   return (
@@ -17,6 +18,7 @@ function App() {
           <Routes>
             <Route path="/" element={<HomePage />} />
           </Routes>
+          <Footer />
         </Router>
       </ContextProvider>
     </div>
