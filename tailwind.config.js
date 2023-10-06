@@ -16,5 +16,14 @@ module.exports = {
       },
     },
   },
-  plugins: [],
+  plugins: [
+    function ({ addUtilities }) {
+      const myUtilities = {
+        ".custom-gradient": {
+          backgroundImage: "linear-gradient(to right, #f06, #9f6)",
+        },
+      };
+      addUtilities(myUtilities);
+    },
+  ],
 };

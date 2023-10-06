@@ -10,7 +10,7 @@ import Footer from "./components/Footer";
 
 function App() {
   return (
-    <div className="main-app">
+    <div className="main-app custom-gradient">
       <ContextProvider>
         <Router>
           <NavBar />
