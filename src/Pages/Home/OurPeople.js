@@ -9,9 +9,9 @@ export const OurPeople = () => {
     btnTopicArea: "bg-blue transition duration-300 hover:bg-white",
   };
   return (
-    <div className="w-full px-[50px] py-[80px] bg-white relative">
+    <div className="w-full px-[50px]  bg-white relative">
       <div className="max-w-[1500px] mx-auto flex z-10 relative">
-        <div className="max-w-[555px] pr-[60px]">
+        <div className="max-w-[555px] pr-[60px] flex flex-col justify-center">
           <div className="mb-5">
             <h1 className="uppercase tracking-[3px] font-thin text-base">
               OUR PEOPLE
