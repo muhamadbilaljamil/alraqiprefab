@@ -1,6 +1,6 @@
 import React from "react";
-import biologics from "../../assets/images/biologics.png";
-import home_page from "../../assets/images/home_page.png";
+// import biologics from "../../assets/images/biologics.png";
+// import home_page from "../../assets/images/home_page.png";
 
 export const WhatWeDo = () => {
   const styles = {
@@ -11,14 +11,14 @@ export const WhatWeDo = () => {
   };
   return (
     <div className="w-full px-[50px] py-[80px] bg-white relative">
-      <img
+      {/* <img
         src={biologics}
         alt="biologics"
         className="absolute z-0 top-0 right-0"
-      />
+      /> */}
       <div className="max-w-[1500px] mx-auto flex z-10 relative">
         <div className="max-w-[600px] pr-[60px]">
-          <img src={home_page} alt="What we do" />
+          {/* <img src={home_page} alt="What we do" /> */}
         </div>
         <div className="max-w-[900px] w-full p-3">
           <div className="">

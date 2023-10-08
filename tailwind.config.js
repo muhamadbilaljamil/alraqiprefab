@@ -6,8 +6,19 @@ module.exports = {
       spaceM: ["space-mono"],
     },
     extend: {
+      screens: {
+        sm: "576px",
+
+        md: "768px",
+
+        lg: "992px",
+
+        lgm: "1100px",
+
+        xl: "1200px",
+      },
       colors: {
-        primary: "#183c47",
+        primary: "#12497f",
         textPrimary: "#193D47",
         secondary: "#eaf3f6",
         blue: "#059ecc",
@@ -19,8 +30,12 @@ module.exports = {
   plugins: [
     function ({ addUtilities }) {
       const myUtilities = {
+        ".container-c": {
+          maxWidth: "1320px",
+          margin: "0 auto",
+        },
         ".custom-gradient": {
-          backgroundImage: "linear-gradient(to right, #f06, #9f6)",
+          // backgroundImage: "linear-gradient(to right, #f06, #9f6)",
         },
       };
       addUtilities(myUtilities);

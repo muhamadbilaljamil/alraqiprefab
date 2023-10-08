@@ -1,6 +1,6 @@
 import React from "react";
-import cell from "../../assets/images/cells.png";
-import community from "../../assets/images/our-community-and-culture.jpg";
+// import cell from "../../assets/images/cells.png";
+// import community from "../../assets/images/our-community-and-culture.jpg";
 
 export const CommunityCulture = () => {
   const styles = {
@@ -11,11 +11,11 @@ export const CommunityCulture = () => {
   };
   return (
     <div className="w-full px-[50px] py-[80px] bg-white relative">
-      <img src={cell} alt="cells" className="absolute z-0 top-0 right-0" />
+      {/* <img src={cell} alt="cells" className="absolute z-0 top-0 right-0" /> */}
       <div className="max-w-[1500px] mx-auto flex z-10 relative">
         <div className="max-w-[450px] min-w-[450px] flex justify-center items-center">
           <div className="flex justify-center items-center w-80 h-80 rounded-full overflow-hidden">
-            <img src={community} alt="What we do" className="scale-150" />
+            {/* <img src={community} alt="What we do" className="scale-150" /> */}
           </div>
         </div>
         <div className="max-w-[900px] w-full p-3">

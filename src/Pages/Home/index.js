@@ -10,11 +10,16 @@ const Home = () => {
   return (
     <>
       <Hero />
-      <TopicAreas />
-      <WhatWeDo />
-      <OurPeople />
-      <CommunityCulture />
-      <Services />
+      <div className="h-[600px] flex justify-center items-center">
+        <h1 className="text-lg md:text-6xl font-black">
+          Website is under construction... Coming Soon
+        </h1>
+      </div>
+      {/* <TopicAreas /> */}
+      {/* <WhatWeDo /> */}
+      {/* <OurPeople /> */}
+      {/* <CommunityCulture /> */}
+      {/* <Services /> */}
     </>
   );
 };

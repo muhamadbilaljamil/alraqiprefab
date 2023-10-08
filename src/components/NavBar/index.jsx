@@ -2,23 +2,24 @@ import React, { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 import { useCtx } from "../../context/UseContext";
 import { ReactComponent as CaretDown } from "../../assets/icons/caret-down-solid.svg";
-
+import logo_1 from "../../assets/icons/logo_1.jpeg";
 const menus = [
   {
     path: "/",
-    title: "Topic area",
-    icon: true,
-    children: [
-      { path: "/", title: "Omics Frontier" },
-      { path: "/", title: "Life Science Capital" },
-    ],
+    title: "Home",
+    // icon: true,
+    // children: [
+    //   { path: "/", title: "Services" },
+    //   { path: "/", title: "Life Science Capital" },
+    // ],
   },
   { path: "/", title: "Services" },
-  { path: "/", title: "About" },
-  { path: "/", title: "Contact" },
+  { path: "/", title: "Gallery" },
+  { path: "/", title: "About us" },
+  { path: "/", title: "Contact us" },
 ];
 
-const NavBar = () => {
+export const NavBar = () => {
   const { menuOpen, setMenuOpen } = useCtx();
   const [isScrolled, setIsScrolled] = useState(false);
 
@@ -26,7 +27,7 @@ const NavBar = () => {
     window.addEventListener(
       "scroll",
       () => {
-        window.scrollY > 40 ? setIsScrolled(true) : setIsScrolled(false);
+        window.scrollY > 112 ? setIsScrolled(true) : setIsScrolled(false);
       },
       { passive: true }
     );
@@ -37,24 +38,30 @@ const NavBar = () => {
   }, []);
 
   return (
-    <section className="sticky top-0 right-0 left-0 z-[10]">
+    <section
+      className={` right-0 left-0 z-[10] bg-white/75 md:bg-white px-2 backdrop-blur  ${
+        isScrolled ? "fixed top-0" : "fixed top-0 md:absolute md:top-28 "
+      }`}
+    >
       <header
-        className={`transition duration-300 flex h-24 justify-between px-10  ${
-          isScrolled ? "bg-white shadow-lg" : "bg-transparent"
-        }`}
-        id="header-section"
+        className={`transition duration-300 flex justify-between container-c`}
       >
-        <div className="w-[260px] flex justify-start items-center">
-          <Link to={"/"}>
-            <div className="relative">
-              {/* <img className="pointer" src={img} alt="Main Logo SVG" /> */}
-              <h1 className="font-bold text-[24px]">Conferences</h1>
-              <h2 className="absolute right-6 -bottom-5"> & co</h2>
-            </div>
-          </Link>
-        </div>
-        <div className="hidden md:flex justify-center items-center flex-1 w-full">
-          <div className="flex justify-center p-[10px] w-full h-[69px]">
+        {isScrolled ? (
+          <div>
+            <Link to="/">
+              <img src={logo_1} alt="" className="h-28" />
+            </Link>
+          </div>
+        ) : (
+          <div className="md:hidden">
+            <Link to="/">
+              <img src={logo_1} alt="" className="h-28" />
+            </Link>
+          </div>
+        )}
+
+        <div className="hidden md:flex items-center flex-1 w-full">
+          <div className="flex justify-start items-center w-full h-[70px]">
             {menus.map((item, index) => {
               return (
                 <Link to={item.path} key={index}>
@@ -104,8 +111,8 @@ const NavBar = () => {
               }`}
             ></div>
             <div
-              className={`w-6 h-[3px] rounded bg-primary  transition-all duration-600 ease-in-out ${
-                menuOpen ? "w-1" : ""
+              className={`h-[3px] rounded bg-primary  transition-all duration-600 ease-in-out ${
+                menuOpen ? "w-1" : "w-6"
               }`}
             ></div>
             <div
@@ -119,5 +126,3 @@ const NavBar = () => {
     </section>
   );
 };
-
-export default NavBar;

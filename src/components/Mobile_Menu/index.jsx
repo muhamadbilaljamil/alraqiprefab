@@ -1,34 +1,51 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import { useCtx } from "../../context/UseContext";
+import logo_1 from "../../assets/icons/logo_1.jpeg";
 
 const MobileMenu = () => {
   const { menuOpen, setMenuOpen } = useCtx();
   const menus = [
-    { path: "/topic-area", title: "Brands" },
-    { path: "/services", title: "Services" },
-    { path: "/about", title: "About" },
-    { path: "/oxford-global-plus", title: "Oxford Global PLUS" },
+    {
+      path: "/",
+      title: "Home",
+      // icon: true,
+      // children: [
+      //   { path: "/", title: "Services" },
+      //   { path: "/", title: "Life Science Capital" },
+      // ],
+    },
+    { path: "/", title: "Services" },
+    { path: "/", title: "Gallery" },
+    { path: "/", title: "About us" },
+    { path: "/", title: "Contact us" },
   ];
 
   return (
     <div
-      className={` w-80 bg-secondary border fixed top-0 bottom-0 transitation duration-300 ${
+      className={` w-80 bg-white border fixed top-0 bottom-0 transitation duration-300 z-20 ${
         menuOpen ? "-translate-x-0" : "-translate-x-80"
       }`}
     >
       <div>
         <Link to={"/"}>
-          <div className="flex relative h-20 justify-center items-center border">
-            <h1 className="font-bold text-[24px]">Conferences</h1>
-            <h2 className="absolute bottom-2 right-[100px]"> & co</h2>
+          <div className="flex relative justify-center items-center border">
+            <Link to="/">
+              <img src={logo_1} alt="" className="h-28" />
+            </Link>
           </div>
         </Link>
-        <ul className="flex flex-col items-center gap-3">
+        <ul className="flex flex-col items-center ">
           {menus.map((item, index) => {
             return (
-              <Link to={item.path} key={index}>
-                <div className="py-4 px-8">{item.title}</div>
+              <Link
+                to={item.path}
+                key={index}
+                className="w-full text-center hover:bg-blue/5"
+              >
+                <li className="py-4 px-8 border-b-[1px] border-primary/10">
+                  {item.title}
+                </li>
               </Link>
             );
           })}

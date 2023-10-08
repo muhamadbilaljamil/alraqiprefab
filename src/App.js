@@ -13,7 +13,6 @@ function App() {
     <div className="main-app custom-gradient">
       <ContextProvider>
         <Router>
-          <NavBar />
           <MobileMenu />
           <Routes>
             <Route path="/" element={<HomePage />} />
