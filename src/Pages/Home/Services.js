@@ -4,36 +4,55 @@ import { ReactComponent as Global } from "../../assets/icons/globe-solid.svg";
 import { ReactComponent as AddressCard } from "../../assets/icons/address-card-regular.svg";
 import { ReactComponent as File } from "../../assets/icons/file-lines-regular.svg";
 import { ReactComponent as Clander } from "../../assets/icons/calendar-days-solid.svg";
+import { ReactComponent as RightArrow } from "../../assets/icons/double_right_arrow_7.svg";
 
 const listData = [
   {
-    icon: <Handshake height={35} fill="var(--blue)" />,
-    title: "In-Person Events",
-    description:
-      "Amplify your reach through a tailored presence at our high-level events",
+    icon: <RightArrow height={35} width={35} />,
+    title: "Porta Cabins",
+    // description:
+    // "Amplify your reach through a tailored presence at our high-level events",
   },
   {
-    icon: <Global height={35} fill="var(--blue)" />,
-    title: "Digital Services",
-    description:
-      "Create dedicated digital sessions designed to attract your target audience",
+    icon: <RightArrow height={35} width={35} />,
+    title: "Container Converted Units",
+    // description:
+    // "Create dedicated digital sessions designed to attract your target audience",
   },
   {
-    icon: <AddressCard height={35} fill="var(--blue)" />,
-    title: "Lead Generation",
-    description:
-      "Curated environments designed to create meaningful conversations",
+    icon: <RightArrow height={35} width={35} />,
+    title: "Modular Concepts",
+    // description:
+    // "Curated environments designed to create meaningful conversations",
   },
   {
-    icon: <File height={35} fill="var(--blue)" />,
-    title: "Content Services",
-    description: "Create exposure and drive messaging to target demographics",
+    icon: <RightArrow height={35} width={35} />,
+    title: "Villas",
+    // description: "Create exposure and drive messaging to target demographics",
   },
   {
-    icon: <Clander height={35} fill="var(--blue)" />,
-    title: "Event Management",
-    description:
-      "Bespoke event creation, management and marketing built to your design",
+    icon: <RightArrow height={35} width={35} />,
+    title: "Refurbished Units",
+    // description:
+    // "Bespoke event creation, management and marketing built to your design",
+  },
+  {
+    icon: <RightArrow height={35} width={35} />,
+    title: "Double Storey Units",
+    // description:
+    // "Bespoke event creation, management and marketing built to your design",
+  },
+  {
+    icon: <RightArrow height={35} width={35} />,
+    title: "Mosques",
+    // description:
+    // "Bespoke event creation, management and marketing built to your design",
+  },
+  {
+    icon: <RightArrow height={35} width={35} />,
+    title: "Majlis",
+    // description:
+    // "Bespoke event creation, management and marketing built to your design",
   },
 ];
 
@@ -45,38 +64,38 @@ export const Services = () => {
     btnTopicArea: "bg-blue transition duration-300 hover:bg-white",
   };
   return (
-    <div className="w-full px-[50px] pt-[110px] pb-[130px] bg-sceondary relative">
-      <div className="max-w-[1500px] mx-auto flex z-10 relative">
-        <div className="max-w-[710px] pr-[60px]">
+    <div className="w-full p-[50px] bg-sceondary relative">
+      <div className="max-w-[1500px] grid grid-cols-1 md:grid-cols-2 mx-auto z-10 relative">
+        <div className="pr-[60px]">
           <div className="">
             <div className="mb-5">
               <h1 className="uppercase tracking-[3px] font-thin text-base">
-                Services
+                Products & Services
               </h1>
             </div>
             <div>
-              <h1 className="text-[58px] leading-[1.2] font-medium mb-10">
-                Driving impact, awareness, and business generation
+              <h1 className="text-[40px] leading-[1.2] font-medium mb-10">
+                Building the Future, One Prefab at a Time
               </h1>
             </div>
             <div className="mb-[14px]">
-              <h2 className="text-[22px] font-normal leading-[1.5] mb-5">
-                Our extensive and engaged community extends across large,
-                mid-size and innovative start-ups within the pharma and biotech
-                space, with a dedicated audience spanning a range of
-                specialisms. Whether you have content to share, are looking for
-                ways to enhance your brand visibility or would like to increase
-                engagement with prospective customers, Oxford Global can offer
-                valuable access to your target demographic through our range of
-                event & content services.
+              <h2 className="text-[22px] font-normal leading-[1.5] mb-5 text-justify">
+                At Al Raqi Prefab, we understand that every homeowner's vision
+                is unique. That's why we offer comprehensive customization
+                options. Work closely with our expert design team to bring your
+                dream home to life, tailoring every detail to your preferences.
+                From layout adjustments to interior finishes, your home will
+                reflect your distinct style and needs.We are dedicated to
+                sustainable construction practices that minimize our
+                environmental footprint and reduce energy consumption. Our
+                prefab homes are designed with eco-friendly materials and
+                energy-efficient features, ensuring not only a comfortable
+                living space but also a commitment to a greener future.
               </h2>
             </div>
-            <button className={`${styles.rounded} ${styles.commonBtnProps}`}>
-              Our Services
-            </button>
           </div>
         </div>
-        <div className="max-w-[790px] w-full p-3">
+        <div className="p-3">
           <div className="flex flex-col">
             {listData.map((item, index) => {
               return (
@@ -86,7 +105,7 @@ export const Services = () => {
                 >
                   <div className="flex items-center">{item.icon}</div>
                   <div>
-                    <h1 className="mt-2 mb-[5px] text-[30px] font-[700] leading-normal">
+                    <h1 className="mt-2 mb-[5px] text-[22px] font-[700] leading-normal">
                       {item.title}
                     </h1>
                     <h2 className="text-[16px] font-[400] leading-normal">

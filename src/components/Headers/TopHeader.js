@@ -34,7 +34,7 @@ export const TopHeader = () => {
             </div>
             <div className="flex flex-col justify-between">
               <h1 className="text-lg font-semibold text-white">Mobile No</h1>
-              <h1 className="text-sm text-white">123456789</h1>
+              <h1 className="text-sm text-white">+971 55 827 3554</h1>
             </div>
           </div>
           <div className="hidden lg:flex gap-3  px-2">
@@ -43,7 +43,7 @@ export const TopHeader = () => {
             </div>
             <div className="flex flex-col justify-between">
               <h1 className="text-lg font-semibold text-white">What's App</h1>
-              <h1 className="text-sm text-white">123456789</h1>
+              <h1 className="text-sm text-white">+971 55 827 3554</h1>
             </div>
           </div>
           <div className="hidden lgm:flex gap-3  px-2">
@@ -52,7 +52,7 @@ export const TopHeader = () => {
             </div>
             <div className="flex flex-col justify-between">
               <h1 className="text-lg font-semibold text-white">Telephone</h1>
-              <h1 className="text-sm text-white">123456789</h1>
+              <h1 className="text-sm text-white">------</h1>
             </div>
           </div>
         </div>

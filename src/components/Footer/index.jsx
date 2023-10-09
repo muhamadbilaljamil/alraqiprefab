@@ -103,7 +103,7 @@ const Footer = () => {
                     <h1 className="text-lg font-semibold text-white">
                       Mobile No
                     </h1>
-                    <h1 className="text-sm text-white">123456789</h1>
+                    <h1 className="text-sm text-white">+971 55 827 3554</h1>
                   </div>
                 </div>
                 <div className="flex gap-3  px-2">
@@ -114,7 +114,7 @@ const Footer = () => {
                     <h1 className="text-lg font-semibold text-white">
                       What's App
                     </h1>
-                    <h1 className="text-sm text-white">123456789</h1>
+                    <h1 className="text-sm text-white">+971 55 827 3554</h1>
                   </div>
                 </div>
                 <div className="flex gap-3  px-2">
@@ -122,8 +122,8 @@ const Footer = () => {
                     <Location width={26} height={26} fill="#fff" />
                   </div>
                   <div className="flex flex-col justify-between">
-                    <h1 className="text-lg font-semibold text-white">
-                      P.O.Box: 46730, Sharjah - UAE
+                    <h1 className="text-base font-semibold text-white break-words">
+                      Al Sajaa Industrial Sharjah UAE
                     </h1>
                   </div>
                 </div>

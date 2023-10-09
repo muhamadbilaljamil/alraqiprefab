@@ -39,7 +39,7 @@ export const NavBar = () => {
 
   return (
     <section
-      className={` right-0 left-0 z-[10] bg-white/75 md:bg-white px-2 backdrop-blur  ${
+      className={` right-0 left-0 z-[11] bg-white/75 md:bg-white px-2 backdrop-blur  ${
         isScrolled ? "fixed top-0" : "fixed top-0 md:absolute md:top-28 "
       }`}
     >
