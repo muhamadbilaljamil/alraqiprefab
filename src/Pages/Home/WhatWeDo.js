@@ -11,10 +11,10 @@ export const WhatWeDo = () => {
   return (
     <div className="w-full md:p-[50px] bg-white relative">
       <div className="max-w-[1500px] grid  grid-col-1 md:grid-cols-2 mx-auto z-10 relative">
-        <div className="border-[1px] border-primary m-10 p-4 h-fit">
+        <div className="border-[1px] border-primary m-6 p-1 md:m-10 md:p-4 h-fit">
           <img src={home_1} alt="What we do" />
         </div>
-        <div className="w-full px-6 py-3">
+        <div className="w-full p-6 md:px-6 md:py-3">
           <div className="mb-5">
             <h1 className="uppercase tracking-[3px] font-thin text-base">
               WHO WE ARE

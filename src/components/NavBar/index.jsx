@@ -1,7 +1,6 @@
 import React, { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 import { useCtx } from "../../context/UseContext";
-import { ReactComponent as CaretDown } from "../../assets/icons/caret-down-solid.svg";
 import logo_1 from "../../assets/icons/logo_1.jpeg";
 const menus = [
   {
@@ -55,7 +54,7 @@ export const NavBar = () => {
         ) : (
           <div className="md:hidden">
             <Link to="/">
-              <img src={logo_1} alt="" className="h-28" />
+              <img src={logo_1} alt="" className="h-20 md:h-28" />
             </Link>
           </div>
         )}
@@ -66,12 +65,9 @@ export const NavBar = () => {
               return (
                 <Link to={item.path} key={index}>
                   <div
-                    className={`relative group pt-4 pb-2 px-5 mx-2 border-b-[4px] border-transparent transition duration-500 hover:border-b-[4px] hover:border-blue ${
-                      item.icon && "flex gap-[10px]"
-                    }`}
+                    className={`relative group pt-4 pb-2 px-5 mx-2 border-b-[4px] border-transparent transition duration-500 hover:border-b-[4px] hover:border-blue}`}
                   >
                     {item.title}
-                    {item.icon && <CaretDown height={20} />}
                     {item.children && (
                       <div className="absolute top-[48px] transition duration-300 left-0 rounded-xl overflow-hidden bg-white min-w-[250px] flex-col hidden group-hover:flex ">
                         {item.children.map((child, index) => {

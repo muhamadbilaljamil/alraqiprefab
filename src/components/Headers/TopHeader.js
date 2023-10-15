@@ -18,43 +18,48 @@ export const TopHeader = () => {
         <Link to="/">
           <img src={logo_1} alt="" className="h-28" />
         </Link>
-        <div className="flex gap-x-4">
-          <div className="flex gap-3 px-2">
+        <div className="flex gap-x-4 items-center">
+          <div className="flex gap-3 px-2 items-center">
             <div className={styles.icon}>
               {<Email width={26} height={26} fill={"#eaf3f6"} />}
             </div>
-            <div className="flex flex-col justify-between">
+            <div className="flex flex-col justify-between ">
               <h1 className="text-lg font-semibold text-white">Email At</h1>
-              <h1 className="text-sm text-white">info@alraqiprefab.com</h1>
+              <Link to="emailto:info@alraqiprefab.com">
+                <h1 className="text-sm text-white">info@alraqiprefab.com</h1>
+              </Link>
+              <Link to="emailto:sales@alraqiprefab.com">
+                <h1 className="text-sm text-white">sales@alraqiprefab.com</h1>
+              </Link>
             </div>
           </div>
-          <div className="flex gap-3  px-2">
+
+          <div className="flex gap-3  px-2 items-center">
             <div className={styles.icon}>
               <Mobile width={28} height={28} fill="#eaf3f6" />
             </div>
             <div className="flex flex-col justify-between">
               <h1 className="text-lg font-semibold text-white">Mobile No</h1>
-              <h1 className="text-sm text-white">+971 55 827 3554</h1>
+              <Link to="tel:971558273554">
+                <h1 className="text-sm text-white">+971 55 827 3554</h1>
+              </Link>
+              <Link to="tel:971524844246">
+                <h1 className="text-sm text-white">+971 52 484 4246</h1>
+              </Link>
             </div>
           </div>
-          <div className="hidden lg:flex gap-3  px-2">
-            <div className={styles.icon}>
-              <Whatsapp width={26} height={26} />
+
+          <Link to={"https://wa.me/971558273554"}>
+            <div className="hidden lg:flex gap-3  px-2">
+              <div className={styles.icon}>
+                <Whatsapp width={26} height={26} />
+              </div>
+              <div className="flex flex-col justify-between">
+                <h1 className="text-lg font-semibold text-white">What's App</h1>
+                <h1 className="text-sm text-white">+971 55 827 3554</h1>
+              </div>
             </div>
-            <div className="flex flex-col justify-between">
-              <h1 className="text-lg font-semibold text-white">What's App</h1>
-              <h1 className="text-sm text-white">+971 55 827 3554</h1>
-            </div>
-          </div>
-          <div className="hidden lgm:flex gap-3  px-2">
-            <div className={styles.icon}>
-              <Phone width={26} height={26} fill="#fff" />
-            </div>
-            <div className="flex flex-col justify-between">
-              <h1 className="text-lg font-semibold text-white">Telephone</h1>
-              <h1 className="text-sm text-white">------</h1>
-            </div>
-          </div>
+          </Link>
         </div>
       </div>
     </section>

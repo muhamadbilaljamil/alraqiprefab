@@ -31,7 +31,7 @@ const MobileMenu = () => {
         <Link to={"/"}>
           <div className="flex relative justify-center items-center border">
             <Link to="/">
-              <img src={logo_1} alt="" className="h-28" />
+              <img src={logo_1} alt="" className="h-20" />
             </Link>
           </div>
         </Link>
@@ -49,8 +49,15 @@ const MobileMenu = () => {
               </Link>
             );
           })}
-          <button onClick={() => setMenuOpen(!menuOpen)}>Back</button>
         </ul>
+      </div>
+      <div className="absolute bottom-0 w-full text-center hover:bg-blue/5">
+        <button
+          onClick={() => setMenuOpen(!menuOpen)}
+          className=" w-full text-primary py-4 px-8 border-t-[1px] border-primary/10"
+        >
+          Back
+        </button>
       </div>
     </div>
   );
