@@ -48,7 +48,7 @@ export const NavBar = () => {
         {isScrolled ? (
           <div>
             <Link to="/">
-              <img src={logo_1} alt="" className="h-28" />
+              <img src={logo_1} alt="" className="h-20 md:h-28" />
             </Link>
           </div>
         ) : (
