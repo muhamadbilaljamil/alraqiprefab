@@ -1,0 +1,35 @@
+{
+  "files": {
+    "main.css": "./static/css/main.0a0e8863.css",
+    "main.js": "./static/js/main.0ba5ca85.js",
+    "static/js/787.7325c961.chunk.js": "./static/js/787.7325c961.chunk.js",
+    "static/media/prefab_home_6.jpg": "./static/media/prefab_home_6.ddd778e9f139a989b255.jpg",
+    "static/media/prefab_home_5.jpg": "./static/media/prefab_home_5.6614f9a68e9bb803b901.jpg",
+    "static/media/prefab_home_4.jpg": "./static/media/prefab_home_4.e2a8d4bd4b793f809fc7.jpg",
+    "static/media/prefab_home_3.jpg": "./static/media/prefab_home_3.d33f0ac400dcb4fdfebd.jpg",
+    "static/media/prefab_home_8.jpg": "./static/media/prefab_home_8.348efac6bdcb52438045.jpg",
+    "static/media/prefab_home_2.jpg": "./static/media/prefab_home_2.1b3c08b1591787ef06ca.jpg",
+    "static/media/prefab_home_1.jpg": "./static/media/prefab_home_1.04321234d5b0c85f3c1f.jpg",
+    "static/media/prefab_home_7.jpg": "./static/media/prefab_home_7.f4807204790b84feb73a.jpg",
+    "static/media/SpaceGrotesk.ttf": "./static/media/SpaceGrotesk.5771010795a77ba7459b.ttf",
+    "static/media/logo_1.jpeg": "./static/media/logo_1.f1d5113613bb0b633f28.jpeg",
+    "static/media/house_1.jpg": "./static/media/house_1.56fbb984af51c2e36dc1.jpg",
+    "static/media/prefab_home_9.jpg": "./static/media/prefab_home_9.c2afdfa858e9abe7dd1f.jpg",
+    "static/media/Satisfy-Regular.ttf": "./static/media/Satisfy-Regular.32a6713537cf5e1e82f2.ttf",
+    "static/media/phone_1.svg": "./static/media/phone_1.700d6fecb944d860978e14287db2707b.svg",
+    "static/media/whatsapp_1.svg": "./static/media/whatsapp_1.6b1cea7ff7a64568d1aa948a79a5d8d7.svg",
+    "static/media/email_1.svg": "./static/media/email_1.36f760eba7a1ac1b2099b618c4675b42.svg",
+    "index.html": "./index.html",
+    "static/media/location_1.svg": "./static/media/location_1.238941529b274d7e677120f578c81114.svg",
+    "static/media/double_right_arrow_7.svg": "./static/media/double_right_arrow_7.62b4ce5026a4d40c32230f454c9c4207.svg",
+    "static/media/mobile_1.svg": "./static/media/mobile_1.2c69785f60c430f7ef4a8a54f5113108.svg",
+    "static/media/double_right_arrow_8.svg": "./static/media/double_right_arrow_8.31c645d438baa04d8c7b95b0247b7e5e.svg",
+    "main.0a0e8863.css.map": "./static/css/main.0a0e8863.css.map",
+    "main.0ba5ca85.js.map": "./static/js/main.0ba5ca85.js.map",
+    "787.7325c961.chunk.js.map": "./static/js/787.7325c961.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.0a0e8863.css",
+    "static/js/main.0ba5ca85.js"
+  ]
+}
