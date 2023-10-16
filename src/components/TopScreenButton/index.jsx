@@ -1,10 +1,9 @@
 import React, { useEffect } from "react";
 import "./Top_Screen_Button_1.css";
 import { scrollController } from "./scrollController";
-import topArrow from "../../../assets/icons/double_right_arrow_8.svg";
-import { useCtx } from "../../../context/UseContext";
+import topArrow from "../../assets/icons/double_right_arrow_8.svg";
 
-const Top_Screen_Button_1 = () => {
+export const TopScreenButton = () => {
   const handleScrollTop = () => {
     console.log("Handle Scroll");
     window.scroll({
@@ -26,5 +25,3 @@ const Top_Screen_Button_1 = () => {
     </div>
   );
 };
-
-export default Top_Screen_Button_1;

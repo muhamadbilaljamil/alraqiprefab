@@ -61,47 +61,47 @@ const MobileMenu = () => {
           </ul>
         </div>
         <div className="flex gap-y-5 items-center flex-col">
-          <div className="w-full flex gap-3 px-2 items-center">
+          <div className="w-[290px] mx-auto flex gap-3 px-2 items-center ">
             <div className={`${styles.icon} ${styles.border}`}>
               {<Email width={20} height={20} fill={"#eaf3f6"} />}
             </div>
             <div className="flex flex-col justify-between ">
               <Link to="emailto:info@alraqiprefab.com">
-                <h1 className="text-sm text-primary">info@alraqiprefab.com</h1>
+                <h1 className="text-xs text-primary">info@alraqiprefab.com</h1>
               </Link>
               <Link to="emailto:sales@alraqiprefab.com">
-                <h1 className="text-sm text-primary">sales@alraqiprefab.com</h1>
+                <h1 className="text-xs text-primary">sales@alraqiprefab.com</h1>
               </Link>
             </div>
           </div>
 
-          <div className="w-full flex gap-3  px-2 items-center">
+          <div className="w-[290px] mx-auto flex gap-3  px-2 items-center">
             <div className={`${styles.icon} ${styles.border}`}>
               <Mobile width={20} height={20} fill="#eaf3f6" />
             </div>
             <div className="flex flex-col justify-between">
               <Link to="tel:971558273554">
-                <h1 className="text-sm text-primary">+971 55 827 3554</h1>
+                <h1 className="text-xs text-primary">+971 55 827 3554</h1>
               </Link>
               <Link to="tel:971524844246">
-                <h1 className="text-sm text-primary">+971 52 484 4246</h1>
+                <h1 className="text-xs text-primary">+971 52 484 4246</h1>
               </Link>
             </div>
           </div>
 
           <Link
             to={"https://wa.me/971558273554"}
-            className="w-full flex gap-3  px-2"
+            className="w-[290px] mx-auto flex gap-3  px-2"
           >
             <div className={`${styles.icon} ${styles.border}`}>
               <Whatsapp width={20} height={20} />
             </div>
             <div className="flex flex-col justify-center">
-              <h1 className="text-sm text-primary">+971 55 827 3554</h1>
+              <h1 className="text-xs text-primary">+971 55 827 3554</h1>
             </div>
           </Link>
 
-          <div className=" w-full text-center hover:bg-blue/5">
+          <div className="w-full text-center hover:bg-blue/5">
             <button
               onClick={() => setMenuOpen(!menuOpen)}
               className=" w-full text-primary py-4 px-8 border-t-[1px] border-primary/10"
