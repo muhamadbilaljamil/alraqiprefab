@@ -3,6 +3,36 @@ import { createContext, useState } from "react";
 
 // ** Defaults
 const defaultProvider = {
+  menus: [
+    {
+      path: "/",
+      title: "Home",
+    },
+    {
+      path: "/services",
+      title: "Services",
+      icon: true,
+      children: [
+        { path: "/porta-cabins", title: "Porta Cabins" },
+        { path: "/security-cabins", title: "Security Cabins" },
+        { path: "/modular-concepts", title: "Modular Concepts" },
+        {
+          path: "/container-converted-units",
+          title: "Container Converted Units",
+        },
+        { path: "/refurbished-units", title: "Refurbished Units" },
+        { path: "/double-storey-units", title: "Double Storey Units" },
+        { path: "/eye-wash-units", title: "Eye Wash Units" },
+        { path: "/toilet-GRP-units", title: "Toilet / GRP Units" },
+        { path: "/mosques", title: "Mosques" },
+        { path: "/villas", title: "Villas" },
+        { path: "/majlis", title: "Majlis" },
+      ],
+    },
+    { path: "/gallery", title: "Gallery" },
+    { path: "/about-us", title: "About us" },
+    { path: "/contact-us", title: "Contact us" },
+  ],
   menuOpen: false,
   setMenuOpen: () => {},
   user: null,
@@ -27,6 +57,7 @@ const Context = createContext(defaultProvider);
 
 const ContextProvider = ({ children }) => {
   // ** States
+  const menus = defaultProvider.menus;
   const [menuOpen, setMenuOpen] = useState(defaultProvider.menuOpen);
   const [showProfile, setShowProfile] = useState(defaultProvider.showProfile);
   const [user, setUser] = useState(defaultProvider.user);
@@ -46,7 +77,6 @@ const ContextProvider = ({ children }) => {
 
   const handleClickScroll = (e) => {
     const element = document.getElementById(e);
-    // console.log("Element: ", element);
     setMenuOpen(false);
     if (element) {
       element.scrollIntoView({ behavior: "smooth" });
@@ -54,6 +84,7 @@ const ContextProvider = ({ children }) => {
   };
 
   const values = {
+    menus,
     menuOpen,
     setMenuOpen,
     showProfile,

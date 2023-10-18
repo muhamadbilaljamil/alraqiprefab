@@ -12,34 +12,7 @@ const styles = {
 };
 
 const MobileMenu = () => {
-  const { menuOpen, setMenuOpen } = useCtx();
-  const menus = [
-    {
-      path: "/",
-      title: "Home",
-    },
-    {
-      path: "/",
-      title: "Services",
-      icon: true,
-      children: [
-        { path: "/", title: "Porta Cabins" },
-        { path: "/", title: "Security Cabins" },
-        { path: "/", title: "Modular Concepts" },
-        { path: "/", title: "Container Converted Units" },
-        { path: "/", title: "Refurbished Units" },
-        { path: "/", title: "Double Storey Units" },
-        { path: "/", title: "Eye Wash Units" },
-        { path: "/", title: "Toilet / GRP Units" },
-        { path: "/", title: "Mosques" },
-        { path: "/", title: "Villas" },
-        { path: "/", title: "Majlis" },
-      ],
-    },
-    { path: "/", title: "Gallery" },
-    { path: "/", title: "About us" },
-    { path: "/", title: "Contact us" },
-  ];
+  const { menuOpen, setMenuOpen, menus } = useCtx();
 
   return (
     <div
@@ -59,28 +32,26 @@ const MobileMenu = () => {
           <ul className="flex flex-col items-center ">
             {menus.map((item, index) => {
               return (
-                <Link
-                  to={item.path}
-                  key={index}
-                  className="group w-full text-left hover:bg-blue/5"
-                >
-                  <li className="py-4 px-8 border-b-[1px] border-primary/10">
-                    {item.title}
-                    {item.children && (
-                      <div className="transition-all duration-300 overflow-hidden bg-white w-full flex-col h-0 group-hover:h-[600px]">
-                        {item.children.map((child, index) => {
-                          return (
-                            <Link to={child.path} key={index}>
-                              <div className="px-4 py-3 transition duration-300 border-b-[1px] border-secondary hover:bg-lightBlue">
-                                {child.title}
-                              </div>
-                            </Link>
-                          );
-                        })}
-                      </div>
-                    )}
-                  </li>
-                </Link>
+                <div className="group w-full hover:bg-blue/5">
+                  <Link to={item.path} key={index}>
+                    <li className="flex pl-4 items-center border-b-[1px] border-primary/10 h-[54px]">
+                      {item.title}
+                    </li>
+                  </Link>
+                  {item.children && (
+                    <div className="transition-all duration-300 overflow-hidden bg-white w-full flex-col h-0 group-hover:h-[473px]">
+                      {item.children.map((child, index) => {
+                        return (
+                          <Link to={child.path} key={index}>
+                            <div className="pr-4 pl-6 py-3 transition duration-300 border-b-[1px] border-secondary hover:bg-lightBlue">
+                              {child.title}
+                            </div>
+                          </Link>
+                        );
+                      })}
+                    </div>
+                  )}
+                </div>
               );
             })}
           </ul>

@@ -2,36 +2,9 @@ import React, { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 import { useCtx } from "../../context/UseContext";
 import logo_1 from "../../assets/icons/logo_1.jpeg";
-const menus = [
-  {
-    path: "/",
-    title: "Home",
-  },
-  {
-    path: "/",
-    title: "Services",
-    icon: true,
-    children: [
-      { path: "/", title: "Porta Cabins" },
-      { path: "/", title: "Security Cabins" },
-      { path: "/", title: "Modular Concepts" },
-      { path: "/", title: "Container Converted Units" },
-      { path: "/", title: "Refurbished Units" },
-      { path: "/", title: "Double Storey Units" },
-      { path: "/", title: "Eye Wash Units" },
-      { path: "/", title: "Toilet / GRP Units" },
-      { path: "/", title: "Mosques" },
-      { path: "/", title: "Villas" },
-      { path: "/", title: "Majlis" },
-    ],
-  },
-  { path: "/", title: "Gallery" },
-  { path: "/", title: "About us" },
-  { path: "/", title: "Contact us" },
-];
 
 export const NavBar = () => {
-  const { menuOpen, setMenuOpen } = useCtx();
+  const { menuOpen, setMenuOpen, menus } = useCtx();
   const [isScrolled, setIsScrolled] = useState(false);
 
   useEffect(() => {
@@ -75,26 +48,35 @@ export const NavBar = () => {
           <div className="flex justify-start items-center w-full h-[70px]">
             {menus.map((item, index) => {
               return (
-                <Link to={item.path} key={index} className="h-[70px]">
-                  <div
-                    className={`relative group flex items-center px-5 h-full mx-2 border-b-[4px] border-transparent transition duration-500 hover:border-b-[4px] hover:border-blue}`}
-                  >
-                    {item.title}
-                    {item.children && (
-                      <div className="absolute top-[70px] transition-all duration-300 left-0 overflow-hidden bg-white min-w-[300px] flex-col h-0 group-hover:h-[600px]">
-                        {item.children.map((child, index) => {
-                          return (
-                            <Link to={child.path} key={index}>
-                              <div className="px-4 py-3 transition duration-300 border-b-[1px] border-secondary hover:bg-lightBlue">
-                                {child.title}
-                              </div>
-                            </Link>
-                          );
-                        })}
-                      </div>
-                    )}
-                  </div>
-                </Link>
+                <div className="relative group h-[70px]">
+                  <Link to={item.path} key={index}>
+                    <div className={`flex items-center px-5 h-full mx-2}`}>
+                      {item.title}
+                      {/* {item.icon && (
+                        <Image
+                          src={item?.icon}
+                          alt="logo"
+                          width={15}
+                          height={15}
+                          className="mt-[2px] ml-1 transition duration-300 transform  group-hover:rotate-90"
+                        />
+                      )} */}
+                    </div>
+                  </Link>
+                  {item.children && (
+                    <div className="absolute top-[70px] [&>*:first-child]:border-t-[4px] [&>*:first-child]:border-primary  transition-all duration-300 left-0 overflow-hidden bg-white min-w-[300px] flex-col h-0 group-hover:h-[473px]">
+                      {item.children.map((child, index) => {
+                        return (
+                          <Link to={child.path} key={index}>
+                            <div className="px-4 py-3 transition duration-300 border-b-[1px] border-secondary hover:bg-lightBlue">
+                              {child.title}
+                            </div>
+                          </Link>
+                        );
+                      })}
+                    </div>
+                  )}
+                </div>
               );
             })}
           </div>
