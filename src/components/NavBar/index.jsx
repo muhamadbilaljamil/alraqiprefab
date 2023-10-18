@@ -6,13 +6,25 @@ const menus = [
   {
     path: "/",
     title: "Home",
-    // icon: true,
-    // children: [
-    //   { path: "/", title: "Services" },
-    //   { path: "/", title: "Life Science Capital" },
-    // ],
   },
-  { path: "/", title: "Services" },
+  {
+    path: "/",
+    title: "Services",
+    icon: true,
+    children: [
+      { path: "/", title: "Porta Cabins" },
+      { path: "/", title: "Security Cabins" },
+      { path: "/", title: "Modular Concepts" },
+      { path: "/", title: "Container Converted Units" },
+      { path: "/", title: "Refurbished Units" },
+      { path: "/", title: "Double Storey Units" },
+      { path: "/", title: "Eye Wash Units" },
+      { path: "/", title: "Toilet / GRP Units" },
+      { path: "/", title: "Mosques" },
+      { path: "/", title: "Villas" },
+      { path: "/", title: "Majlis" },
+    ],
+  },
   { path: "/", title: "Gallery" },
   { path: "/", title: "About us" },
   { path: "/", title: "Contact us" },
@@ -69,7 +81,7 @@ export const NavBar = () => {
                   >
                     {item.title}
                     {item.children && (
-                      <div className="absolute top-[48px] transition duration-300 left-0 rounded-xl overflow-hidden bg-white min-w-[250px] flex-col hidden group-hover:flex ">
+                      <div className="absolute top-[48px] transition duration-300 left-0 rounded-xl overflow-hidden bg-white min-w-[300px] flex-col h-0 group-hover:h-[600px]">
                         {item.children.map((child, index) => {
                           return (
                             <Link to={child.path} key={index}>
