@@ -75,13 +75,13 @@ export const NavBar = () => {
           <div className="flex justify-start items-center w-full h-[70px]">
             {menus.map((item, index) => {
               return (
-                <Link to={item.path} key={index}>
+                <Link to={item.path} key={index} className="h-[70px]">
                   <div
-                    className={`relative group pt-4 pb-2 px-5 mx-2 border-b-[4px] border-transparent transition duration-500 hover:border-b-[4px] hover:border-blue}`}
+                    className={`relative group flex items-center px-5 h-full mx-2 border-b-[4px] border-transparent transition duration-500 hover:border-b-[4px] hover:border-blue}`}
                   >
                     {item.title}
                     {item.children && (
-                      <div className="absolute top-[48px] transition duration-300 left-0 rounded-xl overflow-hidden bg-white min-w-[300px] flex-col h-0 group-hover:h-[600px]">
+                      <div className="absolute top-[70px] transition-all duration-300 left-0 overflow-hidden bg-white min-w-[300px] flex-col h-0 group-hover:h-[600px]">
                         {item.children.map((child, index) => {
                           return (
                             <Link to={child.path} key={index}>

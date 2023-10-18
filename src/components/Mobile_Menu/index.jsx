@@ -62,10 +62,23 @@ const MobileMenu = () => {
                 <Link
                   to={item.path}
                   key={index}
-                  className="w-full text-center hover:bg-blue/5"
+                  className="group w-full text-left hover:bg-blue/5"
                 >
                   <li className="py-4 px-8 border-b-[1px] border-primary/10">
                     {item.title}
+                    {item.children && (
+                      <div className="transition-all duration-300 overflow-hidden bg-white w-full flex-col h-0 group-hover:h-[600px]">
+                        {item.children.map((child, index) => {
+                          return (
+                            <Link to={child.path} key={index}>
+                              <div className="px-4 py-3 transition duration-300 border-b-[1px] border-secondary hover:bg-lightBlue">
+                                {child.title}
+                              </div>
+                            </Link>
+                          );
+                        })}
+                      </div>
+                    )}
                   </li>
                 </Link>
               );
