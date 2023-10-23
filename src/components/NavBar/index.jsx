@@ -48,8 +48,8 @@ export const NavBar = () => {
           <div className="flex justify-start items-center w-full h-[70px]">
             {menus.map((item, index) => {
               return (
-                <div className="relative group h-[70px]">
-                  <Link to={item.path} key={index}>
+                <div className="relative group h-[70px]" key={index}>
+                  <Link to={item.path}>
                     <div className={`flex items-center px-5 h-full mx-2}`}>
                       {item.title}
                       {/* {item.icon && (

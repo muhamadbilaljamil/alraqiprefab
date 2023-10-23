@@ -32,8 +32,8 @@ const MobileMenu = () => {
           <ul className="flex flex-col items-center ">
             {menus.map((item, index) => {
               return (
-                <div className="group w-full hover:bg-blue/5">
-                  <Link to={item.path} key={index}>
+                <div className="group w-full hover:bg-blue/5" key={index}>
+                  <Link to={item.path}>
                     <li className="flex pl-4 items-center border-b-[1px] border-primary/10 h-[54px]">
                       {item.title}
                     </li>

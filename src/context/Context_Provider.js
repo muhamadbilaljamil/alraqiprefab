@@ -1,6 +1,36 @@
 // ** React Imports
 import { createContext, useState } from "react";
 
+// menus: [
+//   {
+//     path: "/",
+//     title: "Home",
+//   },
+//   {
+//     path: "/services",
+//     title: "Services",
+//     icon: true,
+//     children: [
+//       { path: "/porta-cabins", title: "Porta Cabins" },
+//       { path: "/security-cabins", title: "Security Cabins" },
+//       { path: "/modular-concepts", title: "Modular Concepts" },
+//       {
+//         path: "/container-converted-units",
+//         title: "Container Converted Units",
+//       },
+//       { path: "/refurbished-units", title: "Refurbished Units" },
+//       { path: "/double-storey-units", title: "Double Storey Units" },
+//       { path: "/eye-wash-units", title: "Eye Wash Units" },
+//       { path: "/toilet-GRP-units", title: "Toilet / GRP Units" },
+//       { path: "/mosques", title: "Mosques" },
+//       { path: "/villas", title: "Villas" },
+//       { path: "/majlis", title: "Majlis" },
+//     ],
+//   },
+//   { path: "/gallery", title: "Gallery" },
+//   { path: "/about-us", title: "About us" },
+//   { path: "/contact-us", title: "Contact us" },
+// ],
 // ** Defaults
 const defaultProvider = {
   menus: [
@@ -13,20 +43,20 @@ const defaultProvider = {
       title: "Services",
       icon: true,
       children: [
-        { path: "/porta-cabins", title: "Porta Cabins" },
-        { path: "/security-cabins", title: "Security Cabins" },
-        { path: "/modular-concepts", title: "Modular Concepts" },
+        { path: "/", title: "Porta Cabins" },
+        { path: "/", title: "Security Cabins" },
+        { path: "/", title: "Modular Concepts" },
         {
-          path: "/container-converted-units",
+          path: "/",
           title: "Container Converted Units",
         },
-        { path: "/refurbished-units", title: "Refurbished Units" },
-        { path: "/double-storey-units", title: "Double Storey Units" },
-        { path: "/eye-wash-units", title: "Eye Wash Units" },
-        { path: "/toilet-GRP-units", title: "Toilet / GRP Units" },
-        { path: "/mosques", title: "Mosques" },
-        { path: "/villas", title: "Villas" },
-        { path: "/majlis", title: "Majlis" },
+        { path: "/", title: "Refurbished Units" },
+        { path: "/", title: "Double Storey Units" },
+        { path: "/", title: "Eye Wash Units" },
+        { path: "/", title: "Toilet / GRP Units" },
+        { path: "/", title: "Mosques" },
+        { path: "/", title: "Villas" },
+        { path: "/", title: "Majlis" },
       ],
     },
     { path: "/gallery", title: "Gallery" },

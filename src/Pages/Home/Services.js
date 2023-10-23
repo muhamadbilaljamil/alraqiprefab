@@ -63,12 +63,12 @@ export const Services = () => {
     btnTopicArea: "bg-blue transition duration-300 hover:bg-white",
   };
   return (
-    <div className="w-full p-6 md:p-[50px] bg-sceondary relative">
+    <div className="w-full p-6 md:p-[50px] bg-secondary relative">
       <div className="max-w-[1500px] grid grid-cols-1 md:grid-cols-2 mx-auto z-10 relative">
         <div className="md:pr-[60px]">
           <div className="">
             <div className="mb-5">
-              <h1 className="uppercase tracking-[3px] font-thin text-base">
+              <h1 className="uppercase tracking-[3px] font-medium text-base text-orange">
                 Products & Services
               </h1>
             </div>

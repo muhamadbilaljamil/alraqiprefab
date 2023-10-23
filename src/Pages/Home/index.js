@@ -1,19 +1,16 @@
 import React from "react";
-import { Hero } from "./Hero";
-// import { TopicAreas } from "./TopicAreas";
+import { SliderFull } from "../../components/Sliders";
 import { WhatWeDo } from "./WhatWeDo";
-import { OurPeople } from "./OurPeople";
-import { CommunityCulture } from "./CommunityCulture";
 import { Services } from "./Services";
+import TestimonialArea from "../../components/TestimonialArea";
 
 const Home = () => {
   return (
     <>
-      <Hero />
+      <SliderFull />
       <WhatWeDo />
-      {/* <OurPeople />
-      <CommunityCulture /> */}
       <Services />
+      <TestimonialArea />
     </>
   );
 };

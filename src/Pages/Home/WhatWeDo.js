@@ -16,7 +16,7 @@ export const WhatWeDo = () => {
         </div>
         <div className="w-full p-6 md:px-6 md:py-3">
           <div className="mb-5">
-            <h1 className="uppercase tracking-[3px] font-thin text-base">
+            <h1 className="uppercase tracking-[3px] font-medium text-base text-orange">
               WHO WE ARE
             </h1>
           </div>
