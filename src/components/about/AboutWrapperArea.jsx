@@ -53,7 +53,7 @@ function AboutWrapperArea() {
 
   return (
     <>
-      <div className="about-main-wrappper pt-[200px]">
+      <div className="about-main-wrappper mt-[90px] md:mt-[200px]">
         <div className="container max-w-[1340px] mx-auto">
           <div className="about-tab-wrapper">
             <div className="grid grid-cols-1 md:grid-cols-2">

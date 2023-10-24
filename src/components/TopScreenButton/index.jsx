@@ -5,7 +5,6 @@ import topArrow from "../../assets/icons/double_right_arrow_8.svg";
 
 export const TopScreenButton = () => {
   const handleScrollTop = () => {
-    console.log("Handle Scroll");
     window.scroll({
       top: 0,
       // left: 0,

@@ -5,7 +5,7 @@ import contactBanner from "../../assets/image/banner/contact-bg.png";
 function ContactWrapperArea() {
   return (
     <>
-      <div className="contact-wrapper pt-[200px]">
+      <div className="contact-wrapper mt-[130px] md:mt-[200px]">
         <div className="container mx-auto">
           <div className="flex row align-items-center justify-content-lg-center gy-5 justify-center">
             <div className="col-lg-6">

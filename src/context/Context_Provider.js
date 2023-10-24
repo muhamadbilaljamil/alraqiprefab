@@ -52,7 +52,6 @@ const defaultProvider = {
         },
         { path: "/", title: "Refurbished Units" },
         { path: "/", title: "Double Storey Units" },
-        { path: "/", title: "Eye Wash Units" },
         { path: "/", title: "Toilet / GRP Units" },
         { path: "/", title: "Mosques" },
         { path: "/", title: "Villas" },
@@ -80,6 +79,7 @@ const defaultProvider = {
   },
   setToastData: () => {},
   handleClickScroll: () => {},
+  handleScrollToTop: () => {},
   loading: false,
   setLoading: () => Boolean,
 };
@@ -103,6 +103,14 @@ const ContextProvider = ({ children }) => {
       setIsToast,
     });
     return setIsToast(true);
+  };
+
+  const handleScrollToTop = () => {
+    window.scroll({
+      top: 0,
+      // left: 0,
+      behavior: "smooth",
+    });
   };
 
   const handleClickScroll = (e) => {
@@ -129,6 +137,7 @@ const ContextProvider = ({ children }) => {
     toastData,
     setToastData,
     handleClickScroll,
+    handleScrollToTop,
     loading,
     setLoading,
   };

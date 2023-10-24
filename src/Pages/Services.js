@@ -242,7 +242,7 @@ export const Services = () => {
     btnTopicArea: "bg-blue transition duration-300 hover:bg-white",
   };
   return (
-    <div className="about-main-wrappper w-full p-6 md:p-[50px] bg-secondary relative z-0 mt-[200px]">
+    <div className="about-main-wrappper w-full p-6 md:p-[50px] bg-secondary relative z-0 mt-[90px] md:mt-[200px]">
       <div className="max-w-[1500px] mx-auto">
         <div className=" grid grid-cols-1 md:grid-cols-2 z-10 relative">
           <div className="md:pr-[60px]">
@@ -275,7 +275,7 @@ export const Services = () => {
           </div>
         </div>
         <div className="achievement-counter-wrap mt-16">
-          <div className="achievement-counter-cards grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-x-20">
+          <div className="achievement-counter-cards grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-8 md:gap-x-20">
             {whyData.map((item, index) => (
               <div
                 key={index}

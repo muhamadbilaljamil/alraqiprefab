@@ -12,7 +12,7 @@ const styles = {
 };
 
 const MobileMenu = () => {
-  const { menuOpen, setMenuOpen, menus } = useCtx();
+  const { menuOpen, setMenuOpen, menus, handleScrollToTop } = useCtx();
 
   return (
     <div
@@ -33,7 +33,13 @@ const MobileMenu = () => {
             {menus.map((item, index) => {
               return (
                 <div className="group w-full hover:bg-blue/5" key={index}>
-                  <Link to={item.path}>
+                  <Link
+                    to={item.path}
+                    onClick={() => {
+                      setMenuOpen(false);
+                      handleScrollToTop();
+                    }}
+                  >
                     <li className="flex pl-4 items-center border-b-[1px] border-primary/10 h-[54px]">
                       {item.title}
                     </li>
@@ -42,7 +48,14 @@ const MobileMenu = () => {
                     <div className="transition-all duration-300 overflow-hidden bg-white w-full flex-col h-0 group-hover:h-[473px]">
                       {item.children.map((child, index) => {
                         return (
-                          <Link to={child.path} key={index}>
+                          <Link
+                            to={child.path}
+                            key={index}
+                            onClick={() => {
+                              setMenuOpen(false);
+                              handleScrollToTop();
+                            }}
+                          >
                             <div className="pr-4 pl-6 py-3 transition duration-300 border-b-[1px] border-secondary hover:bg-lightBlue">
                               {child.title}
                             </div>

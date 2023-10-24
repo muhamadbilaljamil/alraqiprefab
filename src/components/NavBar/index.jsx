@@ -52,15 +52,6 @@ export const NavBar = () => {
                   <Link to={item.path}>
                     <div className={`flex items-center px-5 h-full mx-2}`}>
                       {item.title}
-                      {/* {item.icon && (
-                        <Image
-                          src={item?.icon}
-                          alt="logo"
-                          width={15}
-                          height={15}
-                          className="mt-[2px] ml-1 transition duration-300 transform  group-hover:rotate-90"
-                        />
-                      )} */}
                     </div>
                   </Link>
                   {item.children && (
