@@ -71,7 +71,7 @@ const teamData = [
 function GuideArea() {
   return (
     <>
-      <div className="guide-area guide-style-one py-32">
+      <div className="guide-area guide-style-one px-4 py-6 md:py-32">
         <div className="container max-w-[1320px] mx-auto">
           <div className="row">
             <div className="col-lg-12">
@@ -93,7 +93,7 @@ function GuideArea() {
               <GuideCardGama team={team} index={index} />
             ))}
           </div>
-          <div className="pt-16">
+          <div className="pt-8 md:pt-16">
             <p>
               These are just a few of the dedicated professionals who make up
               the Alraqi Prefab team. We believe that our people are our

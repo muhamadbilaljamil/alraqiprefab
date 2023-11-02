@@ -5,10 +5,10 @@ import contactBanner from "../../assets/image/banner/contact-bg.png";
 function ContactWrapperArea() {
   return (
     <>
-      <div className="contact-wrapper mt-[130px] md:mt-[200px]">
-        <div className="container mx-auto">
-          <div className="flex row align-items-center justify-content-lg-center gy-5 justify-center">
-            <div className="col-lg-6">
+      <div className="contact-wrapper mt-[100px] md:mt-[200px]">
+        <div className="container mx-auto flex justify-center">
+          <div className="grid grid-cols-1 md:grid-cols-2">
+            <div className="">
               <div className="contatc-intro-figure">
                 <img
                   src={contactBanner}
@@ -17,8 +17,8 @@ function ContactWrapperArea() {
                 />
               </div>
             </div>
-            <div className="col-lg-6 flex items-center">
-              <div className="contact-info">
+            <div className="md:-ml-[80px] flex items-center">
+              <div className="contact-info py-10 px-4">
                 <h3>Contact Info.</h3>
                 <ul>
                   <li>
@@ -61,7 +61,7 @@ function ContactWrapperArea() {
             </div>
           </div>
         </div>
-        <div className="container pt-110 mx-auto">
+        <div className="container pt-[20px] md:pt-110 mx-auto">
           <form onSubmit={(e) => e.preventDefault()} id="contact_form">
             <div className="contact-form-wrap">
               <h4>Get a free key stroke quote now</h4>

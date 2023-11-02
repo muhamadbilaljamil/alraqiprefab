@@ -6,17 +6,14 @@ import card3 from "../../assets/images/services/modular_concept/modular_concept1
 import card4 from "../../assets/images/services/container_converted/container_converted4.jpeg";
 import card5 from "../../assets/images/services/refurbished_units/refurbished_unit2.jpeg";
 import card6 from "../../assets/images/services/double_stories/double_story2.jpeg";
-// import card7 from "../../assets/image/package/p-alpha7.png";
-// import card8 from "../../assets/image/package/p-alpha8.png";
 import card9 from "../../assets/images/services/masjid/masjid1.jpeg";
 import card10 from "../../assets/images/services/villas/villas1.jpeg";
-// import card11 from "../../assets/image/package/p-alpha11.png";
 
 function PackageGridWrapper() {
   return (
     <>
       {/* ===============  Package gird area start =============== */}
-      <div className="package-wrapper pt-110">
+      <div className=" package-wrapper mt-10 md:pt-110">
         <div className="container max-w-[1500px] mx-auto">
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 row gap-8">
             <PackageCard
@@ -49,14 +46,8 @@ function PackageGridWrapper() {
               title="Double Storey Units"
               price="More Datail"
             />
-            {/* <PackageCard
-              image={card8}
-              title="Toilet / GRP Units"
-              price="More Datail"
-            /> */}
             <PackageCard image={card9} title="Mosques" price="More Datail" />
             <PackageCard image={card10} title="Villas" price="More Datail" />
-            {/* <PackageCard image={card11} title="Majlis" price="More Datail" /> */}
           </div>
         </div>
       </div>

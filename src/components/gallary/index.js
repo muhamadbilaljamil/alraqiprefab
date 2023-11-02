@@ -78,24 +78,24 @@ const images = [
 
 export const Gallery = () => {
   return (
-    <div className="">
-      <div className="gallary-wrapper max-w-[1340px] mx-auto mt-[200px]">
-        <div className="gallary-group-header">
-          <h4 className="gallary-group-title">Projects Gallery</h4>
-        </div>
-        <div className="gallery-wrapper">
-          <div className="grid grid-cols-4  py-8 mt-24 gap-6">
-            {images.map((image, index) => (
-              <div className="overflow-hidden rounded-lg h-fit transition-all duration-300 border-[6px] border-white hover:scale-[1.1]">
-                <img
-                  src={image}
-                  alt="gallery"
-                  key={index}
-                  className="rounded-md"
-                />
-              </div>
-            ))}
-          </div>
+    <div className="gallary-wrapper max-w-[1340px] p-4 mx-auto mt-[80px] md:mt-[200px]">
+      <div className="gallary-group-header">
+        <h4 className="font-spaceG text-3xl text-[#12497f] md:text-[45px] font-extrabold">
+          Projects Gallery
+        </h4>
+      </div>
+      <div className="gallery-wrapper">
+        <div className="grid  grid-cols-2 md:grid-cols-4 py-8 mt-10 md:mt-24 gap-2 md:gap-6">
+          {images.map((image, index) => (
+            <div className="overflow-hidden rounded-lg h-fit transition-all duration-300 border-[6px] border-white hover:scale-[1.1]">
+              <img
+                src={image}
+                alt="gallery"
+                key={index}
+                className="rounded-md"
+              />
+            </div>
+          ))}
         </div>
       </div>
     </div>

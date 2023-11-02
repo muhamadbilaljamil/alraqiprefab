@@ -83,29 +83,34 @@ function TestimonialArea() {
       },
     },
   };
+
+  //   .section-head-alpha h2 {
+  //     font-weight: 800;
+  //     font-size: 35px;
+  //     line-height: 42px;
+  //     color: #2d373c;
+  // }
+
   return (
     <>
-      <div className="testimonial-area testimonial-style-one mt-110">
+      <div className="testimonial-area testimonial-style-one  relative overflow-hidden bg-[#162b32] py-[40px] md:py-[90px] md:mt-110">
         <div className="testimonial-shape-group" />
-        <div className="container max-w-[1320px] mx-auto relative">
+        <div className="container max-w-[1320px] mx-auto relative px-4">
           <div className="grid grid-cols-1 md:grid-cols-[8fr_1fr] align-items-center">
-            <div className="">
-              <div className="section-head-alpha">
-                <h2>
-                  What Our Clients Say About <span>Alraqi Prefab</span>
-                </h2>
-                <p>
-                  At Alraqi Prefab, we take immense pride in delivering
-                  top-notch prefab solutions to our clients in the UAE. Our
-                  commitment to excellence and customer satisfaction has earned
-                  us the trust and appreciation of our valued customers. Here's
-                  what some of our clients have to say about their experiences
-                  with us:
-                </p>
-              </div>
+            <div>
+              <h2 className="text-white font-extrabold text-[22px] md:text-[35px] leading-[1.3]">
+                What Our Clients Say About <span>Alraqi Prefab</span>
+              </h2>
+              <p className="text-white py-4 text-justify leading-[1.4]">
+                At Alraqi Prefab, we take immense pride in delivering top-notch
+                prefab solutions to our clients in the UAE. Our commitment to
+                excellence and customer satisfaction has earned us the trust and
+                appreciation of our valued customers. Here's what some of our
+                clients have to say about their experiences with us:
+              </p>
             </div>
-            <div className="">
-              <div className="md:flex slider-arrows text-center d-lg-flex d-none justify-content-end mb-3">
+            <div>
+              <div className="flex justify-end slider-arrows text-center  mb-6">
                 <div className="testi-prev custom-swiper-prev" tabIndex={0}>
                   <i className="bi bi-chevron-left" />
                 </div>

@@ -84,65 +84,53 @@ function AboutWrapperArea() {
                   </div>
                 </div>
               </div>
-              <div className="mt-5 mt-lg-0">
+              <div className="p-4 mt-5 mt-lg-0">
                 <div className="about-tab-wrap">
-                  <h2 className="about-wrap-title">
-                    About Our Company And <span>What We Are</span> Offer.
+                  <h2 className="font-spaceG font-extrabold text-[34px] md:text-[45px] leading-normal">
+                    About Our Company And{" "}
+                    <span className="text-orange">What We Are</span> Offer.
                   </h2>
-                  <div
-                    className="tab-content about-tab-content"
-                    id="pills-tabContent"
-                  >
-                    <div
-                      className="tab-pane fade show active"
-                      id="about-pills1"
-                      role="tabpanel"
-                      aria-labelledby="pills-about1"
-                    >
-                      <p>
-                        AlRaqi Prefab is your trusted partner in the world of
-                        Prefabricated Buildings. With a strong presence in the
-                        GCC region, we have established ourselves as pioneers in
-                        manufacturing high-quality prefab solutions. Our diverse
-                        range of products includes porta cabins, modular
-                        buildings, toilet units, security cabins, mosques,
-                        villas, container converted units, knock-down
-                        structures, and flat-pack deliveries.
-                      </p>
-                      <p>
-                        We are dedicated to upholding the highest standards of
-                        quality and workmanship. All our prefab structures are
-                        meticulously crafted in our state-of-the-art facilities
-                        located in the Sajjaa Industrial area, Sharjah. Our
-                        facilities are designed to optimize efficiency and
-                        workmanship, ensuring that we consistently deliver
-                        products of unparalleled quality.
-                      </p>
-                      <p>
-                        Our commitment to excellence extends to the materials
-                        and processes we employ. AlRaqi Prefab sources
-                        top-quality tools, anchors, and adhesives from trusted
-                        suppliers, ensuring that every component of our
-                        structures meets or exceeds industry standards. We
-                        meticulously apply these materials under the right
-                        conditions to optimize the performance and durability of
-                        our prefab solutions.
-                      </p>
-                    </div>
-                  </div>
+                  <p className="text-lg text-justify leading-[1.3] my-3">
+                    AlRaqi Prefab is your trusted partner in the world of
+                    Prefabricated Buildings. With a strong presence in the GCC
+                    region, we have established ourselves as pioneers in
+                    manufacturing high-quality prefab solutions. Our diverse
+                    range of products includes porta cabins, modular buildings,
+                    toilet units, security cabins, mosques, villas, container
+                    converted units, knock-down structures, and flat-pack
+                    deliveries.
+                  </p>
+                  <p className="text-lg text-justify leading-[1.3] my-3">
+                    We are dedicated to upholding the highest standards of
+                    quality and workmanship. All our prefab structures are
+                    meticulously crafted in our state-of-the-art facilities
+                    located in the Sajjaa Industrial area, Sharjah. Our
+                    facilities are designed to optimize efficiency and
+                    workmanship, ensuring that we consistently deliver products
+                    of unparalleled quality.
+                  </p>
+                  <p className="text-lg text-justify leading-[1.3] my-3">
+                    Our commitment to excellence extends to the materials and
+                    processes we employ. AlRaqi Prefab sources top-quality
+                    tools, anchors, and adhesives from trusted suppliers,
+                    ensuring that every component of our structures meets or
+                    exceeds industry standards. We meticulously apply these
+                    materials under the right conditions to optimize the
+                    performance and durability of our prefab solutions.
+                  </p>
                 </div>
               </div>
             </div>
           </div>
-          <div className="pt-110 px-7">
-            <h2 className="about-wrap-title">
-              Why Select <span>AlRaqi Prefab?</span>
+          <div className="pt-[10px] md:pt-110 px-4">
+            <h2 className="font-spaceG font-extrabold text-[34px] md:text-[45px] leading-normal">
+              Why Select <span className="text-orange">AlRaqi Prefab?</span>
             </h2>
             <h2 className="about-wrap-subtitle">
               Your Premier Destination for Quality{" "}
               <span>Products and Services</span>
             </h2>
-            <div className="achievement-counter-wrap mt-16">
+            <div className="achievement-counter-wrap my-6 md:mt-16">
               <div className="achievement-counter-cards grid grid-cols-1 md:grid-cols-2 gap-6">
                 {whyData.map((item, index) => (
                   <div

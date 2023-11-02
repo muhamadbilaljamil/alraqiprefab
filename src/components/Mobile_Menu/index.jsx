@@ -16,7 +16,7 @@ const MobileMenu = () => {
 
   return (
     <div
-      className={` w-80 bg-white border fixed top-0 bottom-0 transitation duration-300 z-20 ${
+      className={`overflow-scroll w-80 bg-white border fixed top-0 bottom-0 transitation duration-300 z-20 ${
         menuOpen ? "-translate-x-0" : "-translate-x-80"
       }`}
     >

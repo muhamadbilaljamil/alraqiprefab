@@ -14,6 +14,11 @@ import porta_cabin1 from "../../assets/images/porta_cabin_1.jpeg";
 import porta_cabin2 from "../../assets/images/porta_cabin_2.jpeg";
 import porta_cabin3 from "../../assets/images/porta_cabin_3.jpeg";
 
+const styles = {
+  hero_content: "max-w-[600px] px-6 py-4 md:py-32",
+  slider_arrows: "flex absolute bottom-[48px] right-[24px] z-[2]",
+};
+
 export const SliderFull = () => {
   const scrollTop = () => window.scrollTo({ top: 0, behavior: "smooth" });
   const HeroSlider = {
@@ -60,7 +65,9 @@ export const SliderFull = () => {
                   <img src={porta_cabin1} alt="images" />
                 </div>
                 <div className="hero-content-bg ">
-                  <div className="hero-content position-relative">
+                  <div
+                    className={`hero-content position-relative ${styles.hero_content}`}
+                  >
                     <h2 className="hero-title">
                       Building <span>Your Dream Home, One Panel at a Time</span>
                     </h2>
@@ -88,7 +95,9 @@ export const SliderFull = () => {
                   <img src={porta_cabin2} alt="images" />
                 </div>
                 <div className="hero-content-bg">
-                  <div className="hero-content position-relative">
+                  <div
+                    className={`hero-content position-relative ${styles.hero_content}`}
+                  >
                     <h2 className="hero-title">
                       Sustainability <span>Meets Style</span>
                     </h2>
@@ -116,7 +125,9 @@ export const SliderFull = () => {
                   <img src={porta_cabin3} alt="images" />
                 </div>
                 <div className="hero-content-bg">
-                  <div className="hero-content position-relative">
+                  <div
+                    className={`hero-content position-relative ${styles.hero_content}`}
+                  >
                     <h2 className="hero-title">
                       Personalized <span>Perfection</span>
                     </h2>
@@ -141,7 +152,9 @@ export const SliderFull = () => {
           </div>
         </Swiper>
       </div>
-      <div className="slider-arrows text-center d-lg-flex d-none">
+      <div
+        className={`slider-arrows text-center d-lg-flex d-none ${styles.slider_arrows}`}
+      >
         <div
           className="hero-prev"
           tabIndex={0}

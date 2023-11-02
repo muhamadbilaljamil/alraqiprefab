@@ -4,6 +4,7 @@ module.exports = {
   theme: {
     fontFamily: {
       spaceM: ["space-mono"],
+      spaceG: ["SpaceGrotesk", "sans-serif"],
     },
     extend: {
       screens: {
