@@ -55,7 +55,7 @@ export const NavBar = () => {
                     </div>
                   </Link>
                   {item.children && (
-                    <div className="absolute top-[70px] [&>*:first-child]:border-t-[4px] [&>*:first-child]:border-primary  transition-all duration-300 left-0 overflow-hidden bg-white min-w-[300px] flex-col h-0 group-hover:h-[473px]">
+                    <div className="absolute top-[70px] [&>*:first-child]:border-t-[4px] [&>*:first-child]:border-primary  transition-all duration-300 left-0 overflow-hidden bg-white min-w-[300px] flex-col h-0 group-hover:h-[344px]">
                       {item.children.map((child, index) => {
                         return (
                           <Link to={child.path} key={index}>

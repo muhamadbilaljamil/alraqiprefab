@@ -14,6 +14,14 @@ const styles = {
 const MobileMenu = () => {
   const { menuOpen, setMenuOpen, menus, handleScrollToTop } = useCtx();
 
+  const handleClick = (item) => {
+    if (item.path === "/services") return "#";
+    else {
+      setMenuOpen(false);
+      handleScrollToTop();
+    }
+  };
+
   return (
     <div
       className={`overflow-scroll w-80 bg-white border fixed top-0 bottom-0 transitation duration-300 z-20 ${
@@ -34,10 +42,9 @@ const MobileMenu = () => {
               return (
                 <div className="group w-full hover:bg-blue/5" key={index}>
                   <Link
-                    to={item.path}
+                    to={item.path === "/services" ? "" : item.path}
                     onClick={() => {
-                      setMenuOpen(false);
-                      handleScrollToTop();
+                      handleClick(item);
                     }}
                   >
                     <li className="flex pl-4 items-center border-b-[1px] border-primary/10 h-[54px]">
@@ -45,7 +52,7 @@ const MobileMenu = () => {
                     </li>
                   </Link>
                   {item.children && (
-                    <div className="transition-all duration-300 overflow-hidden bg-white w-full flex-col h-0 group-hover:h-[473px]">
+                    <div className="transition-all duration-300 overflow-hidden bg-white w-full flex-col h-0 group-hover:h-[344px]">
                       {item.children.map((child, index) => {
                         return (
                           <Link

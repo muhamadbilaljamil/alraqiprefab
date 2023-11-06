@@ -25,8 +25,8 @@ const Footer = () => {
                 <img src={logo_1} alt="" className="h-28 rounded-md mb-5" />
               </Link>
               <h1 className="text-secondary text-sm text-justify">
-                Al-Raqi, has a mission to provide prefab houses and services. As
-                a leading prefab houses provider in UAE, we offer a
+                Al-Qasr Al-Raqi, has a mission to provide prefab houses and
+                services. As a leading prefab houses provider in UAE, we offer a
                 comprehensive range of prefeb solutions to meet all your needs
                 related to prefab houses and all types of building.
               </h1>
@@ -151,7 +151,7 @@ const Footer = () => {
         <h1 className="text-secondary text-sm py-5">
           Copyright 2023{" "}
           <span className="text-sm font-semibold cursor-pointer">
-            AL-RAQI PREFAB
+            AL-QASR AL-RAQI PREFAB
           </span>{" "}
           PVT LTD
         </h1>

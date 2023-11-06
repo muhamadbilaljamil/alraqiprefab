@@ -39,12 +39,12 @@ function PackageGridWrapper() {
             <PackageCard
               image={card5}
               title="Refurbished Units"
-              path="refurbished-units"
+              path="/refurbished-units"
             />
             <PackageCard
               image={card6}
               title="Double Storey Units"
-              path="double-storey-units"
+              path="/double-storey-units"
             />
             <PackageCard image={card9} title="Mosques" path="/mosques" />
             <PackageCard image={card10} title="Villas" path="/villas" />

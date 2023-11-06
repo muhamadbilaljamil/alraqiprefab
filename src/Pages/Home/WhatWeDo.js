@@ -27,10 +27,10 @@ export const WhatWeDo = () => {
           </div>
           <div className="mb-[14px]">
             <h2 className="text-base md:text-[22px] font-normal leading-[1.5] mb-5 text-justify">
-              At AL-RAQI PREFAB, we are more than just a prefab house company;
-              we are visionary creators of exceptional living spaces. With a
-              legacy spanning 14 years in the UAE's construction and housing
-              industry, we have consistently pushed the boundaries of
+              At AL-QASR AL-RAQI PREFAB, we are more than just a prefab house
+              company; we are visionary creators of exceptional living spaces.
+              With a legacy spanning 14 years in the UAE's construction and
+              housing industry, we have consistently pushed the boundaries of
               innovation, design, and sustainability.
             </h2>
           </div>

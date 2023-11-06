@@ -35,6 +35,40 @@ import image34 from "../../assets/images/products/image34.jpeg";
 import image35 from "../../assets/images/products/image35.jpeg";
 import image36 from "../../assets/images/products/image36.jpeg";
 import image37 from "../../assets/images/products/image37.jpeg";
+
+import security_cabin1 from "../../assets/images/services/security_cabins/security_cabin1.jpeg";
+import security_cabin2 from "../../assets/images/services/security_cabins/security_cabin2.jpeg";
+import security_cabin3 from "../../assets/images/services/security_cabins/security_cabin3.jpeg";
+
+import modular_concept1 from "../../assets/images/services/modular_concept/modular_concept1.jpeg";
+import modular_concept2 from "../../assets/images/services/modular_concept/modular_concept2.jpeg";
+import modular_concept3 from "../../assets/images/services/modular_concept/modular_concept3.jpeg";
+
+import container_converted_unit1 from "../../assets/images/services/container_converted/container_converted1.jpeg";
+import container_converted_unit2 from "../../assets/images/services/container_converted/container_converted2.jpeg";
+import container_converted_unit3 from "../../assets/images/services/container_converted/container_converted3.jpeg";
+import container_converted_unit4 from "../../assets/images/services/container_converted/container_converted4.jpeg";
+import container_converted_unit5 from "../../assets/images/services/container_converted/container_converted5.jpeg";
+
+import refurbished_unit1 from "../../assets/images/services/refurbished_units/refurbished_unit1.jpeg";
+import refurbished_unit2 from "../../assets/images/services/refurbished_units/refurbished_unit2.jpeg";
+import refurbished_unit3 from "../../assets/images/services/refurbished_units/refurbished_unit3.jpeg";
+import refurbished_unit4 from "../../assets/images/services/refurbished_units/refurbished_unit4.jpeg";
+
+import double_storey_unit1 from "../../assets/images/services/double_stories/double_story1.jpeg";
+import double_storey_unit2 from "../../assets/images/services/double_stories/double_story2.jpeg";
+import double_storey_unit3 from "../../assets/images/services/double_stories/double_story3.jpeg";
+
+import masjid1 from "../../assets/images/services/masjid/masjid1.jpeg";
+import masjid2 from "../../assets/images/services/masjid/masjid2.jpeg";
+import masjid3 from "../../assets/images/services/masjid/masjid3.jpeg";
+
+import villas1 from "../../assets/images/services/villas/villas1.jpeg";
+import villas2 from "../../assets/images/services/villas/villas2.jpeg";
+import villas3 from "../../assets/images/services/villas/villas3.jpeg";
+import villas4 from "../../assets/images/services/villas/villas4.jpeg";
+import villas5 from "../../assets/images/services/villas/villas5.jpeg";
+
 import Lightroom from "react-lightbox-gallery";
 import { useLocation } from "react-router-dom";
 
@@ -83,27 +117,58 @@ const data = {
   },
   "/porta-cabins": {
     title: "Porta Cabins",
-    images: [{ src: image1, desc: "", sub: "" }],
+    images: [
+      { src: image7, desc: "", sub: "" },
+      { src: image8, desc: "", sub: "" },
+      { src: image14, desc: "", sub: "" },
+      { src: image15, desc: "", sub: "" },
+      { src: image25, desc: "", sub: "" },
+      { src: image28, desc: "", sub: "" },
+      { src: image31, desc: "", sub: "" },
+    ],
   },
   "/security-cabins": {
     title: "Security Cabins",
-    images: [{ src: image1, desc: "", sub: "" }],
+    images: [
+      { src: security_cabin1, desc: "", sub: "" },
+      { src: security_cabin2, desc: "", sub: "" },
+      { src: security_cabin3, desc: "", sub: "" },
+    ],
   },
   "/modular-concepts": {
     title: "Modular Concepts",
-    images: [{ src: image1, desc: "", sub: "" }],
+    images: [
+      { src: modular_concept1, desc: "", sub: "" },
+      { src: modular_concept2, desc: "", sub: "" },
+      { src: modular_concept3, desc: "", sub: "" },
+    ],
   },
   "/container-converted-units": {
     title: "Container Converted Units",
-    images: [{ src: image1, desc: "", sub: "" }],
+    images: [
+      { src: container_converted_unit3, desc: "", sub: "" },
+      { src: container_converted_unit1, desc: "", sub: "" },
+      { src: container_converted_unit2, desc: "", sub: "" },
+      { src: container_converted_unit5, desc: "", sub: "" },
+      { src: container_converted_unit4, desc: "", sub: "" },
+    ],
   },
   "/refurbished-units": {
     title: "Refurbished Units",
-    images: [{ src: image1, desc: "", sub: "" }],
+    images: [
+      { src: refurbished_unit1, desc: "", sub: "" },
+      { src: refurbished_unit2, desc: "", sub: "" },
+      { src: refurbished_unit3, desc: "", sub: "" },
+      { src: refurbished_unit4, desc: "", sub: "" },
+    ],
   },
   "/double-storey-units": {
     title: "Double Story Units",
-    images: [{ src: image1, desc: "", sub: "" }],
+    images: [
+      { src: double_storey_unit1, desc: "", sub: "" },
+      { src: double_storey_unit2, desc: "", sub: "" },
+      { src: double_storey_unit3, desc: "", sub: "" },
+    ],
   },
   "/toilet-GRP-units": {
     title: "Toilet / GRP Units",
@@ -111,11 +176,21 @@ const data = {
   },
   "/mosques": {
     title: "Mosques",
-    images: [{ src: image1, desc: "", sub: "" }],
+    images: [
+      { src: masjid1, desc: "", sub: "" },
+      { src: masjid2, desc: "", sub: "" },
+      { src: masjid3, desc: "", sub: "" },
+    ],
   },
   "/villas": {
     title: "Villas",
-    images: [{ src: image1, desc: "", sub: "" }],
+    images: [
+      { src: villas1, desc: "", sub: "" },
+      { src: villas2, desc: "", sub: "" },
+      { src: villas3, desc: "", sub: "" },
+      { src: villas4, desc: "", sub: "" },
+      { src: villas5, desc: "", sub: "" },
+    ],
   },
   "/majlis": {
     title: "Majlis",
@@ -123,10 +198,9 @@ const data = {
   },
 };
 var settings = {
-  className: "rounded",
   columnCount: {
-    default: 3,
-    mobile: 3,
+    default: 2,
+    mobile: 1,
     tab: 4,
   },
   mode: "dark",

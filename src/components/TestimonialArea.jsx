@@ -6,6 +6,9 @@ import reviewerbg from "../assets/image/reviewer/reviewer.png";
 import avatar1 from "../assets/image/reviewer/r-sm1.png";
 import avatar2 from "../assets/image/reviewer/r-sm2.png";
 import avatar3 from "../assets/image/reviewer/r-sm3.png";
+import avatar4 from "../assets/image/reviewer/testi31.png";
+import avatar5 from "../assets/image/reviewer/testi32.png";
+import avatar6 from "../assets/image/reviewer/testi33.png";
 
 import "swiper/css";
 import "swiper/css/navigation";
@@ -36,19 +39,19 @@ const testData = [
   {
     name: "Sara Al-Khatri",
     location: "Ras Al Khaimah",
-    avatar: avatar3,
+    avatar: avatar6,
     says: "I had the pleasure of working with Alraqi Prefab for my villa construction project. Their ability to tailor designs to my exact preferences and the speed with which they executed the project were truly impressive. I'm a satisfied customer.",
   },
   {
     name: "Ali Al-Qubaisi",
     location: "Fujairah",
-    avatar: avatar1,
+    avatar: avatar5,
     says: "Alraqi Prefab offers innovative solutions and exceptional customer service. They were able to adapt to the unique requirements of my project and delivered results that surpassed my expectations. I would not hesitate to choose them again.",
   },
   {
     name: "Mariam Al-Hamad",
     location: "Umm Al-Quwain",
-    avatar: avatar3,
+    avatar: avatar4,
     says: "Alraqi Prefab is a company I can rely on. They provided me with an eco-friendly prefab structure that aligns perfectly with my vision. Their team's dedication and commitment to sustainability are truly admirable.",
   },
 ];
