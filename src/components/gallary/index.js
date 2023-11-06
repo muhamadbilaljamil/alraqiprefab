@@ -35,68 +35,117 @@ import image34 from "../../assets/images/products/image34.jpeg";
 import image35 from "../../assets/images/products/image35.jpeg";
 import image36 from "../../assets/images/products/image36.jpeg";
 import image37 from "../../assets/images/products/image37.jpeg";
+import Lightroom from "react-lightbox-gallery";
+import { useLocation } from "react-router-dom";
 
-const images = [
-  image1,
-  image2,
-  image3,
-  image4,
-  image5,
-  image6,
-  image9,
-  image10,
-  image11,
-  image12,
-  image13,
-  image16,
-  image17,
-  image18,
-  image19,
-  image20,
-  image21,
-  image22,
-  image23,
-  image24,
-  image26,
-  image27,
-  image29,
-  image30,
-  image32,
-  image33,
-  image34,
-  image35,
-  image36,
-  image37,
-  image7,
-  image8,
-  image14,
-  image15,
-  image25,
-  image28,
-  image31,
-];
+const data = {
+  "/gallery": {
+    title: "Project Gallery",
+    images: [
+      { src: image1, desc: "", sub: "" },
+      { src: image2, desc: "", sub: "" },
+      { src: image3, desc: "", sub: "" },
+      { src: image4, desc: "", sub: "" },
+      { src: image5, desc: "", sub: "" },
+      { src: image6, desc: "", sub: "" },
+      { src: image9, desc: "", sub: "" },
+      { src: image10, desc: "", sub: "" },
+      { src: image11, desc: "", sub: "" },
+      { src: image12, desc: "", sub: "" },
+      { src: image13, desc: "", sub: "" },
+      { src: image16, desc: "", sub: "" },
+      { src: image17, desc: "", sub: "" },
+      { src: image18, desc: "", sub: "" },
+      { src: image19, desc: "", sub: "" },
+      { src: image20, desc: "", sub: "" },
+      { src: image21, desc: "", sub: "" },
+      { src: image22, desc: "", sub: "" },
+      { src: image23, desc: "", sub: "" },
+      { src: image24, desc: "", sub: "" },
+      { src: image26, desc: "", sub: "" },
+      { src: image27, desc: "", sub: "" },
+      { src: image29, desc: "", sub: "" },
+      { src: image30, desc: "", sub: "" },
+      { src: image32, desc: "", sub: "" },
+      { src: image33, desc: "", sub: "" },
+      { src: image34, desc: "", sub: "" },
+      { src: image35, desc: "", sub: "" },
+      { src: image36, desc: "", sub: "" },
+      { src: image37, desc: "", sub: "" },
+      { src: image7, desc: "", sub: "" },
+      { src: image8, desc: "", sub: "" },
+      { src: image14, desc: "", sub: "" },
+      { src: image15, desc: "", sub: "" },
+      { src: image25, desc: "", sub: "" },
+      { src: image28, desc: "", sub: "" },
+      { src: image31, desc: "", sub: "" },
+    ],
+  },
+  "/porta-cabins": {
+    title: "Porta Cabins",
+    images: [{ src: image1, desc: "", sub: "" }],
+  },
+  "/security-cabins": {
+    title: "Security Cabins",
+    images: [{ src: image1, desc: "", sub: "" }],
+  },
+  "/modular-concepts": {
+    title: "Modular Concepts",
+    images: [{ src: image1, desc: "", sub: "" }],
+  },
+  "/container-converted-units": {
+    title: "Container Converted Units",
+    images: [{ src: image1, desc: "", sub: "" }],
+  },
+  "/refurbished-units": {
+    title: "Refurbished Units",
+    images: [{ src: image1, desc: "", sub: "" }],
+  },
+  "/double-storey-units": {
+    title: "Double Story Units",
+    images: [{ src: image1, desc: "", sub: "" }],
+  },
+  "/toilet-GRP-units": {
+    title: "Toilet / GRP Units",
+    images: [{ src: image1, desc: "", sub: "" }],
+  },
+  "/mosques": {
+    title: "Mosques",
+    images: [{ src: image1, desc: "", sub: "" }],
+  },
+  "/villas": {
+    title: "Villas",
+    images: [{ src: image1, desc: "", sub: "" }],
+  },
+  "/majlis": {
+    title: "Majlis",
+    images: [{ src: image1, desc: "", sub: "" }],
+  },
+};
+var settings = {
+  className: "rounded",
+  columnCount: {
+    default: 3,
+    mobile: 3,
+    tab: 4,
+  },
+  mode: "dark",
+};
 
 export const Gallery = () => {
+  const { pathname } = useLocation();
+  const item = data[pathname];
+
   return (
     <div className="gallary-wrapper max-w-[1340px] p-4 mx-auto mt-[80px] md:mt-[200px]">
       <div className="gallary-group-header">
         <h4 className="font-spaceG text-3xl text-[#12497f] md:text-[45px] font-extrabold">
-          Projects Gallery
+          {item.title}
         </h4>
       </div>
-      <div className="gallery-wrapper">
-        <div className="grid  grid-cols-2 md:grid-cols-4 py-8 mt-10 md:mt-24 gap-2 md:gap-6">
-          {images.map((image, index) => (
-            <div className="overflow-hidden rounded-lg h-fit transition-all duration-300 border-[6px] border-white hover:scale-[1.1]">
-              <img
-                src={image}
-                alt="gallery"
-                key={index}
-                className="rounded-md"
-              />
-            </div>
-          ))}
-        </div>
+
+      <div className="py-8 md:mt-12">
+        <Lightroom images={item.images} settings={settings} />
       </div>
     </div>
   );

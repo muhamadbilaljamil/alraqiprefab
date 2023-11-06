@@ -19,35 +19,35 @@ function PackageGridWrapper() {
             <PackageCard
               image={card1}
               title="PORTA CABINS"
-              price="More Datail"
+              path="/porta-cabins"
             />
             <PackageCard
               image={card2}
               title="SECURITY CABINS"
-              price="More Datail"
+              path="/security-cabins"
             />
             <PackageCard
               image={card3}
               title="Modular Concepts"
-              price="More Datail"
+              path="/modular-concepts"
             />
             <PackageCard
               image={card4}
               title="Container Converted Units"
-              price="More Datail"
+              path="/container-converted-units"
             />
             <PackageCard
               image={card5}
               title="Refurbished Units"
-              price="More Datail"
+              path="refurbished-units"
             />
             <PackageCard
               image={card6}
               title="Double Storey Units"
-              price="More Datail"
+              path="double-storey-units"
             />
-            <PackageCard image={card9} title="Mosques" price="More Datail" />
-            <PackageCard image={card10} title="Villas" price="More Datail" />
+            <PackageCard image={card9} title="Mosques" path="/mosques" />
+            <PackageCard image={card10} title="Villas" path="/villas" />
           </div>
         </div>
       </div>

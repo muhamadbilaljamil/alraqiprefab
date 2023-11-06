@@ -25,10 +25,10 @@ const Footer = () => {
                 <img src={logo_1} alt="" className="h-28 rounded-md mb-5" />
               </Link>
               <h1 className="text-secondary text-sm text-justify">
-                Al-Raqi, founded in 2009, has a mission to provide prefab houses
-                and services. As a leading prefab houses provider in UAE, we
-                offer a comprehensive range of prefeb solutions to meet all your
-                needs related to prefab houses and all types of building.
+                Al-Raqi, has a mission to provide prefab houses and services. As
+                a leading prefab houses provider in UAE, we offer a
+                comprehensive range of prefeb solutions to meet all your needs
+                related to prefab houses and all types of building.
               </h1>
             </li>
             <li className="p-3">
@@ -102,21 +102,6 @@ const Footer = () => {
                     </Link>
                   </div>
                 </div>
-
-                {/* <Link to="tel:+971 55 827 3554">
-                  <div className="flex gap-3  px-2">
-                    <div className={styles.icon}>
-                      <Mobile width={28} height={28} fill="#eaf3f6" />
-                    </div>
-                    <div className="flex flex-col justify-between">
-                      <h1 className="text-lg font-semibold text-white">
-                        Mobile No
-                      </h1>
-                      <h1 className="text-sm text-white">+971 55 827 3554</h1>
-                    </div>
-                  </div>
-                </Link> */}
-
                 <div className="flex gap-3  px-2 items-center">
                   <div className={styles.icon}>
                     <Mobile width={28} height={28} fill="#eaf3f6" />
@@ -164,8 +149,11 @@ const Footer = () => {
       </div>
       <div className="text-center border-t-[0.1px] border-secondary/80">
         <h1 className="text-secondary text-sm py-5">
-          Copyright 2009-2023{" "}
-          <span className="text-lg font-semibold">AL-RAQI PREFAB</span> PVT LTD
+          Copyright 2023{" "}
+          <span className="text-sm font-semibold cursor-pointer">
+            AL-RAQI PREFAB
+          </span>{" "}
+          PVT LTD
         </h1>
         <div></div>
       </div>
